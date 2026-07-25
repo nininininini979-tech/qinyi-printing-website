@@ -1,0 +1,13 @@
+{
+  "name": "Qinyi Printing | Coinshin",
+  "short_name": "Qinyi Printing",
+  "description": "Custom puzzles, paper games and gift packaging from Dongguan, China.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f4f0e8",
+  "theme_color": "#171714",
+  "lang": "en"
+}
+
