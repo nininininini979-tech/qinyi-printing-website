@@ -1,0 +1,33 @@
+name: i18n checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Refresh source catalog
+        run: python3 scripts/i18n_extract.py
+      - name: Synchronize locale schemas
+        run: node scripts/i18n_sync.mjs
+      - name: Build static locale pages
+        run: node scripts/i18n_build.mjs
+      - name: Validate locale data and output
+        run: node scripts/i18n_check.mjs
+      - name: Validate links and structured data
+        run: python3 scripts/site_smoke.py
+      - name: Verify generated files are committed
+        run: git diff --exit-code

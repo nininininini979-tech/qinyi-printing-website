@@ -1,48 +1,91 @@
 document.documentElement.classList.add('js');
 
+const i18n = window.QINYI_I18N || { locale: 'en', messages: {}, rootAlias: false };
+const t = (key, variables = {}) => {
+  const template = i18n.messages[key] || key;
+  return Object.entries(variables).reduce(
+    (value, [name, replacement]) => value.replaceAll(`{${name}}`, replacement),
+    template,
+  );
+};
+const languages = [
+  ['en', 'English'], ['zh-CN', '中文'], ['es', 'Español'], ['de', 'Deutsch'],
+  ['fr', 'Français'], ['ja', '日本語'], ['ko', '한국어'], ['ar', 'العربية'],
+];
+const currentPage = window.location.pathname.split('/').filter(Boolean).pop()?.endsWith('.html')
+  ? window.location.pathname.split('/').pop()
+  : 'index.html';
+const scriptUrl = new URL(document.currentScript.src);
+const siteRoot = new URL('../', scriptUrl);
+
+function bestInitialLocale() {
+  const stored = window.localStorage.getItem('qinyi-locale');
+  if (languages.some(([code]) => code === stored)) return stored;
+  const browserLanguages = navigator.languages || [navigator.language || 'en'];
+  return languages.find(([code]) => browserLanguages.some((item) => (
+    item.toLowerCase() === code.toLowerCase()
+    || item.toLowerCase().split('-')[0] === code.toLowerCase().split('-')[0]
+  )))?.[0] || 'en';
+}
+
+function localeUrl(locale) {
+  const page = currentPage === 'index.html' ? '' : currentPage;
+  const url = new URL(`${locale}/${page}`, siteRoot);
+  url.search = window.location.search;
+  url.hash = window.location.hash;
+  return url;
+}
+
+if (i18n.rootAlias) {
+  window.location.replace(localeUrl(bestInitialLocale()));
+}
+
+document.documentElement.lang = i18n.locale;
+document.documentElement.dir = i18n.locale === 'ar' ? 'rtl' : 'ltr';
+document.documentElement.style.setProperty('--rfq-production-brief', JSON.stringify(t('common.rfq.production_brief')));
+
 const menuButton = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
-const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-
 const primaryNavigation = [
-  ['products.html', 'Products'],
-  ['trade.html', 'OEM & Trade Partnership'],
-  ['manufacturing.html', 'Manufacturing & Quality'],
-  ['projects.html', 'Case Studies'],
-  ['about.html', 'Company'],
+  ['products.html', 'common.nav.products'],
+  ['trade.html', 'common.nav.trade'],
+  ['manufacturing.html', 'common.nav.manufacturing'],
+  ['projects.html', 'common.nav.projects'],
+  ['about.html', 'common.nav.company'],
 ];
 
 if (navLinks) {
   navLinks.id = 'primary-navigation';
-  navLinks.innerHTML = primaryNavigation.map(([href, label]) => {
+  navLinks.innerHTML = primaryNavigation.map(([href, key]) => {
     const current = currentPage === href ? ' aria-current="page"' : '';
-    return `<a href="${href}"${current}>${label}</a>`;
+    return `<a href="${href}"${current}>${t(key)}</a>`;
   }).join('');
-  navLinks.insertAdjacentHTML(
-    'beforeend',
-    '<a class="mobile-nav-only" href="contact.html">Contact</a><a class="mobile-nav-only" href="privacy.html">Privacy & file security</a><a class="mobile-nav-only" href="quote.html">Request a quote</a>',
-  );
+  navLinks.insertAdjacentHTML('beforeend', [
+    ['contact.html', 'common.nav.contact'],
+    ['privacy.html', 'common.nav.privacy'],
+    ['quote.html', 'common.nav.quote'],
+  ].map(([href, key]) => `<a class="mobile-nav-only" href="${href}">${t(key)}</a>`).join(''));
 }
 
 if (menuButton) {
   menuButton.setAttribute('aria-controls', 'primary-navigation');
+  menuButton.setAttribute('aria-label', t('common.menu.open'));
   menuButton.addEventListener('click', () => {
     const isOpen = document.body.classList.toggle('menu-open');
     menuButton.setAttribute('aria-expanded', String(isOpen));
-    menuButton.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    menuButton.setAttribute('aria-label', t(isOpen ? 'common.menu.close' : 'common.menu.open'));
   });
-
   document.querySelectorAll('.nav-links a').forEach((link) => {
     link.addEventListener('click', () => {
       document.body.classList.remove('menu-open');
       menuButton.setAttribute('aria-expanded', 'false');
-      menuButton.setAttribute('aria-label', 'Open menu');
+      menuButton.setAttribute('aria-label', t('common.menu.open'));
     });
   });
 }
 
 document.querySelectorAll('[data-year]').forEach((node) => {
-  node.textContent = new Date().getFullYear();
+  node.textContent = new Intl.NumberFormat(i18n.locale, { useGrouping: false }).format(new Date().getFullYear());
 });
 
 const observer = 'IntersectionObserver' in window
@@ -55,125 +98,73 @@ const observer = 'IntersectionObserver' in window
       });
     }, { threshold: 0.12 })
   : null;
-
-document.querySelectorAll('.reveal').forEach((node) => {
-  if (observer) observer.observe(node);
-  else node.classList.add('visible');
-});
-
-const languages = [
-  ['en', 'English'],
-  ['zh-CN', '中文'],
-  ['es', 'Español'],
-  ['de', 'Deutsch'],
-  ['fr', 'Français'],
-  ['ja', '日本語'],
-  ['ko', '한국어'],
-  ['ar', 'العربية'],
-];
-
-function selectedTranslationLanguage() {
-  const match = document.cookie.match(/(?:^|; )googtrans=\/en\/([^;]+)/);
-  return match ? decodeURIComponent(match[1]) : 'en';
-}
+document.querySelectorAll('.reveal').forEach((node) => observer ? observer.observe(node) : node.classList.add('visible'));
 
 function buildLanguageControl() {
   const existing = document.querySelector('[data-language]');
   if (!existing) return;
-
   const wrapper = document.createElement('div');
-  wrapper.className = 'language-control notranslate';
-  wrapper.innerHTML = `
-    <label class="sr-only" for="site-language">Website language</label>
-    <select id="site-language" aria-label="Website language" disabled>
+  wrapper.className = 'language-control';
+  wrapper.innerHTML = `<label class="sr-only" for="site-language">${t('common.language.label')}</label>
+    <select id="site-language" aria-label="${t('common.language.label')}">
       ${languages.map(([value, label]) => `<option value="${value}">${label}</option>`).join('')}
-    </select>
-    <div id="google_translate_element" hidden></div>`;
+    </select>`;
   existing.replaceWith(wrapper);
-
   const select = wrapper.querySelector('select');
-  select.value = selectedTranslationLanguage();
+  select.value = i18n.locale;
   select.addEventListener('change', () => {
-    const combo = document.querySelector('.goog-te-combo');
-    if (!combo) return;
-    combo.value = select.value;
-    combo.dispatchEvent(new Event('change'));
-    document.documentElement.dir = select.value === 'ar' ? 'rtl' : 'ltr';
+    window.localStorage.setItem('qinyi-locale', select.value);
+    window.location.assign(localeUrl(select.value));
   });
 }
-
 buildLanguageControl();
 
-window.googleTranslateElementInit = function googleTranslateElementInit() {
-  if (!window.google || !window.google.translate) return;
-  new window.google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: languages.map(([code]) => code).join(','),
-    autoDisplay: false,
-  }, 'google_translate_element');
-  const select = document.getElementById('site-language');
-  if (select) select.disabled = false;
-};
-
-if (document.querySelector('#google_translate_element')) {
-  const script = document.createElement('script');
-  script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-  script.async = true;
-  script.referrerPolicy = 'no-referrer-when-downgrade';
-  document.head.appendChild(script);
+function localizedFieldValue(field) {
+  if (field instanceof HTMLSelectElement) return field.selectedOptions[0]?.textContent?.trim() || field.value;
+  return field.value;
 }
 
 document.querySelectorAll('[data-enquiry-form]').forEach((form) => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     if (!form.reportValidity()) return;
-
-    const data = new FormData(form);
     const reference = `QY-${new Date().toISOString().slice(0, 10).replaceAll('-', '')}-${Math.random().toString(36).slice(2, 7).toUpperCase()}`;
-    const lines = [
-      `Qinyi Printing enquiry ${reference}`,
-      '',
-      ...Array.from(data.entries())
-        .filter(([, value]) => typeof value === 'string' && value.trim())
-        .map(([key, value]) => `${key}: ${value}`),
-    ];
-    const subject = encodeURIComponent(`${reference}: ${data.get('product') || 'Custom paper product'}`);
+    const lines = [t('common.form.enquiry_title', { reference }), ''];
+    Array.from(form.elements).filter((field) => field.name && localizedFieldValue(field).trim()).forEach((field) => {
+      const label = form.querySelector(`label[for="${CSS.escape(field.id)}"]`)?.textContent?.trim() || field.name;
+      lines.push(`${label}: ${localizedFieldValue(field)}`);
+    });
+    const product = form.elements.namedItem('product');
+    const productValue = product ? localizedFieldValue(product) : t('common.form.default_product');
+    const subject = encodeURIComponent(`${reference}: ${productValue || t('common.form.default_product')}`);
     const body = encodeURIComponent(lines.join('\n'));
     const status = form.querySelector('.form-status');
-
     if (status) {
-      status.textContent = `Reference ${reference} created. Your email application will open next; the enquiry is only submitted after you send it.`;
+      status.textContent = t('common.form.reference_created', { reference });
       status.classList.add('visible');
     }
-
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
       event: form.dataset.enquiryForm === 'quote' ? 'quote_email_handoff' : 'contact_email_handoff',
-      product_type: data.get('product') || 'not specified',
+      product_type: product?.value || t('common.form.not_specified'),
     });
-
     window.location.href = `mailto:hello@qinyiprinting.com?subject=${subject}&body=${body}`;
   });
 });
 
-document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
-  link.addEventListener('click', () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'email_click' });
-  });
-});
-
-document.querySelectorAll('a[href^="tel:"]').forEach((link) => {
-  link.addEventListener('click', () => {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'phone_click' });
-  });
-});
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => link.addEventListener('click', () => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'email_click' });
+}));
+document.querySelectorAll('a[href^="tel:"]').forEach((link) => link.addEventListener('click', () => {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'phone_click' });
+}));
 
 if (currentPage !== 'quote.html') {
   const mobileQuote = document.createElement('a');
   mobileQuote.className = 'mobile-rfq';
   mobileQuote.href = 'quote.html';
-  mobileQuote.textContent = 'Request a quote';
+  mobileQuote.textContent = t('common.nav.quote');
   document.body.appendChild(mobileQuote);
 }

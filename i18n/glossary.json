@@ -1,0 +1,41 @@
+{
+  "preserveExactly": [
+    "Qinyi Printing",
+    "Coinshin",
+    "MOQ",
+    "RFQ",
+    "Roland",
+    "Heidelberg",
+    "hello@qinyiprinting.com"
+  ],
+  "legalName": {
+    "en": "Dongguan Qinyi Printing Co., Ltd.",
+    "zh-CN": "东莞市勤益印刷有限公司"
+  },
+  "preferredTerms": {
+    "prepress": {
+      "zh-CN": "印前处理",
+      "es": "preimpresión",
+      "de": "Druckvorstufe",
+      "fr": "prépresse",
+      "ja": "プリプレス",
+      "ko": "프리프레스",
+      "ar": "مرحلة ما قبل الطباعة"
+    },
+    "die-cutting": {
+      "zh-CN": "模切",
+      "es": "troquelado",
+      "de": "Stanzen",
+      "fr": "découpe à l'emporte-pièce",
+      "ja": "型抜き",
+      "ko": "톰슨 가공",
+      "ar": "القطع بالقالب"
+    }
+  },
+  "rules": [
+    "Translate addresses naturally without changing any address fact.",
+    "A team size is a staff count, never an age.",
+    "Keep quantities, dimensions, dates, email addresses, URLs and equipment brands factually unchanged.",
+    "Use professional B2B manufacturing language, not consumer advertising language."
+  ]
+}

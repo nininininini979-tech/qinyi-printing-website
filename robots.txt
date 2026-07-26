@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.qinyipuzzle.com/sitemap.xml
-
+Sitemap: https://nininininini979-tech.github.io/deyi-printing-website/sitemap.xml
