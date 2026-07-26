@@ -168,3 +168,75 @@ if (currentPage !== 'quote.html') {
   mobileQuote.textContent = t('common.nav.quote');
   document.body.appendChild(mobileQuote);
 }
+
+const supportLabels = {
+  en: { open: 'Open Qinyi AI Support', title: 'Qinyi AI Support', close: 'Close support', full: 'Open full page' },
+  'zh-CN': { open: '打开勤益智能客服', title: '勤益智能客服', close: '关闭客服', full: '打开完整页面' },
+  es: { open: 'Abrir asistencia de Qinyi', title: 'Asistencia de Qinyi', close: 'Cerrar asistencia', full: 'Abrir página completa' },
+  de: { open: 'Qinyi-Support öffnen', title: 'Qinyi AI Support', close: 'Support schließen', full: 'Ganze Seite öffnen' },
+  fr: { open: "Ouvrir l'assistance Qinyi", title: 'Assistance Qinyi', close: "Fermer l'assistance", full: 'Ouvrir la page complète' },
+  ja: { open: 'Qinyi AIサポートを開く', title: 'Qinyi AIサポート', close: 'サポートを閉じる', full: '全画面で開く' },
+  ko: { open: 'Qinyi AI 지원 열기', title: 'Qinyi AI 지원', close: '지원 닫기', full: '전체 페이지 열기' },
+  ar: { open: 'فتح دعم Qinyi الذكي', title: 'دعم Qinyi الذكي', close: 'إغلاق الدعم', full: 'فتح الصفحة الكاملة' },
+};
+
+function installSupportWidget() {
+  const copy = supportLabels[i18n.locale] || supportLabels.en;
+  const embeddedUrl = new URL('ai-support.html', siteRoot);
+  embeddedUrl.searchParams.set('locale', i18n.locale);
+  embeddedUrl.searchParams.set('embed', '1');
+  const fullUrl = new URL('ai-support.html', siteRoot);
+  fullUrl.searchParams.set('locale', i18n.locale);
+
+  const launcher = document.createElement('button');
+  launcher.className = 'qinyi-support-launcher';
+  launcher.type = 'button';
+  launcher.setAttribute('aria-label', copy.open);
+  launcher.setAttribute('title', copy.open);
+  launcher.setAttribute('aria-expanded', 'false');
+  launcher.innerHTML = '<span class="qinyi-support-icon" aria-hidden="true"><i></i><i></i><i></i></span>';
+
+  const layer = document.createElement('div');
+  layer.className = 'qinyi-support-layer';
+  layer.hidden = true;
+  layer.innerHTML = `<button class="qinyi-support-scrim" type="button" aria-label="${copy.close}"></button>
+    <section class="qinyi-support-dialog" role="dialog" aria-modal="true" aria-label="${copy.title}">
+      <header class="qinyi-support-dialog__header">
+        <strong>${copy.title}</strong>
+        <div>
+          <a class="qinyi-support-expand" href="${fullUrl.href}" title="${copy.full}" aria-label="${copy.full}">↗</a>
+          <button class="qinyi-support-close" type="button" title="${copy.close}" aria-label="${copy.close}">×</button>
+        </div>
+      </header>
+      <iframe class="qinyi-support-frame" title="${copy.title}" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>`;
+
+  const frame = layer.querySelector('.qinyi-support-frame');
+  const closeButton = layer.querySelector('.qinyi-support-close');
+  const scrim = layer.querySelector('.qinyi-support-scrim');
+
+  function closeSupport() {
+    layer.hidden = true;
+    document.body.classList.remove('support-open');
+    launcher.setAttribute('aria-expanded', 'false');
+    launcher.focus();
+  }
+
+  function openSupport() {
+    if (!frame.src) frame.src = embeddedUrl.href;
+    layer.hidden = false;
+    document.body.classList.add('support-open');
+    launcher.setAttribute('aria-expanded', 'true');
+    closeButton.focus();
+  }
+
+  launcher.addEventListener('click', openSupport);
+  closeButton.addEventListener('click', closeSupport);
+  scrim.addEventListener('click', closeSupport);
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !layer.hidden) closeSupport();
+  });
+  document.body.append(layer, launcher);
+}
+
+installSupportWidget();

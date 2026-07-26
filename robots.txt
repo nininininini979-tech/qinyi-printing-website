@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nininininini979-tech.github.io/deyi-printing-website/sitemap.xml
+Sitemap: https://nininininini979-tech.github.io/qinyi-printing-website/sitemap.xml

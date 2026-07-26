@@ -57,6 +57,10 @@ Production deployment is intentionally manual through
 **GitHub Actions**; the workflow refuses to deploy while any non-English message
 is not marked `reviewed`.
 
+The site includes Qinyi AI Support at `ai-support.html` and loads it in an
+isolated iframe from the floating support button on every localized page. Run
+`node local-server.mjs` for a local preview with same-origin API proxying.
+
 ## Site Structure
 
 - `index.html` - home

@@ -34,7 +34,10 @@ for (const locale of locales) {
         const chineseLegalName = locale === 'zh-CN'
           && source.value.includes(glossary.legalName.en)
           && target?.value.includes(glossary.legalName['zh-CN']);
-        if (!chineseLegalName) errors.push(`${locale}:${key}: protected term changed: ${term}`);
+        const chineseBrandName = locale === 'zh-CN'
+          && term === glossary.brandName.en
+          && target?.value.includes(glossary.brandName['zh-CN']);
+        if (!chineseLegalName && !chineseBrandName) errors.push(`${locale}:${key}: protected term changed: ${term}`);
       }
     }
   }

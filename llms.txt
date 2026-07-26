@@ -27,19 +27,20 @@ Qinyi Printing serves artists, museums and galleries, tourism and cultural desti
 
 ## Key pages
 
-- [Home](https://nininininini979-tech.github.io/deyi-printing-website/en/): Company overview, core products, capabilities and enquiry options.
-- [Products](https://nininininini979-tech.github.io/deyi-printing-website/en/products.html): Custom puzzles, paper games, cards and printed packaging.
-- [OEM and trade partnership](https://nininininini979-tech.github.io/deyi-printing-website/en/trade.html): Contract manufacturing, process-only support, white-label delivery and project protection.
-- [Custom solutions](https://nininininini979-tech.github.io/deyi-printing-website/en/solutions.html): Product development and manufacturing options.
-- [Industries](https://nininininini979-tech.github.io/deyi-printing-website/en/industries.html): Applications for culture, education, gifting, publishing and private label.
-- [Manufacturing and quality](https://nininininini979-tech.github.io/deyi-printing-website/en/manufacturing.html): Production workflow, equipment and quality information.
-- [Case studies](https://nininininini979-tech.github.io/deyi-printing-website/en/projects.html): Representative product formats, manufacturing scope and quality focus.
-- [About](https://nininininini979-tech.github.io/deyi-printing-website/en/about.html): Company history, location, factory and team.
-- [Insights](https://nininininini979-tech.github.io/deyi-printing-website/en/insights.html): Procurement and production guidance.
-- [FAQ](https://nininininini979-tech.github.io/deyi-printing-website/en/faq.html): Buyer questions and confirmed answers.
-- [Contact](https://nininininini979-tech.github.io/deyi-printing-website/en/contact.html): Contact and enquiry channels.
-- [Request a quote](https://nininininini979-tech.github.io/deyi-printing-website/en/quote.html): Project requirements and quotation request.
-- [Privacy and file security](https://nininininini979-tech.github.io/deyi-printing-website/en/privacy.html): Enquiry handling and confidential-file guidance.
+- [Home](https://nininininini979-tech.github.io/qinyi-printing-website/en/): Company overview, core products, capabilities and enquiry options.
+- [Products](https://nininininini979-tech.github.io/qinyi-printing-website/en/products.html): Custom puzzles, paper games, cards and printed packaging.
+- [OEM and trade partnership](https://nininininini979-tech.github.io/qinyi-printing-website/en/trade.html): Contract manufacturing, process-only support, white-label delivery and project protection.
+- [Custom solutions](https://nininininini979-tech.github.io/qinyi-printing-website/en/solutions.html): Product development and manufacturing options.
+- [Industries](https://nininininini979-tech.github.io/qinyi-printing-website/en/industries.html): Applications for culture, education, gifting, publishing and private label.
+- [Manufacturing and quality](https://nininininini979-tech.github.io/qinyi-printing-website/en/manufacturing.html): Production workflow, equipment and quality information.
+- [Case studies](https://nininininini979-tech.github.io/qinyi-printing-website/en/projects.html): Representative product formats, manufacturing scope and quality focus.
+- [About](https://nininininini979-tech.github.io/qinyi-printing-website/en/about.html): Company history, location, factory and team.
+- [Insights](https://nininininini979-tech.github.io/qinyi-printing-website/en/insights.html): Procurement and production guidance.
+- [FAQ](https://nininininini979-tech.github.io/qinyi-printing-website/en/faq.html): Buyer questions and confirmed answers.
+- [Contact](https://nininininini979-tech.github.io/qinyi-printing-website/en/contact.html): Contact and enquiry channels.
+- [Request a quote](https://nininininini979-tech.github.io/qinyi-printing-website/en/quote.html): Project requirements and quotation request.
+- [Privacy and file security](https://nininininini979-tech.github.io/qinyi-printing-website/en/privacy.html): Enquiry handling and confidential-file guidance.
+- [Qinyi AI Support](https://nininininini979-tech.github.io/qinyi-printing-website/ai-support.html): AI-assisted product guidance with clearly marked business-confirmation boundaries.
 
 ## Commercial scope
 

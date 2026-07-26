@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ROOT / "src" / "pages"
-BASE_URL = "https://nininininini979-tech.github.io/deyi-printing-website"
+BASE_URL = "https://nininininini979-tech.github.io/qinyi-printing-website"
 LOCALES = ["en", "zh-CN", "es", "de", "fr", "ja", "ko", "ar"]
 ASSET_VERSION = "20260726-i18n"
 TRANSLATABLE_ATTRIBUTES = {"alt", "aria-label", "placeholder", "title"}
@@ -226,6 +226,7 @@ def main() -> None:
         for source_path in html_files:
             suffix = "" if source_path.name == "index.html" else source_path.name
             entries.append(f"  <url><loc>{BASE_URL}/{locale}/{suffix}</loc></url>")
+    entries.append(f"  <url><loc>{BASE_URL}/ai-support.html</loc></url>")
     (ROOT / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(entries) + "\n</urlset>\n")
     print(f"Built {len(LOCALES) * len(html_files)} localized pages plus {len(html_files)} root aliases.")
 

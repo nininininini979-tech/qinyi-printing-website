@@ -12,6 +12,10 @@
     "en": "Dongguan Qinyi Printing Co., Ltd.",
     "zh-CN": "东莞市勤益印刷有限公司"
   },
+  "brandName": {
+    "en": "Qinyi Printing",
+    "zh-CN": "勤益"
+  },
   "preferredTerms": {
     "prepress": {
       "zh-CN": "印前处理",

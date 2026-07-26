@@ -10,12 +10,12 @@
       "sourceHash": "73d01dfab56e6ee4"
     },
     "about.about_qinyi": {
-      "value": "关于Qinyi Printing",
+      "value": "关于勤益",
       "status": "needs_review",
       "sourceHash": "583a24fd3cbf68ef"
     },
     "about.about_qinyi_dongguan_paper_product_manufacturer": {
-      "value": "关于Qinyi Printing |东莞纸制品制造商",
+      "value": "关于勤益 |东莞纸制品制造商",
       "status": "needs_review",
       "sourceHash": "087efa71ac13a31b"
     },
@@ -50,7 +50,7 @@
       "sourceHash": "cd9a67fca2a5477e"
     },
     "about.contact_qinyi": {
-      "value": "联系勤一",
+      "value": "联系勤益",
       "status": "needs_review",
       "sourceHash": "dd4ca363e97795b5"
     },
@@ -85,7 +85,7 @@
       "sourceHash": "ffbc239a8f8e7186"
     },
     "about.dongguan_qinyi_co_ltd_uses_qinyi_as": {
-      "value": "东莞市勤益印刷有限公司 使用 Qinyi Printing 作为其英文公司名称。 Coinshin / 可燊礼品是其礼品产品品牌，从2020年开始开发的创意纸质礼品。",
+      "value": "东莞市勤益印刷有限公司 使用 勤益 作为其英文公司名称。 Coinshin / 可燊礼品是其礼品产品品牌，从2020年开始开发的创意纸质礼品。",
       "status": "needs_review",
       "sourceHash": "f88f04f011880505"
     },
@@ -105,7 +105,7 @@
       "sourceHash": "d1d50b2cbac7497b"
     },
     "about.exterior_of_qinyi_s_factory_in_dongguan": {
-      "value": "Qinyi Printing 广东省东莞市工厂外观",
+      "value": "勤益 广东省东莞市工厂外观",
       "status": "needs_review",
       "sourceHash": "faf47884722ebe10"
     },
@@ -150,17 +150,17 @@
       "sourceHash": "507475324bb30fd9"
     },
     "about.qinyi_coinshin": {
-      "value": "Qinyi Printing / Coinshin",
+      "value": "勤益 / Coinshin",
       "status": "needs_review",
       "sourceHash": "d6aab0159c72e0fc"
     },
     "about.qinyi_develops_and_manufactures_custom_puzzles_paper": {
-      "value": "Qinyi Printing 在中国东莞开发和制造定制拼图、纸质游戏、卡片和印刷包装。该工厂占地约 5,000 m²，拥有 80 多名团队成员。",
+      "value": "勤益 在中国东莞开发和制造定制拼图、纸质游戏、卡片和印刷包装。该工厂占地约 5,000 m²，拥有 80 多名团队成员。",
       "status": "needs_review",
       "sourceHash": "acc43608f0aa6d5a"
     },
     "about.qinyi_is_located_at_no_10_jianmin": {
-      "value": "Qinyi Printing位于中国广东省东莞市茶山镇上园村建民一路10号。将产品详细信息发送至",
+      "value": "勤益位于中国广东省东莞市茶山镇上园村建民一路10号。将产品详细信息发送至",
       "status": "needs_review",
       "sourceHash": "341301e4c4fac022"
     },
@@ -240,7 +240,7 @@
       "sourceHash": "5bee56f7f11b9ab1"
     },
     "common.can_qinyi_support_a_project_from_concept": {
-      "value": "勤一能否支持一个项目从概念到包装的整个过程？",
+      "value": "勤益能否支持一个项目从概念到包装的整个过程？",
       "status": "needs_review",
       "sourceHash": "c0a7b6342aa8990a"
     },
@@ -325,7 +325,7 @@
       "sourceHash": "b256be5bd56c9f76"
     },
     "common.form.enquiry_title": {
-      "value": "Qinyi Printing 询价 {reference}",
+      "value": "勤益 询价 {reference}",
       "status": "needs_review",
       "sourceHash": "676a71a47307a4e3"
     },
@@ -520,22 +520,22 @@
       "sourceHash": "04e2a9728af75840"
     },
     "common.qinyi": {
-      "value": "Qinyi Printing",
+      "value": "勤益",
       "status": "needs_review",
       "sourceHash": "84a6bd96758b5dee"
     },
     "common.qinyi_2": {
-      "value": "Qinyi Printing。",
+      "value": "勤益。",
       "status": "needs_review",
       "sourceHash": "736f5788e8ebc28b"
     },
     "common.qinyi_all_rights_reserved": {
-      "value": "Qinyi Printing。版权所有。",
+      "value": "勤益。版权所有。",
       "status": "needs_review",
       "sourceHash": "60214f09ff4e9b7b"
     },
     "common.qinyi_home": {
-      "value": "Qinyi Printing之家",
+      "value": "勤益之家",
       "status": "needs_review",
       "sourceHash": "fad4e208d7c0450b"
     },
@@ -615,7 +615,7 @@
       "sourceHash": "56ef8f20955f2564"
     },
     "contact.and_consent_to_qinyi_using_these_details": {
-      "value": "并同意Qinyi Printing使用这些详细信息来回复我的询问。",
+      "value": "并同意勤益使用这些详细信息来回复我的询问。",
       "status": "needs_review",
       "sourceHash": "08a43622d261f3fa"
     },
@@ -635,17 +635,17 @@
       "sourceHash": "11226a9e466de020"
     },
     "contact.contact_qinyi": {
-      "value": "联系Qinyi Printing",
+      "value": "联系勤益",
       "status": "needs_review",
       "sourceHash": "9b00cda5bd81a108"
     },
     "contact.contact_qinyi_dongguan_qinyi_co_ltd_about": {
-      "value": "有关定制拼图、纸质游戏、卡片和印刷包装，请联系东莞市勤益印刷有限公司Qinyi Printing。",
+      "value": "有关定制拼图、纸质游戏、卡片和印刷包装，请联系东莞市勤益印刷有限公司勤益。",
       "status": "needs_review",
       "sourceHash": "b2d5fb828624cf9c"
     },
     "contact.contact_qinyi_in_dongguan_china": {
-      "value": "联系中国东莞的 Qinyi Printing",
+      "value": "联系中国东莞的 勤益",
       "status": "needs_review",
       "sourceHash": "5d6b0b7ba07d675c"
     },
@@ -715,7 +715,7 @@
       "sourceHash": "ac3a36a0bb862629"
     },
     "contact.qinyi_factory_exterior_in_dongguan": {
-      "value": "东莞Qinyi Printing厂外观",
+      "value": "东莞勤益厂外观",
       "status": "needs_review",
       "sourceHash": "eab4c374d83517d6"
     },
@@ -860,7 +860,7 @@
       "sourceHash": "4b7ec5f0ed965460"
     },
     "faq.can_qinyi_work_with_our_nominated_freight": {
-      "value": "勤一可以与我们指定的货运代理合作吗？",
+      "value": "勤益可以与我们指定的货运代理合作吗？",
       "status": "needs_review",
       "sourceHash": "a175c87c9cfcd306"
     },
@@ -905,7 +905,7 @@
       "sourceHash": "f73f9658cfa333ff"
     },
     "faq.custom_puzzle_game_manufacturing_faq_qinyi": {
-      "value": "定制拼图和游戏制造常见问题解答 |Qinyi Printing",
+      "value": "定制拼图和游戏制造常见问题解答 |勤益",
       "status": "needs_review",
       "sourceHash": "77fea1cc71930be5"
     },
@@ -1130,7 +1130,7 @@
       "sourceHash": "b3fe9f702144f0de"
     },
     "faq.the_company_portfolio_presents_qinyi_as_the": {
-      "value": "该公司的产品组合以Qinyi Printing作为制造公司，以Coinshin / 可燊礼品作为其创意纸质礼品标识。报价单、合同、发票和受益人信息应标明交易的负责法律实体。",
+      "value": "该公司的产品组合以勤益作为制造公司，以Coinshin / 可燊礼品作为其创意纸质礼品标识。报价单、合同、发票和受益人信息应标明交易的负责法律实体。",
       "status": "needs_review",
       "sourceHash": "a1c88f7ffbe833dd"
     },
@@ -1225,7 +1225,7 @@
       "sourceHash": "492d9064fbc8e619"
     },
     "faq.what_is_the_relationship_between_qinyi_and": {
-      "value": "Qinyi Printing 与 Coinshin 是什么关系？",
+      "value": "勤益 与 Coinshin 是什么关系？",
       "status": "needs_review",
       "sourceHash": "a5692ca01a758948"
     },
@@ -1490,7 +1490,7 @@
       "sourceHash": "4113381fdb3c751c"
     },
     "index.custom_puzzle_paper_game_manufacturer_qinyi": {
-      "value": "定制拼图与纸质游戏制造商 | Qinyi Printing",
+      "value": "定制拼图与纸质游戏制造商 | 勤益",
       "status": "needs_review",
       "sourceHash": "d0433e4c560bbc31"
     },
@@ -1650,7 +1650,7 @@
       "sourceHash": "e247213389f1bb82"
     },
     "index.offset_printing_press_inside_qinyi_s_dongguan": {
-      "value": "Qinyi Printing内的偏移印刷机",
+      "value": "勤益内的偏移印刷机",
       "status": "needs_review",
       "sourceHash": "18ca17c4283f764c"
     },
@@ -1720,22 +1720,22 @@
       "sourceHash": "a57de7b1d19e4a62"
     },
     "index.qinyi_capabilities": {
-      "value": "Qinyi Printing印刷能力",
+      "value": "勤益印刷能力",
       "status": "needs_review",
       "sourceHash": "6411ba1867430741"
     },
     "index.qinyi_custom_puzzles_paper_games_and_gift": {
-      "value": "Qinyi Printing - 定制拼图、纸质游戏与礼品包装",
+      "value": "勤益 - 定制拼图、纸质游戏与礼品包装",
       "status": "needs_review",
       "sourceHash": "4179ff24f67f09f4"
     },
     "index.qinyi_develops_and_manufactures_jigsaw_and_3d": {
-      "value": "Qinyi Printing公司开发并制造了拼图和3D纸拼图,板牌游戏和纸牌游戏,礼品盒和相关印刷纸制品. 我们的内部范围包括印前、印刷、切割、完成、装配和包装。",
+      "value": "勤益公司开发并制造了拼图和3D纸拼图,板牌游戏和纸牌游戏,礼品盒和相关印刷纸制品. 我们的内部范围包括印前、印刷、切割、完成、装配和包装。",
       "status": "needs_review",
       "sourceHash": "b6a6560216d2053c"
     },
     "index.qinyi_staff_assembling_and_packing_printed_products": {
-      "value": "东莞车间的Qinyi Printing人员装配和包装印刷品",
+      "value": "东莞车间的勤益人员装配和包装印刷品",
       "status": "needs_review",
       "sourceHash": "03c7c28e910b8ede"
     },
@@ -1905,7 +1905,7 @@
       "sourceHash": "3acafc9a7aec4557"
     },
     "industries.custom_paper_products_by_industry_qinyi": {
-      "value": "工业定制纸制品 Qinyi Printing.",
+      "value": "工业定制纸制品 勤益.",
       "status": "needs_review",
       "sourceHash": "303246c5d36c0a6a"
     },
@@ -2035,7 +2035,7 @@
       "sourceHash": "c9c7b78e4ea9060f"
     },
     "industries.qinyi_produces_custom_puzzles_games_and_packaging": {
-      "value": "Qinyi Printing为创意市场和商业市场制作定制拼图,游戏和包装. 每一种解决方案都围绕设计稿、使用案例、受众、包装格式和买方要求制定。",
+      "value": "勤益为创意市场和商业市场制作定制拼图,游戏和包装. 每一种解决方案都围绕设计稿、使用案例、受众、包装格式和买方要求制定。",
       "status": "needs_review",
       "sourceHash": "ff45ef0eb36dd277"
     },
@@ -2115,7 +2115,7 @@
       "sourceHash": "492c359d0151708e"
     },
     "insights.prepared_by_the_qinyi_project_team_from": {
-      "value": "由Qinyi Printing项目团队根据第一阶段拼图,游戏和包装询价中使用的信息编写.",
+      "value": "由勤益项目团队根据第一阶段拼图,游戏和包装询价中使用的信息编写.",
       "status": "needs_review",
       "sourceHash": "30a8c87b3700bdb2"
     },
@@ -2150,7 +2150,7 @@
       "sourceHash": "af78e0f2d418da5e"
     },
     "insights.rfq_planning_guides_qinyi": {
-      "value": "RFQ规划指南 Qinyi Printing",
+      "value": "RFQ规划指南 勤益",
       "status": "needs_review",
       "sourceHash": "79fb1ca1c91ae6ce"
     },
@@ -2360,7 +2360,7 @@
       "sourceHash": "6715c5ff3efd63fe"
     },
     "manufacturing.offset_printing_press_inside_qinyi_s_dongguan": {
-      "value": "Qinyi Printing东莞设施内的偏移印刷机",
+      "value": "勤益东莞设施内的偏移印刷机",
       "status": "needs_review",
       "sourceHash": "a421742639d46e99"
     },
@@ -2400,12 +2400,12 @@
       "sourceHash": "adf58e3e476efcb1"
     },
     "manufacturing.printed_paper_product_finishing_workstation_at_qinyi": {
-      "value": "印刷纸产品完成Qinyi Printing工作.",
+      "value": "印刷纸产品完成勤益工作.",
       "status": "needs_review",
       "sourceHash": "3a46572b0d8881c7"
     },
     "manufacturing.printing_converting_assembly_in_dongguan_qinyi": {
-      "value": "东莞印刷、印后加工与装配 | Qinyi Printing",
+      "value": "东莞印刷、印后加工与装配 | 勤益",
       "status": "needs_review",
       "sourceHash": "f00dc92248e55c9f"
     },
@@ -2415,7 +2415,7 @@
       "sourceHash": "98eb41c2a28a58a1"
     },
     "manufacturing.production_workshop_inside_qinyi_s_dongguan_facility": {
-      "value": "Qinyi Printing东莞厂内生产车间",
+      "value": "勤益东莞厂内生产车间",
       "status": "needs_review",
       "sourceHash": "138577462a26a4e9"
     },
@@ -2430,12 +2430,12 @@
       "sourceHash": "8833590956cf4dda"
     },
     "manufacturing.qinyi_can_provide_applicable_company_registration_and": {
-      "value": "Qinyi Printing可以在项目审查期间向合格的买主提供适用的公司注册和证明遵守文件. 对照具体产品、材料和目的地市场确定供应情况和范围。",
+      "value": "勤益可以在项目审查期间向合格的买主提供适用的公司注册和证明遵守文件. 对照具体产品、材料和目的地市场确定供应情况和范围。",
       "status": "needs_review",
       "sourceHash": "7be0df512d4c9c47"
     },
     "manufacturing.qinyi_operates_an_approximately_5_000_m": {
-      "value": "Qinyi Printing 运营一座约 5,000 m²的厂房，团队成员超过 80 人。内部流程支持定制拼图、纸质游戏和印刷包装从已批准文件到包装成品的生产。",
+      "value": "勤益 运营一座约 5,000 m²的厂房，团队成员超过 80 人。内部流程支持定制拼图、纸质游戏和印刷包装从已批准文件到包装成品的生产。",
       "status": "needs_review",
       "sourceHash": "4a6c17526c658f73"
     },
@@ -2455,7 +2455,7 @@
       "sourceHash": "eb1d8a48727b783f"
     },
     "manufacturing.registered_company_dongguan_qinyi_co_ltd_located": {
-      "value": "注册公司: /东莞Qinyi Printing印刷有限公司,位于东莞市车山镇.",
+      "value": "注册公司: /东莞勤益印刷有限公司,位于东莞市车山镇.",
       "status": "needs_review",
       "sourceHash": "06652e52698849c6"
     },
@@ -2465,7 +2465,7 @@
       "sourceHash": "7412d95de2ffdf3c"
     },
     "manufacturing.review_qinyi_s_approximately_5_000_m": {
-      "value": "审查Qinyi Printing约5,000 m²的东莞设施,内部生产阶段,质量检查站和项目文件流程.",
+      "value": "审查勤益约5,000 m²的东莞设施,内部生产阶段,质量检查站和项目文件流程.",
       "status": "needs_review",
       "sourceHash": "718abf8bb7b9bcfc"
     },
@@ -2555,7 +2555,7 @@
       "sourceHash": "fa291f4af3a00d11"
     },
     "privacy.how_qinyi_handles_enquiry_details_project_files": {
-      "value": "Qinyi Printing公司如何处理询价细节,项目文件以及未来客户和商业联系人的隐私请求.",
+      "value": "勤益公司如何处理询价细节,项目文件以及未来客户和商业联系人的隐私请求.",
       "status": "needs_review",
       "sourceHash": "ebf8d8110850dcdf"
     },
@@ -2590,7 +2590,7 @@
       "sourceHash": "8502d51aa8dca203"
     },
     "privacy.privacy_file_security_qinyi": {
-      "value": "隐私与文件安全 Qinyi Printing",
+      "value": "隐私与文件安全 勤益",
       "status": "needs_review",
       "sourceHash": "8f34a921f788ad18"
     },
@@ -2600,7 +2600,7 @@
       "sourceHash": "d4e8830a71c73edf"
     },
     "privacy.qinyi_operates_in_dongguan_china_information_sent": {
-      "value": "Qinyi Printing在中国东莞经营. 其他国家的买主发送的信息将转移到中国并在中国处理,并可能通过买主和Qinyi Printing的服务提供者的系统.",
+      "value": "勤益在中国东莞经营. 其他国家的买主发送的信息将转移到中国并在中国处理,并可能通过买主和勤益的服务提供者的系统.",
       "status": "needs_review",
       "sourceHash": "4b45f00cbdc4c53e"
     },
@@ -2625,12 +2625,12 @@
       "sourceHash": "2514aeb0555faeee"
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "value": "报价和联系表会在您的电子邮件应用程序中准备电子邮件 。 网站不声称要上传或存储这些表格条目。 Qinyi Printing只有在审查并发送邮件时才会收到信息.",
+      "value": "报价和联系表会在您的电子邮件应用程序中准备电子邮件 。 网站不声称要上传或存储这些表格条目。 勤益只有在审查并发送邮件时才会收到信息.",
       "status": "needs_review",
       "sourceHash": "36d9a4f2a499bc30"
     },
     "privacy.this_notice_explains_what_happens_when_a": {
-      "value": "本通知解释未来客户或业务联系人向Qinyi Printing询问或项目材料时会发生什么.",
+      "value": "本通知解释未来客户或业务联系人向勤益询问或项目材料时会发生什么.",
       "status": "needs_review",
       "sourceHash": "0a9549f0d39f3a09"
     },
@@ -2640,12 +2640,12 @@
       "sourceHash": "4ade8cc6a9e14d3f"
     },
     "privacy.using_the_english_site_name_qinyi_is": {
-      "value": "使用英文网站名Qinyi Printing,是负责其收到的询价信息的业务. 联系人:Xiao 女士,",
+      "value": "使用英文网站名勤益,是负责其收到的询价信息的业务. 联系人:Xiao 女士,",
       "status": "needs_review",
       "sourceHash": "8e5f64ac72654858"
     },
     "privacy.wait_until_a_qinyi_contact_has_replied": {
-      "value": "等待Qinyi Printing联系人回复并确认预定接收人和转移方法. 在分享敏感材料之前商定任何保密要求的范围。",
+      "value": "等待勤益联系人回复并确认预定接收人和转移方法. 在分享敏感材料之前商定任何保密要求的范围。",
       "status": "needs_review",
       "sourceHash": "048ef1cfe6f9e87a"
     },
@@ -2675,12 +2675,12 @@
       "sourceHash": "165c26da6a6804d6"
     },
     "privacy.with_the_subject_privacy_request_qinyi_may": {
-      "value": "“私人请求”。 Qinyi Printing在应请求采取行动前,可能需要核实身份.",
+      "value": "“私人请求”。 勤益在应请求采取行动前,可能需要核实身份.",
       "status": "needs_review",
       "sourceHash": "868077e098d366d0"
     },
     "privacy.you_may_contact_qinyi_to_ask_what": {
-      "value": "您可联系Qinyi Printing询问您持有哪些业务联系信息,在适用的情况下请求更正或删除,或撤销未来询问通信的同意. 出于法律、合同或争端解决等原因,有些信息可能仍需保留。",
+      "value": "您可联系勤益询问您持有哪些业务联系信息,在适用的情况下请求更正或删除,或撤销未来询问通信的同意. 出于法律、合同或争端解决等原因,有些信息可能仍需保留。",
       "status": "needs_review",
       "sourceHash": "3be736a1425818c1"
     },
@@ -2830,7 +2830,7 @@
       "sourceHash": "99a031c36fee299f"
     },
     "products.custom_puzzles_games_paper_packaging_qinyi": {
-      "value": "定制拼图、游戏和纸质包装 | Qinyi Printing",
+      "value": "定制拼图、游戏和纸质包装 | 勤益",
       "status": "needs_review",
       "sourceHash": "326dd956769b81ac"
     },
@@ -3005,12 +3005,12 @@
       "sourceHash": "4b2e0f863fca7f3f"
     },
     "products.qinyi_custom_puzzle_portfolio_showing_boxed_art": {
-      "value": "Qinyi Printing定制拼图组合,显示箱型艺术,教育和礼品拼图格式",
+      "value": "勤益定制拼图组合,显示箱型艺术,教育和礼品拼图格式",
       "status": "needs_review",
       "sourceHash": "19f728a7dc2c9b60"
     },
     "products.qinyi_manufactures_jigsaw_and_3d_paper_puzzles": {
-      "value": "Qinyi Printing制造拼图和3D纸谜,板牌游戏和纸牌游戏,以及印刷礼品包装. 以下范围将现有的拼图刀模与具体项目选项分开,以便买家在请求报价之前可以限定一个摘要。",
+      "value": "勤益制造拼图和3D纸谜,板牌游戏和纸牌游戏,以及印刷礼品包装. 以下范围将现有的拼图刀模与具体项目选项分开,以便买家在请求报价之前可以限定一个摘要。",
       "status": "needs_review",
       "sourceHash": "6fb57f42cc861b6b"
     },
@@ -3270,7 +3270,7 @@
       "sourceHash": "c62e4989bec0f5b9"
     },
     "projects.qinyi_s_supplied_portfolio_documents_corporate_and": {
-      "value": "Qinyi Printing提供的组合文件 公司和目的地营销拼图 品牌美术,拼图建设和外包作为一个视觉系统运行.",
+      "value": "勤益提供的组合文件 公司和目的地营销拼图 品牌美术,拼图建设和外包作为一个视觉系统运行.",
       "status": "needs_review",
       "sourceHash": "143cb94192641cec"
     },
@@ -3280,7 +3280,7 @@
       "sourceHash": "31e27193138d550a"
     },
     "projects.representative_puzzle_corporate_gift_and_3d_paper": {
-      "value": "代表拼图,公司赠与Qinyi Printing所记录的3D纸产品程序.",
+      "value": "代表拼图,公司赠与勤益所记录的3D纸产品程序.",
       "status": "needs_review",
       "sourceHash": "d18a9bbb41ba459a"
     },
@@ -3290,7 +3290,7 @@
       "sourceHash": "07192a9b89b21fd0"
     },
     "projects.send_the_product_type_target_quantity_destination": {
-      "value": "发送产品类型,目标数量,目的地和您需要验证的方面. Qinyi Printing可以根据适当的保密安排,确定相关格式并讨论现有样本或项目文件.",
+      "value": "发送产品类型,目标数量,目的地和您需要验证的方面. 勤益可以根据适当的保密安排,确定相关格式并讨论现有样本或项目文件.",
       "status": "needs_review",
       "sourceHash": "64c79faaed2bae57"
     },
@@ -3310,7 +3310,7 @@
       "sourceHash": "2ec8e3be5b755f1c"
     },
     "projects.these_examples_use_product_and_factory_photography": {
-      "value": "这些例子使用Qinyi Printing提供的产品和工厂摄影. 商业数量和客户保密细节仅与合格的买主讨论。",
+      "value": "这些例子使用勤益提供的产品和工厂摄影. 商业数量和客户保密细节仅与合格的买主讨论。",
       "status": "needs_review",
       "sourceHash": "7f3111faec5dbf23"
     },
@@ -3330,7 +3330,7 @@
       "sourceHash": "90fbf706fc995653"
     },
     "quote.and_consent_to_qinyi_using_these_details": {
-      "value": "同意Qinyi Printing公司利用这些细节来审查和回应这一询问.",
+      "value": "同意勤益公司利用这些细节来审查和回应这一询问.",
       "status": "needs_review",
       "sourceHash": "d6457cfc17b21c9f"
     },
@@ -3435,7 +3435,7 @@
       "sourceHash": "66dfeeedabf1f022"
     },
     "quote.if_the_project_is_a_potential_fit": {
-      "value": "如果项目可能适合,Xiao 女士或Qinyi Printing团队成员会回复并询问开发报价所需的信息.",
+      "value": "如果项目可能适合,Xiao 女士或勤益团队成员会回复并询问开发报价所需的信息.",
       "status": "needs_review",
       "sourceHash": "60c39eefb66ec0e2"
     },
@@ -3500,7 +3500,7 @@
       "sourceHash": "66048860303d9e27"
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "value": "申请定制生产报价 | Qinyi Printing",
+      "value": "申请定制生产报价 | 勤益",
       "status": "needs_review",
       "sourceHash": "fea8be71aa6cbafb"
     },
@@ -3515,7 +3515,7 @@
       "sourceHash": "5994bea3d662c0b7"
     },
     "quote.send_a_short_project_outline_first_qinyi": {
-      "value": "先发送短项目大纲. Qinyi Printing将审查制造是否合适,然后要求提供定价所需的图纸、设计稿和详细规格。",
+      "value": "先发送短项目大纲. 勤益将审查制造是否合适,然后要求提供定价所需的图纸、设计稿和详细规格。",
       "status": "needs_review",
       "sourceHash": "732dd3c1a0565ed2"
     },
@@ -3525,7 +3525,7 @@
       "sourceHash": "4e37d90ab1adbf9f"
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "value": "在中国东莞开始使用Qinyi Printing的定制拼图,纸牌游戏,卡片或印刷包装的两步RFQ.",
+      "value": "在中国东莞开始使用勤益的定制拼图,纸牌游戏,卡片或印刷包装的两步RFQ.",
       "status": "needs_review",
       "sourceHash": "2426a0c5f16f240c"
     },
@@ -3675,7 +3675,7 @@
       "sourceHash": "e3814cf8e9eb3a45"
     },
     "solutions.oem_puzzle_paper_product_solutions_qinyi": {
-      "value": "OEM 拼图与纸张产品解决方案 Qinyi Printing",
+      "value": "OEM 拼图与纸张产品解决方案 勤益",
       "status": "needs_review",
       "sourceHash": "85e90c7a66496328"
     },
@@ -3735,12 +3735,12 @@
       "sourceHash": "919f284d4c45dbc6"
     },
     "solutions.provide_the_product_type_dimensions_quantity_target": {
-      "value": "提供产品类型,尺寸,数量,目标市场,预期用途,物质偏好,包装需求,所需日期和可用文件. Qinyi Printing随后可以确认可行性,识别缺失信息.",
+      "value": "提供产品类型,尺寸,数量,目标市场,预期用途,物质偏好,包装需求,所需日期和可用文件. 勤益随后可以确认可行性,识别缺失信息.",
       "status": "needs_review",
       "sourceHash": "0dab509046b6b37b"
     },
     "solutions.qinyi_supports_custom_puzzle_paper_game_and": {
-      "value": "Qinyi Printing支持定制拼图,纸质游戏和包装项目,跨越设计开发,印前,印刷,模具,模切,表面处理,组装和包装.",
+      "value": "勤益支持定制拼图,纸质游戏和包装项目,跨越设计开发,印前,印刷,模具,模切,表面处理,组装和包装.",
       "status": "needs_review",
       "sourceHash": "9265294d8ab06be1"
     },
@@ -4215,17 +4215,17 @@
       "sourceHash": "0528f28aa7339181"
     },
     "trade.qinyi_production_workshop_in_dongguan_with_paper": {
-      "value": "东莞Qinyi Printing印刷生产车间,正在加工纸制品.",
+      "value": "东莞勤益印刷生产车间,正在加工纸制品.",
       "status": "needs_review",
       "sourceHash": "f1dc977579f28728"
     },
     "trade.qinyi_staff_assembling_and_packing_printed_products": {
-      "value": "Qinyi Printing工作人员在受控生产线上组装和包装印刷品",
+      "value": "勤益工作人员在受控生产线上组装和包装印刷品",
       "status": "needs_review",
       "sourceHash": "8659b1f564702938"
     },
     "trade.qinyi_supports_other_manufacturers_print_partners_sourcing": {
-      "value": "Qinyi Printing支持其他制造商,印刷伙伴,采购团队和出版商,拥有完整的订单或定义的印刷,模切、表面处理,装配和包装阶段. 根据现场生产计划确定范围和能力。",
+      "value": "勤益支持其他制造商,印刷伙伴,采购团队和出版商,拥有完整的订单或定义的印刷,模切、表面处理,装配和包装阶段. 根据现场生产计划确定范围和能力。",
       "status": "needs_review",
       "sourceHash": "3c4d1d241d10e0f6"
     },
@@ -4360,7 +4360,7 @@
       "sourceHash": "465486fc1397c678"
     },
     "trade.trade_contract_manufacturing": {
-      "value": "贸易与合同制造 | Qinyi Printing",
+      "value": "贸易与合同制造 | 勤益",
       "status": "needs_review",
       "sourceHash": "a39f0f790179767f"
     },
@@ -4370,7 +4370,7 @@
       "sourceHash": "d5329b22e9e03c91"
     },
     "trade.trade_contract_manufacturing_qinyi": {
-      "value": "贸易与合同制造 | Qinyi Printing",
+      "value": "贸易与合同制造 | 勤益",
       "status": "needs_review",
       "sourceHash": "ef6d0613e0f1ae4a"
     },

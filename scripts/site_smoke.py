@@ -90,8 +90,14 @@ def main() -> None:
                         errors.append(f"{page}: runtime locale mismatch")
                 except json.JSONDecodeError as exc:
                     errors.append(f"{page}: invalid runtime locale payload: {exc}")
-            if not re.search(r'<link rel="canonical" href="https://nininininini979-tech\.github\.io/deyi-printing-website/' + re.escape(locale) + r'/', content):
+            if not re.search(r'<link rel="canonical" href="https://nininininini979-tech\.github\.io/qinyi-printing-website/' + re.escape(locale) + r'/', content):
                 errors.append(f"{page}: incorrect canonical")
+
+    support_page = ROOT / "ai-support.html"
+    support_content = support_page.read_text()
+    for required in ("assets/support.css", "assets/support-config.js", "assets/support-i18n.js", "assets/support.js"):
+        if required not in support_content:
+            errors.append(f"ai-support.html: missing {required}")
 
     zh_index = (ROOT / "zh-CN/index.html").read_text()
     if "团队成员超过 80 人" not in zh_index or re.search(r"80\s*岁", zh_index):
