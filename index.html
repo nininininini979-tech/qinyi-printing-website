@@ -14,6 +14,7 @@
   <meta property="og:url" content="https://www.qinyipuzzle.com/">
   <meta property="og:image" content="https://www.qinyipuzzle.com/assets/images/qinyi-custom-floral-keepsake-puzzle.webp">
   <link rel="manifest" href="site.webmanifest">
+  <script>document.documentElement.classList.add('intro-capable');</script>
   <link rel="stylesheet" href="assets/styles.css">
   <script type="application/ld+json">
   {
@@ -44,6 +45,7 @@
   </script>
 </head>
 <body>
+  <div class="intro-boot-curtain" data-html2canvas-ignore="true" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <nav class="nav-shell" aria-label="Primary navigation">
@@ -160,6 +162,10 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">Q</span><span class="brand-copy"><strong>Qinyi Printing</strong><span>Coinshin creative paper goods</span></span></a><p>Custom puzzles, paper games and printed gift packaging, developed and manufactured in Dongguan, China.</p></div><div class="footer-col"><h3>Explore</h3><a href="products.html">Products</a><a href="solutions.html">Custom solutions</a><a href="industries.html">Industries</a><a href="projects.html">Product gallery</a></div><div class="footer-col"><h3>Company</h3><a href="about.html">About</a><a href="manufacturing.html">Manufacturing</a><a href="insights.html">Insights</a><a href="faq.html">FAQ</a></div><div class="footer-col"><h3>Contact</h3><span>No. 10 Jianmin 1st Road, Shangyuan Village, Chashan Town, Dongguan, Guangdong, China</span><a href="mailto:hello@qinyiprinting.com">hello@qinyiprinting.com</a><a href="contact.html">Contact details</a><a href="quote.html">Request a quote</a></div></div><div class="container footer-bottom"><span>&copy; <span data-year></span> Qinyi Printing. All rights reserved.</span><span>Product specifications and document scope are confirmed during project review.</span></div></footer>
+  <script src="assets/vendor/html2canvas.min.js" defer></script>
+  <script src="assets/vendor/gsap.min.js" defer></script>
+  <script src="assets/vendor/ScrollTrigger.min.js" defer></script>
   <script src="assets/app.js" defer></script>
+  <script type="module" src="assets/intro-scene.js" onerror="document.documentElement.classList.add('intro-ready')"></script>
 </body>
 </html>
