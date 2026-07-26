@@ -85,6 +85,18 @@
             </div>
           </header>
 
+          <section class="handoff-status" id="handoffStatus" role="status" aria-live="polite" hidden>
+            <span class="handoff-status__indicator" aria-hidden="true"></span>
+            <div class="handoff-status__content">
+              <div class="handoff-status__heading">
+                <strong id="handoffStatusTitle">正在联系人工客服</strong>
+                <span class="handoff-status__badge" id="handoffStatusBadge">等待接管</span>
+              </div>
+              <p id="handoffStatusDetail">您的消息已进入人工服务队列，您可以继续补充信息。</p>
+              <p class="handoff-status__ticket" id="handoffTicket" hidden></p>
+            </div>
+          </section>
+
           <div
             class="messages"
             id="messages"

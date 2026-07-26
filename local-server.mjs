@@ -6,7 +6,7 @@ import { Readable } from "node:stream";
 const HOST = "127.0.0.1";
 const PORT = Number(process.env.PORT || 4173);
 const ROOT = resolve(import.meta.dirname);
-const API_ORIGIN = "https://qinyi-ai-support-private-api.vercel.app";
+const API_ORIGIN = String(process.env.QINYI_API_ORIGIN || "https://qinyi-ai-support-private-api.vercel.app").replace(/\/+$/, "");
 const MAX_REQUEST_BYTES = 1024 * 1024;
 
 const CONTENT_TYPES = {
@@ -58,7 +58,7 @@ async function proxyApi(req, res, pathname) {
   }
 
   const headers = {};
-  for (const name of ["content-type", "x-client-id", "x-demo-user-id", "x-user-id", "x-tenant-id"]) {
+  for (const name of ["authorization", "content-type", "x-client-id", "x-demo-user-id", "x-user-id", "x-tenant-id"]) {
     if (req.headers[name]) headers[name] = req.headers[name];
   }
 
@@ -119,7 +119,7 @@ async function serveStatic(res, pathname) {
 const server = createServer(async (req, res) => {
   try {
     const url = new URL(req.url || "/", `http://${req.headers.host || HOST}`);
-    if (url.pathname.startsWith("/api/support/")) {
+    if (url.pathname.startsWith("/api/")) {
       await proxyApi(req, res, `${url.pathname}${url.search}`);
       return;
     }

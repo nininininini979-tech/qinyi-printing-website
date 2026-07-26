@@ -59,7 +59,7 @@ is not marked `reviewed`.
 
 The site includes Qinyi AI Support at `ai-support.html` and loads it in an
 isolated iframe from the floating support button on every localized page. Run
-`node local-server.mjs` for a local preview with same-origin API proxying.
+`node local-server.mjs` starts a local preview with same-origin API proxying. It uses the deployed API by default; for full local operations testing, start the backend separately and run `QINYI_API_ORIGIN=http://127.0.0.1:3001 node local-server.mjs`.
 
 ## Site Structure
 

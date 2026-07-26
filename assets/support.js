@@ -3,12 +3,21 @@
 
   const NORMAL_REQUEST_TIMEOUT_MS = 45_000;
   const PROFESSIONAL_REQUEST_TIMEOUT_MS = 60_000;
+  const EVENT_POLL_INTERVAL_MS = 3_000;
+  const EVENT_POLL_MAX_BACKOFF_MS = 30_000;
+  const EVENT_POLL_TIMEOUT_MS = 12_000;
+  const HANDOFF_STATUS_RANK = Object.freeze({
+    waiting_human: 0,
+    acknowledged: 1,
+    human_active: 2,
+    resolved: 3,
+  });
   const runtimeConfig = window.__QINYI_SUPPORT_CONFIG__ || {};
   const localeConfig = window.__QINYI_SUPPORT_LOCALE__ || { requested: "zh-CN", locale: "zh-CN" };
   const englishCopy = {
     me: "Me", support: "Support", you: "You", assistant: "AI support",
     manualTitle: "Business confirmation required",
-    manualDetail: "The public website does not create a real ticket. Please continue through Qinyi's official contact channel.",
+    manualDetail: "This request needs a Qinyi team member. Use the human-support action below to start a real handoff.",
     handoffCreated: "Support request prepared", handoffPending: "Human support required",
     handoffDetail: "A Qinyi team member will need to continue from the information in this conversation.",
     restrictedTitle: "Human review required",
@@ -30,6 +39,20 @@
     aiMode: "AI support", statusUnknown: "Status unavailable", statusUnknownTitle: "Service status unavailable",
     statusUnknownDetail: "The service status could not be read. You can still try sending a message.", waiting: "Waiting for connection",
     professionalOn: "Professional consultation enabled", professionalOff: "Standard consultation enabled",
+    humanSupport: "Qinyi human support", system: "System",
+    waitingHumanTitle: "Connecting you with human support", waitingHumanBadge: "Waiting",
+    waitingHumanDetail: "Your request is in the human-support queue. You can continue adding details.",
+    acknowledgedTitle: "Qinyi has received your request", acknowledgedBadge: "Acknowledged",
+    acknowledgedDetail: "The support team has been notified and your conversation is waiting to be claimed.",
+    humanActiveTitle: "Human support is now active", humanActiveBadge: "Connected",
+    humanActiveDetail: "AI automatic replies are paused. New messages will be sent to Qinyi human support.",
+    resolvedTitle: "Human support has ended", resolvedBadge: "Resolved",
+    resolvedDetail: "This handoff has been resolved. AI support is available again unless the team has kept this conversation human-only.",
+    ticketLabel: "Support reference", humanMessageQueued: "Your message was sent to Qinyi human support.",
+    waitingHumanEvent: "A human-support request has been created.", acknowledgedEvent: "Qinyi has acknowledged your support request.",
+    humanActiveEvent: "Qinyi human support has joined the conversation. AI automatic replies are paused.",
+    resolvedEvent: "Human support has ended. AI support is available again.",
+    humanConversationMode: "Human support",
   };
 
   function copy(key, fallback) {
@@ -98,6 +121,17 @@
     professionalServerBudgetMs: 55_000,
     normalRequestTimeoutMs: NORMAL_REQUEST_TIMEOUT_MS,
     professionalRequestTimeoutMs: PROFESSIONAL_REQUEST_TIMEOUT_MS,
+    handoffStatus: storageRead(window.sessionStorage, "qinyi-support-handoff-status") || "ai_active",
+    ticketId: storageRead(window.sessionStorage, "qinyi-support-ticket-id"),
+    handoffUpdatedAt: null,
+    eventCursor: "0",
+    eventPollTimer: null,
+    eventPollController: null,
+    eventPollInFlight: false,
+    eventPollFailures: 0,
+    seenEventIds: new Set(),
+    recentMessages: [],
+    lastAnnouncedHandoffStatus: null,
   };
 
   const elements = {
@@ -122,6 +156,11 @@
     dismissErrorButton: document.getElementById("dismissErrorButton"),
     toast: document.getElementById("toast"),
     professionalConsultationButton: document.getElementById("professionalConsultationButton"),
+    handoffStatus: document.getElementById("handoffStatus"),
+    handoffStatusTitle: document.getElementById("handoffStatusTitle"),
+    handoffStatusBadge: document.getElementById("handoffStatusBadge"),
+    handoffStatusDetail: document.getElementById("handoffStatusDetail"),
+    handoffTicket: document.getElementById("handoffTicket"),
   };
 
   function setText(element, value) {
@@ -143,22 +182,32 @@
     });
   }
 
-  function formatTime() {
+  function formatTime(value) {
+    const date = value ? new Date(value) : new Date();
     return new Intl.DateTimeFormat(localeConfig.requested || "zh-CN", {
       hour: "2-digit",
       minute: "2-digit",
       hour12: false,
-    }).format(new Date());
+    }).format(Number.isNaN(date.getTime()) ? new Date() : date);
   }
 
-  function createMessage(role, text, responseData) {
+  function authorForRole(role) {
+    if (role === "user") return copy("you", "您");
+    if (role === "human") return copy("humanSupport", "勤益人工客服");
+    if (role === "system") return copy("system", "系统");
+    return copy("assistant", "智能客服");
+  }
+
+  function createMessage(role, text, responseData, options) {
+    const settings = options || {};
     const article = document.createElement("article");
     article.className = `message message--${role}`;
+    if (settings.eventId) article.dataset.eventId = settings.eventId;
 
     const avatar = document.createElement("div");
     avatar.className = "message-avatar";
     avatar.setAttribute("aria-hidden", "true");
-    setText(avatar, role === "user" ? copy("me", "我") : copy("support", "客服"));
+    setText(avatar, role === "user" ? copy("me", "我") : role === "human" ? copy("humanSupport", "勤益人工客服") : copy("support", "客服"));
 
     const content = document.createElement("div");
     content.className = "message-content";
@@ -167,9 +216,9 @@
     meta.className = "message-meta";
 
     const author = document.createElement("span");
-    setText(author, role === "user" ? copy("you", "您") : copy("assistant", "智能客服"));
+    setText(author, authorForRole(role));
     const time = document.createElement("time");
-    setText(time, formatTime());
+    setText(time, formatTime(settings.createdAt));
     meta.append(author, time);
 
     const bubble = document.createElement("div");
@@ -179,7 +228,7 @@
     paragraph.textContent = text;
     bubble.appendChild(paragraph);
 
-    if (role === "assistant" && responseData) {
+    if ((role === "assistant" || role === "human") && responseData) {
       appendActionState(bubble, responseData);
       appendCitations(bubble, responseData.citations);
     }
@@ -200,10 +249,138 @@
     return "";
   }
 
+  function normalizeHandoffStatus(value) {
+    const status = normalizeAction(value).replace(/[\s-]+/g, "_");
+    if ([
+      "waiting_human", "waiting", "requested", "request_human", "request_handoff", "handoff_requested",
+      "human_requested", "handoff", "human_handoff", "ticket_created", "escalate", "queued",
+    ].includes(status)) {
+      return "waiting_human";
+    }
+    if (["acknowledged", "ack", "notified", "human_acknowledged"].includes(status)) {
+      return "acknowledged";
+    }
+    if (["human_active", "waiting_customer", "active", "claimed", "human_joined", "operator_active"].includes(status)) {
+      return "human_active";
+    }
+    if (["resolved", "closed", "completed", "ai_resumed", "resume_ai", "returned_to_ai"].includes(status)) {
+      return "resolved";
+    }
+    return "";
+  }
+
+  function extractHandoff(source) {
+    if (!source || typeof source !== "object") return null;
+    const nested = source.handoff && typeof source.handoff === "object" ? source.handoff : {};
+    const actionObject = source.action && typeof source.action === "object" ? source.action : {};
+    const action = normalizeAction(source.action || nested.action || source.type);
+    const ticketId = nested.ticketId || nested.ticketID || nested.id || actionObject.ticketId ||
+      source.ticketId || source.ticketID || null;
+    const status = normalizeHandoffStatus(
+      nested.status || nested.state || actionObject.status || actionObject.state ||
+        (typeof source.handoff === "string" ? source.handoff : "") || source.handoffStatus ||
+        source.handoff_state || source.status || action,
+    );
+    const handoffActions = [
+      "handoff", "human_handoff", "ticket_created", "escalate", "request_human", "request_handoff", "handoff_requested",
+    ];
+    if (!status && !ticketId && !handoffActions.includes(action)) {
+      return null;
+    }
+    return {
+      ticketId: ticketId == null ? null : String(ticketId),
+      status: status || "waiting_human",
+      updatedAt: nested.updatedAt || nested.updated_at || actionObject.updatedAt || source.updatedAt || source.updated_at || null,
+    };
+  }
+
+  function handoffCopy(status) {
+    if (status === "acknowledged") {
+      return {
+        title: copy("acknowledgedTitle", "勤益已收到人工服务请求"),
+        badge: copy("acknowledgedBadge", "已知晓"),
+        detail: copy("acknowledgedDetail", "客服团队已收到通知，会话正在等待认领。"),
+        event: copy("acknowledgedEvent", "勤益已知晓您的人工服务请求。"),
+      };
+    }
+    if (status === "human_active") {
+      return {
+        title: copy("humanActiveTitle", "人工客服已接入"),
+        badge: copy("humanActiveBadge", "已接通"),
+        detail: copy("humanActiveDetail", "AI 自动回复已暂停，新消息将发送给勤益人工客服。"),
+        event: copy("humanActiveEvent", "勤益人工客服已加入对话，AI 自动回复已暂停。"),
+      };
+    }
+    if (status === "resolved") {
+      return {
+        title: copy("resolvedTitle", "人工服务已结束"),
+        badge: copy("resolvedBadge", "已解决"),
+        detail: copy("resolvedDetail", "本次人工接管已结束；如未被设为仅人工，会话已恢复智能客服。"),
+        event: copy("resolvedEvent", "人工服务已结束，会话已恢复智能客服。"),
+      };
+    }
+    return {
+      title: copy("waitingHumanTitle", "正在联系人工客服"),
+      badge: copy("waitingHumanBadge", "等待接管"),
+      detail: copy("waitingHumanDetail", "您的消息已进入人工服务队列，您可以继续补充信息。"),
+      event: copy("waitingHumanEvent", "已创建人工服务请求。"),
+    };
+  }
+
+  function applyHandoff(handoff, options) {
+    if (!handoff) return;
+    const settings = options || {};
+    const incomingTicketId = handoff.ticketId == null ? state.ticketId : String(handoff.ticketId);
+    const ticketChanged = Boolean(incomingTicketId && state.ticketId && incomingTicketId !== state.ticketId);
+    if (ticketChanged) {
+      state.eventCursor = "0";
+      state.seenEventIds.clear();
+      state.recentMessages = [];
+      state.handoffUpdatedAt = null;
+      state.lastAnnouncedHandoffStatus = null;
+    }
+    const incomingStatus = handoff.status || state.handoffStatus;
+    const incomingTime = handoff.updatedAt ? Date.parse(handoff.updatedAt) : NaN;
+    const currentTime = state.handoffUpdatedAt ? Date.parse(state.handoffUpdatedAt) : NaN;
+    const olderTimestamp = !ticketChanged && Number.isFinite(incomingTime) && Number.isFinite(currentTime) && incomingTime < currentTime;
+    const statusRegression = !ticketChanged && !Number.isFinite(incomingTime) &&
+      (HANDOFF_STATUS_RANK[incomingStatus] ?? -1) < (HANDOFF_STATUS_RANK[state.handoffStatus] ?? -1);
+    if (olderTimestamp || statusRegression) return;
+    const previousStatus = state.handoffStatus;
+    if (incomingTicketId) state.ticketId = incomingTicketId;
+    if (handoff.updatedAt) state.handoffUpdatedAt = handoff.updatedAt;
+    state.handoffStatus = incomingStatus;
+    storageWrite(window.sessionStorage, "qinyi-support-ticket-id", state.ticketId);
+    storageWrite(window.sessionStorage, "qinyi-support-handoff-status", state.handoffStatus);
+    const statusCopy = handoffCopy(state.handoffStatus);
+
+    elements.handoffStatus.hidden = false;
+    elements.handoffStatus.dataset.status = state.handoffStatus;
+    setText(elements.handoffStatusTitle, statusCopy.title);
+    setText(elements.handoffStatusBadge, statusCopy.badge);
+    setText(elements.handoffStatusDetail, statusCopy.detail);
+    if (state.ticketId) {
+      setText(elements.handoffTicket, `${copy("ticketLabel", "服务编号")}：${state.ticketId}`);
+      elements.handoffTicket.hidden = false;
+    }
+    syncConversationMode();
+
+    const shouldAnnounce = settings.announce !== false && state.lastAnnouncedHandoffStatus !== state.handoffStatus;
+    if (shouldAnnounce && (previousStatus !== state.handoffStatus || state.lastAnnouncedHandoffStatus == null)) {
+      appendTranscriptMessage("system", statusCopy.event, null, { createdAt: handoff.updatedAt });
+      state.lastAnnouncedHandoffStatus = state.handoffStatus;
+    } else if (settings.announce === false) {
+      state.lastAnnouncedHandoffStatus = state.handoffStatus;
+    }
+    if (state.handoffStatus === "resolved") stopEventPolling();
+    else startEventPolling();
+  }
+
   function appendActionState(container, responseData) {
     const action = normalizeAction(responseData.action);
-    const hasTicket = Boolean(responseData.ticketId);
-    const isHandoff = hasTicket || ["handoff", "human_handoff", "ticket_created", "escalate"].includes(action);
+    const handoff = extractHandoff(responseData);
+    const hasTicket = Boolean(handoff && handoff.ticketId);
+    const isHandoff = Boolean(handoff);
     const isRefusal = ["refuse", "refused", "restricted"].includes(action);
     const isManualRequired = action === "manual_required";
 
@@ -219,10 +396,11 @@
 
     if (isManualRequired) {
       setText(title, copy("manualTitle", "需要业务人员确认"));
-      setText(detail, copy("manualDetail", "公开站点不会创建真实工单，请通过勤益的正式联系方式继续处理。"));
+      setText(detail, copy("manualDetail", "该事项需要勤益业务人员确认，您可以在下方发起真实人工接管。"));
     } else if (isHandoff) {
-      setText(title, hasTicket ? copy("handoffCreated", "已准备人工服务请求") : copy("handoffPending", "需要人工继续处理"));
-      setText(detail, copy("handoffDetail", "勤益业务人员需要根据本次对话信息继续处理。"));
+      const statusCopy = handoffCopy(handoff ? handoff.status : "waiting_human");
+      setText(title, statusCopy.title);
+      setText(detail, statusCopy.detail);
     } else {
       setText(title, copy("restrictedTitle", "该事项需要人工处理"));
       setText(detail, copy("restrictedDetail", "智能客服不会审批退款、赔偿、合同或其他具有约束力的承诺。"));
@@ -233,9 +411,9 @@
     if (hasTicket) {
       const ticket = document.createElement("p");
       ticket.className = "action-ticket";
-      setText(ticket, `${copy("ticket", "参考编号")}：${responseData.ticketId}`);
+      setText(ticket, `${copy("ticket", "参考编号")}：${handoff.ticketId}`);
       block.appendChild(ticket);
-    } else if (isRefusal) {
+    } else if (isRefusal || isManualRequired) {
       const handoffButton = document.createElement("button");
       handoffButton.type = "button";
       handoffButton.className = "action-button";
@@ -311,12 +489,37 @@
   function appendUserMessage(message) {
     elements.emptyState.hidden = true;
     elements.messages.appendChild(createMessage("user", message));
+    rememberRecentMessage("user", message);
     scrollToLatest();
   }
 
   function appendAssistantMessage(answer, responseData) {
+    appendTranscriptMessage("assistant", answer, responseData);
+  }
+
+  function rememberRecentMessage(role, text) {
+    state.recentMessages.push({ role: role, text: String(text) });
+    if (state.recentMessages.length > 200) state.recentMessages.shift();
+  }
+
+  function consumeRecentMessage(role, text) {
+    const normalizedText = String(text);
+    const index = state.recentMessages.findIndex(function (item) {
+      return item.role === role && item.text === normalizedText;
+    });
+    if (index < 0) return false;
+    state.recentMessages.splice(index, 1);
+    return true;
+  }
+
+  function appendTranscriptMessage(role, text, responseData, options) {
+    const settings = options || {};
+    const normalizedText = String(text || "").trim();
+    if (!normalizedText) return;
+    if (settings.fromEvent && consumeRecentMessage(role, normalizedText)) return;
     elements.emptyState.hidden = true;
-    elements.messages.appendChild(createMessage("assistant", answer, responseData));
+    elements.messages.appendChild(createMessage(role, normalizedText, responseData, settings));
+    if (!settings.fromEvent) rememberRecentMessage(role, normalizedText);
     scrollToLatest();
   }
 
@@ -410,8 +613,37 @@
   function setPending(pending) {
     state.pending = pending;
     elements.newConversationButton.disabled = false;
-    elements.professionalConsultationButton.disabled = pending;
+    elements.professionalConsultationButton.disabled = pending || isHumanFlow();
     updateSendButton();
+  }
+
+  function isHumanFlow() {
+    return ["waiting_human", "acknowledged", "human_active"].includes(state.handoffStatus);
+  }
+
+  function syncConversationMode() {
+    if (isHumanFlow()) {
+      setText(elements.serviceMode, copy("humanConversationMode", "人工客服"));
+    } else if (state.handoffStatus === "resolved") {
+      setText(elements.serviceMode, copy("aiMode", "智能答复"));
+    }
+    elements.professionalConsultationButton.disabled = state.pending || isHumanFlow();
+  }
+
+  function resumeAiConversation() {
+    if (state.handoffStatus !== "resolved") return;
+    state.handoffStatus = "ai_active";
+    state.ticketId = null;
+    state.handoffUpdatedAt = null;
+    state.eventCursor = "0";
+    state.seenEventIds.clear();
+    state.lastAnnouncedHandoffStatus = null;
+    storageWrite(window.sessionStorage, "qinyi-support-ticket-id", null);
+    storageWrite(window.sessionStorage, "qinyi-support-handoff-status", null);
+    elements.handoffStatus.hidden = true;
+    elements.handoffStatus.removeAttribute("data-status");
+    elements.handoffTicket.hidden = true;
+    syncConversationMode();
   }
 
   async function readResponse(response) {
@@ -426,9 +658,157 @@
     }
   }
 
+  function eventValue(event, names) {
+    const sources = [
+      event,
+      event && event.event,
+      event && event.data,
+      event && event.payload,
+      event && event.message,
+      event && event.data && event.data.message,
+      event && event.payload && event.payload.message,
+    ].filter(function (item) {
+      return item && typeof item === "object";
+    });
+    for (const source of sources) {
+      for (const name of names) {
+        if (source[name] != null) return source[name];
+      }
+    }
+    return null;
+  }
+
+  function eventText(event) {
+    if (!event || typeof event !== "object") return "";
+    if (typeof event.message === "string") return event.message;
+    const value = eventValue(event, ["text", "content", "body", "answer"]);
+    if (typeof value === "string") return value;
+    if (value && typeof value === "object") {
+      return String(value.text || value.content || value.body || "");
+    }
+    const message = eventValue(event, ["message"]);
+    return message && typeof message === "object" ? String(message.text || message.content || message.body || "") : "";
+  }
+
+  function eventRole(event) {
+    const rawRole = String(eventValue(event, ["role", "actorType", "senderType", "authorType", "source"]) || "").toLowerCase();
+    const rawType = String(eventValue(event, ["type", "eventType", "kind"]) || "").toLowerCase();
+    const combined = `${rawRole} ${rawType}`;
+    if (/human|operator|agent|admin|staff/.test(combined) && !/handoff_status|system/.test(combined)) return "human";
+    if (/visitor|customer|client|user_message|customer_message/.test(combined) || rawRole === "user") return "user";
+    if (/system|status|handoff|resolved|joined|acknowledged/.test(combined)) return "system";
+    return "assistant";
+  }
+
+  function eventIdentity(event, index) {
+    const value = eventValue(event, ["id", "eventId", "event_id", "sequence", "seq", "cursor"]);
+    return value == null ? "" : String(value);
+  }
+
+  function processSessionEvent(event, index) {
+    if (!event || typeof event !== "object") return;
+    const eventId = eventIdentity(event, index);
+    if (eventId && state.seenEventIds.has(eventId)) return;
+    if (eventId) state.seenEventIds.add(eventId);
+
+    const text = eventText(event).trim();
+    const handoff = extractHandoff(event.data && typeof event.data === "object" ? Object.assign({}, event, event.data) : event);
+    if (handoff) applyHandoff(handoff, { announce: !text });
+
+    if (text) {
+      const role = eventRole(event);
+      const createdAt = eventValue(event, ["createdAt", "created_at", "timestamp", "updatedAt", "updated_at"]);
+      const citations = eventValue(event, ["citations", "references"]);
+      appendTranscriptMessage(role, text, citations ? { citations: citations } : null, {
+        eventId: eventId,
+        createdAt: createdAt,
+        fromEvent: true,
+      });
+    }
+  }
+
+  function processSessionEvents(data) {
+    const handoff = extractHandoff(data);
+    const events = Array.isArray(data)
+      ? data
+      : Array.isArray(data.events)
+        ? data.events
+        : Array.isArray(data.items)
+          ? data.items
+          : data.data && Array.isArray(data.data.events) ? data.data.events : [];
+    if (handoff) applyHandoff(handoff, { announce: events.length === 0 });
+    events.forEach(processSessionEvent);
+
+    const explicitCursor = !Array.isArray(data)
+      ? data.nextCursor ?? data.next_cursor ?? data.cursor ?? data.lastEventId ?? (data.data && data.data.nextCursor)
+      : null;
+    const lastEvent = events.length ? eventIdentity(events[events.length - 1], events.length - 1) : "";
+    if (explicitCursor != null) state.eventCursor = String(explicitCursor);
+    else if (lastEvent) state.eventCursor = lastEvent;
+  }
+
+  function stopEventPolling() {
+    window.clearTimeout(state.eventPollTimer);
+    state.eventPollTimer = null;
+    if (state.eventPollController) state.eventPollController.abort();
+    state.eventPollController = null;
+    state.eventPollInFlight = false;
+    state.eventPollFailures = 0;
+  }
+
+  function scheduleEventPoll(delay) {
+    window.clearTimeout(state.eventPollTimer);
+    if (!state.ticketId || state.handoffStatus === "resolved") return;
+    state.eventPollTimer = window.setTimeout(pollSessionEvents, delay);
+  }
+
+  async function pollSessionEvents() {
+    if (!state.ticketId || state.eventPollInFlight) return;
+    const ticketId = state.ticketId;
+    const controller = new AbortController();
+    state.eventPollController = controller;
+    state.eventPollInFlight = true;
+    const timeout = window.setTimeout(function () {
+      controller.abort();
+    }, EVENT_POLL_TIMEOUT_MS);
+    try {
+      const response = await fetch(apiUrl(`/api/support/tickets/${encodeURIComponent(ticketId)}/events?after=${encodeURIComponent(state.eventCursor)}`), {
+        method: "GET",
+        headers: {
+          "X-Client-Id": API_HEADERS["X-Client-Id"],
+          "X-Demo-User-Id": API_HEADERS["X-Demo-User-Id"],
+          "X-Tenant-Id": API_HEADERS["X-Tenant-Id"],
+        },
+        signal: controller.signal,
+      });
+      const data = await readResponse(response);
+      if (!response.ok) throw new Error("events unavailable");
+      if (state.ticketId !== ticketId) return;
+      processSessionEvents(data);
+      state.eventPollFailures = 0;
+    } catch (_error) {
+      state.eventPollFailures += 1;
+    } finally {
+      window.clearTimeout(timeout);
+      if (state.eventPollController === controller) state.eventPollController = null;
+      state.eventPollInFlight = false;
+      if (state.ticketId === ticketId && state.handoffStatus !== "resolved") {
+        const delay = state.eventPollFailures
+          ? Math.min(EVENT_POLL_MAX_BACKOFF_MS, EVENT_POLL_INTERVAL_MS * (2 ** Math.min(state.eventPollFailures, 4)))
+          : EVENT_POLL_INTERVAL_MS;
+        scheduleEventPoll(delay);
+      }
+    }
+  }
+
+  function startEventPolling() {
+    if (!state.ticketId || state.handoffStatus === "resolved") return;
+    scheduleEventPoll(0);
+  }
+
   function fallbackAnswer(responseData) {
     const action = normalizeAction(responseData.action);
-    if (responseData.ticketId || ["handoff", "human_handoff", "ticket_created", "escalate"].includes(action)) {
+    if (extractHandoff(responseData) || ["handoff", "human_handoff", "ticket_created", "escalate", "request_human"].includes(action)) {
       return copy("handoffFallback", "您的诉求需要由勤益业务人员继续处理。");
     }
     if (action === "refuse") {
@@ -454,7 +834,8 @@
     resizeComposer();
     setPending(true);
     const professional = state.professionalConsultation;
-    showTyping(professional);
+    const humanFlow = isHumanFlow();
+    if (!humanFlow) showTyping(professional);
 
     const controller = new AbortController();
     state.controller = controller;
@@ -471,13 +852,26 @@
         payload.sessionId = state.sessionId;
       }
 
-      const response = await fetch(apiUrl("/api/support/chat"), {
+      let response = await fetch(apiUrl("/api/support/chat"), {
         method: "POST",
         headers: API_HEADERS,
         body: JSON.stringify(payload),
         signal: controller.signal,
       });
-      const responseData = await readResponse(response);
+      let responseData = await readResponse(response);
+
+      if (!response.ok && [404, 410].includes(response.status) && payload.sessionId && !humanFlow) {
+        state.sessionId = null;
+        storageWrite(window.sessionStorage, "qinyi-support-session-id", null);
+        delete payload.sessionId;
+        response = await fetch(apiUrl("/api/support/chat"), {
+          method: "POST",
+          headers: API_HEADERS,
+          body: JSON.stringify(payload),
+          signal: controller.signal,
+        });
+        responseData = await readResponse(response);
+      }
 
       if (!response.ok) {
         const serverMessage = responseData.error || responseData.message || copy("unavailable", "服务暂时无法处理这条消息。");
@@ -487,14 +881,35 @@
       }
 
       if (responseData.sessionId) {
+        const isNewSession = state.sessionId !== String(responseData.sessionId);
         state.sessionId = String(responseData.sessionId);
         storageWrite(window.sessionStorage, "qinyi-support-session-id", state.sessionId);
         setText(elements.sessionState, copy("active", "进行中"));
+        if (isNewSession) {
+          state.eventCursor = "0";
+          state.seenEventIds.clear();
+        }
       }
 
-      const answer = responseData.answer == null ? fallbackAnswer(responseData) : String(responseData.answer);
+      const handoff = extractHandoff(responseData);
+      if (handoff) applyHandoff(handoff);
+      else resumeAiConversation();
+      const inlineEvents = Array.isArray(responseData.events)
+        ? responseData.events
+        : Array.isArray(responseData.items) ? responseData.items : [];
+      if (inlineEvents.length) processSessionEvents(responseData);
       hideTyping();
-      appendAssistantMessage(answer, responseData);
+      if (responseData.answer != null && String(responseData.answer).trim()) {
+        const answer = String(responseData.answer).trim();
+        const alreadyIncluded = inlineEvents.some(function (event) {
+          return eventText(event).trim() === answer;
+        });
+        if (!alreadyIncluded) appendTranscriptMessage(eventRole(responseData), answer, responseData);
+      } else if (!handoff && !humanFlow) {
+        appendAssistantMessage(fallbackAnswer(responseData), responseData);
+      } else {
+        showToast(copy("humanMessageQueued", "消息已发送给勤益人工客服。"));
+      }
     } catch (error) {
       hideTyping();
       if (error.name === "AbortError" && !timedOut) {
@@ -526,6 +941,19 @@
     hideTyping();
     hideError();
     state.lastFailedMessage = null;
+    state.handoffStatus = "ai_active";
+    state.ticketId = null;
+    storageWrite(window.sessionStorage, "qinyi-support-ticket-id", null);
+    storageWrite(window.sessionStorage, "qinyi-support-handoff-status", null);
+    state.handoffUpdatedAt = null;
+    state.eventCursor = "0";
+    state.seenEventIds.clear();
+    state.recentMessages = [];
+    state.lastAnnouncedHandoffStatus = null;
+    elements.handoffStatus.hidden = true;
+    elements.handoffStatus.removeAttribute("data-status");
+    elements.handoffTicket.hidden = true;
+    elements.professionalConsultationButton.disabled = false;
     setText(elements.sessionState, copy("notStarted", "尚未开始"));
     elements.messageInput.value = "";
     resizeComposer();
@@ -540,6 +968,7 @@
     }
 
     const sessionId = state.sessionId;
+    stopEventPolling();
     state.sessionId = null;
     storageWrite(window.sessionStorage, "qinyi-support-session-id", null);
     setPending(false);
@@ -642,6 +1071,7 @@
       );
     } finally {
       window.clearTimeout(timeout);
+      syncConversationMode();
     }
   }
 
@@ -693,6 +1123,13 @@
   updateProfessionalMode();
   updateSendButton();
   if (state.sessionId) setText(elements.sessionState, copy("active", "进行中"));
+  if (state.ticketId) {
+    applyHandoff({ ticketId: state.ticketId, status: state.handoffStatus }, { announce: false });
+  }
+  window.addEventListener("online", startEventPolling);
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden) startEventPolling();
+  });
   loadServiceStatus();
   window.setInterval(loadServiceStatus, 60_000);
 })();

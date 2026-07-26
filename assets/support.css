@@ -377,7 +377,7 @@ body.support-embedded .topbar { display: none; }
   min-width: 0;
   min-height: 0;
   display: grid;
-  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  grid-template-rows: auto auto minmax(0, 1fr) auto auto;
   background: var(--surface);
 }
 
@@ -502,8 +502,130 @@ body.support-embedded .topbar { display: none; }
   margin: 0 auto 24px;
 }
 
+.handoff-status {
+  margin: 16px clamp(20px, 5vw, 68px) 0;
+  padding: 13px 14px;
+  display: grid;
+  grid-template-columns: 9px minmax(0, 1fr);
+  gap: 12px;
+  border: 1px solid #ead3a6;
+  border-radius: var(--radius);
+  background: var(--warning-soft);
+}
+
+.handoff-status[hidden] {
+  display: none;
+}
+
+.handoff-status__indicator {
+  width: 9px;
+  height: 9px;
+  margin-top: 5px;
+  border-radius: 50%;
+  background: #d4932c;
+}
+
+.handoff-status__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.handoff-status__heading strong {
+  font-size: 13px;
+}
+
+.handoff-status__badge {
+  flex: 0 0 auto;
+  padding: 2px 7px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: #7b4e0d;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.handoff-status p {
+  margin: 4px 0 0;
+  color: var(--muted-strong);
+  font-size: 12px;
+}
+
+.handoff-status__ticket {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.handoff-status[data-status="acknowledged"] {
+  border-color: #bed8ce;
+  background: #eef8f4;
+}
+
+.handoff-status[data-status="acknowledged"] .handoff-status__indicator,
+.handoff-status[data-status="human_active"] .handoff-status__indicator {
+  background: #27916d;
+}
+
+.handoff-status[data-status="acknowledged"] .handoff-status__badge,
+.handoff-status[data-status="human_active"] .handoff-status__badge {
+  color: #176b54;
+}
+
+.handoff-status[data-status="human_active"] {
+  border-color: #9ecbbb;
+  background: #e8f7f1;
+}
+
+.handoff-status[data-status="resolved"] {
+  border-color: var(--line-strong);
+  background: var(--surface-subtle);
+}
+
+.handoff-status[data-status="resolved"] .handoff-status__indicator {
+  background: #8a9690;
+}
+
+.handoff-status[data-status="resolved"] .handoff-status__badge {
+  color: var(--muted-strong);
+}
+
 .message--user {
   grid-template-columns: minmax(0, 1fr) 30px;
+}
+
+.message--human .message-avatar {
+  background: #176b54;
+  color: #fff;
+}
+
+.message--human .message-bubble {
+  border-color: #b8dacc;
+  background: #eef8f4;
+}
+
+.message--system {
+  display: block;
+  width: min(620px, 100%);
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.message--system .message-content {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.message--system .message-meta,
+.message--system .message-avatar {
+  display: none;
+}
+
+.message--system .message-bubble {
+  padding: 7px 11px;
+  border: 0;
+  background: var(--surface-strong);
+  color: var(--muted-strong);
+  font-size: 12px;
 }
 
 .message-avatar {
@@ -948,6 +1070,10 @@ body.support-embedded .topbar { display: none; }
 
   .messages {
     padding: 20px 16px;
+  }
+
+  .handoff-status {
+    margin: 12px 16px 0;
   }
 
   .empty-state {

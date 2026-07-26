@@ -31,6 +31,8 @@
       sendFailed: "消息发送失败", retryLater: "请稍后重试。", retry: "重试", dismissError: "关闭错误提示",
       professionalTitle: "切换专业咨询模式", messageLabel: "输入您的问题", send: "发送消息",
       home: "返回勤益网站", serviceName: "勤益",
+      handoffWaitingTitle: "正在联系人工客服", handoffWaitingBadge: "等待接管",
+      handoffWaitingDetail: "您的消息已进入人工服务队列，您可以继续补充信息。",
     },
     en: {
       skip: "Skip to the message field",
@@ -59,6 +61,8 @@
       sendFailed: "Message not sent", retryLater: "Please try again.", retry: "Retry", dismissError: "Dismiss error",
       professionalTitle: "Toggle professional consultation", messageLabel: "Your question", send: "Send message",
       home: "Return to Qinyi", serviceName: "Qinyi",
+      handoffWaitingTitle: "Connecting you with human support", handoffWaitingBadge: "Waiting",
+      handoffWaitingDetail: "Your request is in the human-support queue. You can continue adding details.",
     },
   };
   const copy = translations[locale];
@@ -86,6 +90,17 @@
   document.querySelectorAll("[data-support-question]").forEach(function (element) {
     const key = element.dataset.supportQuestion;
     if (copy[key]) element.dataset.question = copy[key];
+  });
+
+  const initialHandoffCopy = {
+    handoffStatusTitle: "handoffWaitingTitle",
+    handoffStatusBadge: "handoffWaitingBadge",
+    handoffStatusDetail: "handoffWaitingDetail",
+  };
+  Object.keys(initialHandoffCopy).forEach(function (id) {
+    const element = document.getElementById(id);
+    const key = initialHandoffCopy[id];
+    if (element && copy[key]) element.textContent = copy[key];
   });
 
   const homeLink = document.getElementById("supportHomeLink");
