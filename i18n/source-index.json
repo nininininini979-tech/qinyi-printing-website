@@ -516,7 +516,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 150
+          "position": 151
         },
         {
           "page": "industries",
@@ -551,7 +551,7 @@
         {
           "page": "privacy",
           "kind": "text:a",
-          "position": 65
+          "position": 67
         },
         {
           "page": "products",
@@ -576,7 +576,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 86
+          "position": 83
         },
         {
           "page": "solutions",
@@ -607,7 +607,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 115
+          "position": 116
         },
         {
           "page": "industries",
@@ -628,7 +628,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 102
+          "position": 103
         }
       ]
     },
@@ -644,7 +644,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 110
+          "position": 111
         },
         {
           "page": "manufacturing",
@@ -665,7 +665,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 128
+          "position": 129
         },
         {
           "page": "products",
@@ -696,7 +696,7 @@
         {
           "page": "index",
           "kind": "text:summary",
-          "position": 132
+          "position": 133
         }
       ]
     },
@@ -758,7 +758,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 142
+          "position": 143
         },
         {
           "page": "industries",
@@ -798,7 +798,7 @@
         {
           "page": "privacy",
           "kind": "text:span",
-          "position": 58
+          "position": 60
         },
         {
           "page": "products",
@@ -828,7 +828,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 79
+          "position": 76
         },
         {
           "page": "solutions",
@@ -859,7 +859,12 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 67
+          "position": 64
+        },
+        {
+          "page": "index",
+          "kind": "attribute:alt",
+          "position": 68
         },
         {
           "page": "industries",
@@ -890,7 +895,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 143
+          "position": 144
         },
         {
           "page": "industries",
@@ -910,7 +915,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 59
+          "position": 61
         },
         {
           "page": "products",
@@ -925,7 +930,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 80
+          "position": 77
         },
         {
           "page": "solutions",
@@ -951,7 +956,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 146
+          "position": 147
         },
         {
           "page": "products",
@@ -967,6 +972,22 @@
           "page": "trade",
           "kind": "text:a",
           "position": 152
+        }
+      ]
+    },
+    "common.customization_quote": {
+      "source": "Customization & quote",
+      "sourceHash": "cf8ce130fa26ee10",
+      "references": [
+        {
+          "page": "index",
+          "kind": "text:a",
+          "position": 27
+        },
+        {
+          "page": "quote",
+          "kind": "text:a",
+          "position": 20
         }
       ]
     },
@@ -1051,7 +1072,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 119
+          "position": 120
         },
         {
           "page": "industries",
@@ -1072,7 +1093,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 53
+          "position": 55
         }
       ]
     },
@@ -1171,7 +1192,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 144
+          "position": 145
         },
         {
           "page": "industries",
@@ -1186,7 +1207,7 @@
         {
           "page": "privacy",
           "kind": "text:h3",
-          "position": 60
+          "position": 62
         },
         {
           "page": "products",
@@ -1196,7 +1217,7 @@
         {
           "page": "quote",
           "kind": "text:h3",
-          "position": 81
+          "position": 78
         },
         {
           "page": "solutions",
@@ -1210,6 +1231,17 @@
         }
       ]
     },
+    "common.floating.quote": {
+      "source": "Request a quote",
+      "sourceHash": "724f2336bf690001",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 12
+        }
+      ]
+    },
     "common.form.default_product": {
       "source": "Custom paper product",
       "sourceHash": "b256be5bd56c9f76",
@@ -1217,7 +1249,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 12
+          "position": 14
         }
       ]
     },
@@ -1228,7 +1260,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 11
+          "position": 13
         }
       ]
     },
@@ -1239,7 +1271,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 14
+          "position": 16
         }
       ]
     },
@@ -1250,7 +1282,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 13
+          "position": 15
         }
       ]
     },
@@ -1446,7 +1478,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 61
+          "position": 58
         }
       ]
     },
@@ -1482,7 +1514,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 147
+          "position": 148
         },
         {
           "page": "industries",
@@ -1517,7 +1549,7 @@
         {
           "page": "privacy",
           "kind": "text:a",
-          "position": 63
+          "position": 65
         },
         {
           "page": "quote",
@@ -1527,7 +1559,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 84
+          "position": 81
         },
         {
           "page": "solutions",
@@ -1563,7 +1595,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 152
+          "position": 153
         },
         {
           "page": "industries",
@@ -1716,7 +1748,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 151
+          "position": 152
         },
         {
           "page": "industries",
@@ -1746,7 +1778,7 @@
         {
           "page": "privacy",
           "kind": "text:a",
-          "position": 66
+          "position": 68
         },
         {
           "page": "products",
@@ -1771,7 +1803,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 87
+          "position": 84
         },
         {
           "page": "solutions",
@@ -1800,14 +1832,9 @@
       "sourceHash": "fd10a146e9625bfd",
       "references": [
         {
-          "page": "products",
-          "kind": "text:th",
-          "position": 92
-        },
-        {
-          "page": "trade",
-          "kind": "text:th",
-          "position": 83
+          "page": "common",
+          "kind": "javascript",
+          "position": 18
         }
       ]
     },
@@ -1826,71 +1853,6 @@
       "source": "Open menu",
       "sourceHash": "b40b3713b43dc702",
       "references": [
-        {
-          "page": "about",
-          "kind": "attribute:aria-label",
-          "position": 23
-        },
-        {
-          "page": "contact",
-          "kind": "attribute:aria-label",
-          "position": 24
-        },
-        {
-          "page": "faq",
-          "kind": "attribute:aria-label",
-          "position": 52
-        },
-        {
-          "page": "index",
-          "kind": "attribute:aria-label",
-          "position": 28
-        },
-        {
-          "page": "industries",
-          "kind": "attribute:aria-label",
-          "position": 17
-        },
-        {
-          "page": "insights",
-          "kind": "attribute:aria-label",
-          "position": 9
-        },
-        {
-          "page": "manufacturing",
-          "kind": "attribute:aria-label",
-          "position": 18
-        },
-        {
-          "page": "privacy",
-          "kind": "attribute:aria-label",
-          "position": 19
-        },
-        {
-          "page": "products",
-          "kind": "attribute:aria-label",
-          "position": 19
-        },
-        {
-          "page": "projects",
-          "kind": "attribute:aria-label",
-          "position": 9
-        },
-        {
-          "page": "quote",
-          "kind": "attribute:aria-label",
-          "position": 21
-        },
-        {
-          "page": "solutions",
-          "kind": "attribute:aria-label",
-          "position": 18
-        },
-        {
-          "page": "trade",
-          "kind": "attribute:aria-label",
-          "position": 22
-        },
         {
           "page": "common",
           "kind": "javascript",
@@ -1920,7 +1882,7 @@
         {
           "page": "privacy",
           "kind": "text:span",
-          "position": 69
+          "position": 71
         },
         {
           "page": "projects",
@@ -1930,7 +1892,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 90
+          "position": 87
         }
       ]
     },
@@ -1946,7 +1908,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 34
+          "position": 30
         }
       ]
     },
@@ -1954,91 +1916,6 @@
       "source": "Company",
       "sourceHash": "de4743c879734dc3",
       "references": [
-        {
-          "page": "about",
-          "kind": "text:span",
-          "position": 39
-        },
-        {
-          "page": "about",
-          "kind": "text:h3",
-          "position": 77
-        },
-        {
-          "page": "contact",
-          "kind": "text:label",
-          "position": 40
-        },
-        {
-          "page": "contact",
-          "kind": "text:h3",
-          "position": 71
-        },
-        {
-          "page": "faq",
-          "kind": "text:h3",
-          "position": 151
-        },
-        {
-          "page": "index",
-          "kind": "text:h3",
-          "position": 149
-        },
-        {
-          "page": "industries",
-          "kind": "text:h3",
-          "position": 70
-        },
-        {
-          "page": "insights",
-          "kind": "text:h3",
-          "position": 40
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:span",
-          "position": 77
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:h3",
-          "position": 97
-        },
-        {
-          "page": "privacy",
-          "kind": "text:h3",
-          "position": 64
-        },
-        {
-          "page": "products",
-          "kind": "text:h3",
-          "position": 118
-        },
-        {
-          "page": "projects",
-          "kind": "text:h3",
-          "position": 64
-        },
-        {
-          "page": "quote",
-          "kind": "text:label",
-          "position": 35
-        },
-        {
-          "page": "quote",
-          "kind": "text:h3",
-          "position": 85
-        },
-        {
-          "page": "solutions",
-          "kind": "text:h3",
-          "position": 78
-        },
-        {
-          "page": "trade",
-          "kind": "text:h3",
-          "position": 155
-        },
         {
           "page": "common",
           "kind": "javascript",
@@ -2051,74 +1928,20 @@
       "sourceHash": "2b5c3d26721ae9c3",
       "references": [
         {
-          "page": "about",
-          "kind": "text:h3",
-          "position": 80
-        },
-        {
-          "page": "contact",
-          "kind": "text:span",
-          "position": 26
-        },
-        {
-          "page": "contact",
-          "kind": "text:strong",
-          "position": 33
-        },
-        {
-          "page": "contact",
-          "kind": "text:h3",
-          "position": 75
-        },
-        {
-          "page": "faq",
-          "kind": "text:h3",
-          "position": 155
-        },
-        {
-          "page": "index",
-          "kind": "text:h3",
-          "position": 153
-        },
-        {
-          "page": "industries",
-          "kind": "text:h3",
-          "position": 73
-        },
-        {
-          "page": "insights",
-          "kind": "text:h3",
-          "position": 43
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:h3",
-          "position": 100
-        },
-        {
-          "page": "privacy",
-          "kind": "text:h3",
-          "position": 68
-        },
-        {
-          "page": "products",
-          "kind": "text:h3",
-          "position": 122
-        },
-        {
-          "page": "projects",
-          "kind": "text:h3",
-          "position": 67
-        },
-        {
-          "page": "solutions",
-          "kind": "text:h3",
-          "position": 81
-        },
-        {
           "page": "common",
           "kind": "javascript",
           "position": 8
+        }
+      ]
+    },
+    "common.nav.custom_quote": {
+      "source": "Customize & request a quote",
+      "sourceHash": "bbf75a9ec534e238",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 11
         }
       ]
     },
@@ -2126,11 +1949,6 @@
       "source": "Manufacturing & Quality",
       "sourceHash": "00323f62107bd572",
       "references": [
-        {
-          "page": "manufacturing",
-          "kind": "jsonld:name",
-          "position": 3
-        },
         {
           "page": "common",
           "kind": "javascript",
@@ -2143,36 +1961,6 @@
       "sourceHash": "4c95d0efd3badc30",
       "references": [
         {
-          "page": "contact",
-          "kind": "text:a",
-          "position": 74
-        },
-        {
-          "page": "insights",
-          "kind": "text:a",
-          "position": 42
-        },
-        {
-          "page": "privacy",
-          "kind": "text:span",
-          "position": 21
-        },
-        {
-          "page": "privacy",
-          "kind": "text:a",
-          "position": 67
-        },
-        {
-          "page": "projects",
-          "kind": "text:a",
-          "position": 66
-        },
-        {
-          "page": "quote",
-          "kind": "text:a",
-          "position": 88
-        },
-        {
           "page": "common",
           "kind": "javascript",
           "position": 9
@@ -2183,136 +1971,6 @@
       "source": "Products",
       "sourceHash": "4edc8bfafc6bd936",
       "references": [
-        {
-          "page": "about",
-          "kind": "text:a",
-          "position": 14
-        },
-        {
-          "page": "about",
-          "kind": "text:a",
-          "position": 74
-        },
-        {
-          "page": "contact",
-          "kind": "text:a",
-          "position": 11
-        },
-        {
-          "page": "contact",
-          "kind": "text:a",
-          "position": 68
-        },
-        {
-          "page": "faq",
-          "kind": "text:a",
-          "position": 43
-        },
-        {
-          "page": "faq",
-          "kind": "text:a",
-          "position": 147
-        },
-        {
-          "page": "index",
-          "kind": "text:a",
-          "position": 19
-        },
-        {
-          "page": "index",
-          "kind": "text:a",
-          "position": 145
-        },
-        {
-          "page": "industries",
-          "kind": "text:a",
-          "position": 8
-        },
-        {
-          "page": "industries",
-          "kind": "text:a",
-          "position": 67
-        },
-        {
-          "page": "insights",
-          "kind": "text:a",
-          "position": 37
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:a",
-          "position": 9
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:a",
-          "position": 94
-        },
-        {
-          "page": "privacy",
-          "kind": "text:a",
-          "position": 6
-        },
-        {
-          "page": "privacy",
-          "kind": "text:a",
-          "position": 61
-        },
-        {
-          "page": "products",
-          "kind": "jsonld:name",
-          "position": 4
-        },
-        {
-          "page": "products",
-          "kind": "text:a",
-          "position": 10
-        },
-        {
-          "page": "products",
-          "kind": "text:span",
-          "position": 21
-        },
-        {
-          "page": "products",
-          "kind": "text:a",
-          "position": 114
-        },
-        {
-          "page": "projects",
-          "kind": "text:a",
-          "position": 61
-        },
-        {
-          "page": "quote",
-          "kind": "text:a",
-          "position": 8
-        },
-        {
-          "page": "quote",
-          "kind": "text:a",
-          "position": 82
-        },
-        {
-          "page": "solutions",
-          "kind": "text:a",
-          "position": 9
-        },
-        {
-          "page": "solutions",
-          "kind": "text:a",
-          "position": 75
-        },
-        {
-          "page": "trade",
-          "kind": "text:a",
-          "position": 13
-        },
-        {
-          "page": "trade",
-          "kind": "text:a",
-          "position": 151
-        },
         {
           "page": "common",
           "kind": "javascript",
@@ -2335,111 +1993,6 @@
       "source": "Request a quote",
       "sourceHash": "724f2336bf690001",
       "references": [
-        {
-          "page": "about",
-          "kind": "text:a",
-          "position": 22
-        },
-        {
-          "page": "about",
-          "kind": "text:a",
-          "position": 82
-        },
-        {
-          "page": "contact",
-          "kind": "text:a",
-          "position": 23
-        },
-        {
-          "page": "faq",
-          "kind": "text:a",
-          "position": 51
-        },
-        {
-          "page": "faq",
-          "kind": "text:a",
-          "position": 157
-        },
-        {
-          "page": "index",
-          "kind": "text:a",
-          "position": 27
-        },
-        {
-          "page": "index",
-          "kind": "text:a",
-          "position": 156
-        },
-        {
-          "page": "industries",
-          "kind": "text:a",
-          "position": 16
-        },
-        {
-          "page": "industries",
-          "kind": "text:a",
-          "position": 75
-        },
-        {
-          "page": "insights",
-          "kind": "text:a",
-          "position": 8
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:a",
-          "position": 17
-        },
-        {
-          "page": "manufacturing",
-          "kind": "text:a",
-          "position": 102
-        },
-        {
-          "page": "privacy",
-          "kind": "text:a",
-          "position": 18
-        },
-        {
-          "page": "products",
-          "kind": "text:a",
-          "position": 18
-        },
-        {
-          "page": "products",
-          "kind": "text:a",
-          "position": 124
-        },
-        {
-          "page": "projects",
-          "kind": "text:a",
-          "position": 8
-        },
-        {
-          "page": "quote",
-          "kind": "text:a",
-          "position": 20
-        },
-        {
-          "page": "quote",
-          "kind": "text:span",
-          "position": 23
-        },
-        {
-          "page": "solutions",
-          "kind": "text:a",
-          "position": 17
-        },
-        {
-          "page": "solutions",
-          "kind": "text:a",
-          "position": 83
-        },
-        {
-          "page": "trade",
-          "kind": "text:a",
-          "position": 21
-        },
         {
           "page": "common",
           "kind": "javascript",
@@ -2480,7 +2033,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 154
+          "position": 155
         },
         {
           "page": "manufacturing",
@@ -2543,22 +2096,22 @@
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 38
+          "position": 34
         },
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 53
+          "position": 49
         },
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 55
+          "position": 51
         },
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 59
+          "position": 56
         }
       ]
     },
@@ -2569,7 +2122,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 104
+          "position": 105
         },
         {
           "page": "manufacturing",
@@ -2656,7 +2209,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 106
+          "position": 107
         },
         {
           "page": "manufacturing",
@@ -2677,7 +2230,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 62
+          "position": 59
         }
       ]
     },
@@ -2693,7 +2246,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 148
+          "position": 149
         },
         {
           "page": "products",
@@ -2724,7 +2277,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 158
+          "position": 159
         },
         {
           "page": "manufacturing",
@@ -2745,7 +2298,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 72
+          "position": 69
         },
         {
           "page": "trade",
@@ -2887,7 +2440,7 @@
         {
           "page": "index",
           "kind": "text:strong",
-          "position": 141
+          "position": 142
         },
         {
           "page": "industries",
@@ -2927,7 +2480,7 @@
         {
           "page": "privacy",
           "kind": "text:strong",
-          "position": 57
+          "position": 59
         },
         {
           "page": "products",
@@ -2957,7 +2510,7 @@
         {
           "page": "quote",
           "kind": "text:strong",
-          "position": 78
+          "position": 75
         },
         {
           "page": "solutions",
@@ -3013,7 +2566,7 @@
         {
           "page": "privacy",
           "kind": "text:span",
-          "position": 70
+          "position": 72
         },
         {
           "page": "projects",
@@ -3023,7 +2576,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 91
+          "position": 88
         },
         {
           "page": "solutions",
@@ -3044,7 +2597,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 157
+          "position": 158
         },
         {
           "page": "products",
@@ -3148,7 +2701,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 15
+          "position": 17
         }
       ]
     },
@@ -3285,7 +2838,7 @@
         {
           "page": "privacy",
           "kind": "text:a",
-          "position": 62
+          "position": 64
         },
         {
           "page": "products",
@@ -3300,7 +2853,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 83
+          "position": 80
         },
         {
           "page": "solutions",
@@ -3326,7 +2879,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 92
+          "position": 89
         },
         {
           "page": "solutions",
@@ -3347,7 +2900,7 @@
         {
           "page": "privacy",
           "kind": "text:a",
-          "position": 56
+          "position": 58
         }
       ]
     },
@@ -3374,7 +2927,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 117
+          "position": 118
         },
         {
           "page": "industries",
@@ -3447,7 +3000,7 @@
         {
           "page": "index",
           "kind": "text:summary",
-          "position": 130
+          "position": 131
         }
       ]
     },
@@ -3468,7 +3021,7 @@
         {
           "page": "index",
           "kind": "text:summary",
-          "position": 136
+          "position": 137
         }
       ]
     },
@@ -3484,7 +3037,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 36
+          "position": 32
         }
       ]
     },
@@ -3804,6 +3357,1557 @@
           "page": "contact",
           "kind": "text:label",
           "position": 44
+        }
+      ]
+    },
+    "customizer.action.back": {
+      "source": "Back",
+      "sourceHash": "76900f1bfd16c8d4",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 154
+        }
+      ]
+    },
+    "customizer.action.confirm": {
+      "source": "Confirm selection",
+      "sourceHash": "9ce9c379f3f4b337",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 156
+        }
+      ]
+    },
+    "customizer.action.edit": {
+      "source": "Edit",
+      "sourceHash": "464c4ffd019e1e96",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 158
+        }
+      ]
+    },
+    "customizer.action.finish": {
+      "source": "Complete concept brief",
+      "sourceHash": "f704e27d24ce5bf8",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 157
+        }
+      ]
+    },
+    "customizer.action.next": {
+      "source": "Continue",
+      "sourceHash": "31fbef162594de01",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 155
+        }
+      ]
+    },
+    "customizer.action.reset": {
+      "source": "Reset selections",
+      "sourceHash": "a53881ba69df563d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 159
+        }
+      ]
+    },
+    "customizer.action.start": {
+      "source": "Start",
+      "sourceHash": "e4bb9f1ece9af926",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 153
+        }
+      ]
+    },
+    "customizer.brief.audience": {
+      "source": "Intended audience",
+      "sourceHash": "685b100332e1d6af",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 113
+        }
+      ]
+    },
+    "customizer.brief.audience_placeholder": {
+      "source": "Who will receive, buy or use the product?",
+      "sourceHash": "718f247c7bb85722",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 114
+        }
+      ]
+    },
+    "customizer.brief.budget": {
+      "source": "Indicative budget",
+      "sourceHash": "8549fe0c32f90bbe",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 117
+        }
+      ]
+    },
+    "customizer.brief.budget_placeholder": {
+      "source": "Enter a range and currency",
+      "sourceHash": "54f6a2ec160833c8",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 118
+        }
+      ]
+    },
+    "customizer.brief.delivery": {
+      "source": "Preferred delivery window",
+      "sourceHash": "48abddfa2566f81c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 119
+        }
+      ]
+    },
+    "customizer.brief.delivery_placeholder": {
+      "source": "Enter a target date or period",
+      "sourceHash": "f9435a85abf69ddf",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 120
+        }
+      ]
+    },
+    "customizer.brief.intro": {
+      "source": "Approximate information is useful. Mark anything that still needs discussion.",
+      "sourceHash": "bd02dd3cced86b00",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 110
+        }
+      ]
+    },
+    "customizer.brief.notes": {
+      "source": "Additional notes",
+      "sourceHash": "5871e1abaa639712",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 123
+        }
+      ]
+    },
+    "customizer.brief.notes_placeholder": {
+      "source": "Add dimensions, packaging needs, file requirements or other details",
+      "sourceHash": "1d3cc2ac67057106",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 124
+        }
+      ]
+    },
+    "customizer.brief.quantity": {
+      "source": "Quantity range",
+      "sourceHash": "cb0e79f4d8d3c34f",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 115
+        }
+      ]
+    },
+    "customizer.brief.quantity_placeholder": {
+      "source": "Enter an approximate quantity",
+      "sourceHash": "7f166f6508c82ea7",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 116
+        }
+      ]
+    },
+    "customizer.brief.reference": {
+      "source": "Style references",
+      "sourceHash": "880786a97e903197",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 121
+        }
+      ]
+    },
+    "customizer.brief.reference_placeholder": {
+      "source": "Describe the style or add a public reference link",
+      "sourceHash": "9193edc379a9ba67",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 122
+        }
+      ]
+    },
+    "customizer.brief.title": {
+      "source": "Add your project expectations",
+      "sourceHash": "f64732d495f71fc2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 109
+        }
+      ]
+    },
+    "customizer.brief.use_case": {
+      "source": "Intended use or occasion",
+      "sourceHash": "fdc8eab73a9c0950",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 111
+        }
+      ]
+    },
+    "customizer.brief.use_case_placeholder": {
+      "source": "For example: corporate gift, education, retail or personal use",
+      "sourceHash": "b425df88aa51b9a9",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 112
+        }
+      ]
+    },
+    "customizer.complete": {
+      "source": "Complete",
+      "sourceHash": "143b270a32602d41",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 62
+        }
+      ]
+    },
+    "customizer.finish.board_description": {
+      "source": "Visible paper character and tactile warmth",
+      "sourceHash": "7c5babc52618bee3",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 79
+        }
+      ]
+    },
+    "customizer.finish.emboss": {
+      "source": "Embossing or debossing",
+      "sourceHash": "2ac2f3e7a1e8a454",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 100
+        }
+      ]
+    },
+    "customizer.finish.emboss_description": {
+      "source": "Raised or pressed detail with tactile depth",
+      "sourceHash": "a1344072151181ce",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 82
+        }
+      ]
+    },
+    "customizer.finish.foil": {
+      "source": "Foil stamping",
+      "sourceHash": "a2903b0ec16ef8b8",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 99
+        }
+      ]
+    },
+    "customizer.finish.foil_description": {
+      "source": "Controlled metallic highlights for key details",
+      "sourceHash": "2529154a0987bc78",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 81
+        }
+      ]
+    },
+    "customizer.finish.lamination": {
+      "source": "Matte or gloss lamination",
+      "sourceHash": "145850ffec2558c0",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 98
+        }
+      ]
+    },
+    "customizer.finish.lamination_description": {
+      "source": "A durable matte or gloss surface",
+      "sourceHash": "8504b165b8ade421",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 80
+        }
+      ]
+    },
+    "customizer.finish.spot_uv": {
+      "source": "Spot UV",
+      "sourceHash": "911e6c1f3f9a2619",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 101
+        }
+      ]
+    },
+    "customizer.finish.spot_uv_description": {
+      "source": "Selective gloss contrast on printed areas",
+      "sourceHash": "4467728fb381289d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 83
+        }
+      ]
+    },
+    "customizer.finish.unsure": {
+      "source": "Finish to be defined",
+      "sourceHash": "dbd32129faa63f33",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 102
+        }
+      ]
+    },
+    "customizer.free_model": {
+      "source": "Open concept",
+      "sourceHash": "ed2b36c0c6d2cccc",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 57
+        }
+      ]
+    },
+    "customizer.handoff_ready": {
+      "source": "Human-support request created: {ticket}",
+      "sourceHash": "67fea34244d06647",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 63
+        }
+      ]
+    },
+    "customizer.home.body": {
+      "source": "Choose a product direction, structure, materials and visual style to create an editable initial brief that we can review with you.",
+      "sourceHash": "f8e8e6e43065d2d4",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 30
+        }
+      ]
+    },
+    "customizer.home.cta": {
+      "source": "Start customizing",
+      "sourceHash": "dc4313d81678924e",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 31
+        }
+      ]
+    },
+    "customizer.home.eyebrow": {
+      "source": "Guided customization",
+      "sourceHash": "f80d654f7a96b53a",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 28
+        }
+      ]
+    },
+    "customizer.home.secondary_cta": {
+      "source": "Go directly to the quote form",
+      "sourceHash": "49eaeff513cfa46c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 32
+        }
+      ]
+    },
+    "customizer.home.title": {
+      "source": "Do not have a complete concept yet? Start with an idea.",
+      "sourceHash": "b5724c23db303151",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 29
+        }
+      ]
+    },
+    "customizer.human.failed": {
+      "source": "The request could not be sent. Try again or continue with the quote form.",
+      "sourceHash": "742ec913c58aa0de",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 152
+        }
+      ]
+    },
+    "customizer.human.request": {
+      "source": "Request a human creative adviser",
+      "sourceHash": "bd1f92625f3bd20c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 149
+        }
+      ]
+    },
+    "customizer.human.sending": {
+      "source": "Sending adviser request...",
+      "sourceHash": "b8f4f372213666e9",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 150
+        }
+      ]
+    },
+    "customizer.human.sent": {
+      "source": "Adviser request sent",
+      "sourceHash": "23055c7086f79c66",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 151
+        }
+      ]
+    },
+    "customizer.material.greyboard": {
+      "source": "Paper-wrapped greyboard",
+      "sourceHash": "b876994ecaa7f417",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 94
+        }
+      ]
+    },
+    "customizer.material.recycled": {
+      "source": "Recycled paper",
+      "sourceHash": "de5f0927b7c8c8da",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 96
+        }
+      ]
+    },
+    "customizer.material.special_paper": {
+      "source": "Creative or specialty paper",
+      "sourceHash": "39cf1cc501ce0af5",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 95
+        }
+      ]
+    },
+    "customizer.material.unsure": {
+      "source": "Material to be defined",
+      "sourceHash": "c925a396530a16cc",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 97
+        }
+      ]
+    },
+    "customizer.model_paper_3d": {
+      "source": "3D paper concept",
+      "sourceHash": "788d8ccf070c769f",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 65
+        }
+      ]
+    },
+    "customizer.model_paper_goods": {
+      "source": "Paper goods concept",
+      "sourceHash": "14889fb99ebbb0ce",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 66
+        }
+      ]
+    },
+    "customizer.model_puzzle": {
+      "source": "Puzzle concept",
+      "sourceHash": "a9775a1f025dd11a",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 64
+        }
+      ]
+    },
+    "customizer.name": {
+      "source": "Inspiration Customization Studio",
+      "sourceHash": "a0a63e2ff2bf34f9",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 24
+        }
+      ]
+    },
+    "customizer.open": {
+      "source": "Open",
+      "sourceHash": "ed077f3d8125d60d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 56
+        }
+      ]
+    },
+    "customizer.page.eyebrow": {
+      "source": "Guided customization",
+      "sourceHash": "f80d654f7a96b53a",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 25
+        }
+      ]
+    },
+    "customizer.page.intro": {
+      "source": "Shape an initial product direction, then carry the resulting brief into your quote request.",
+      "sourceHash": "341ced65bd204b53",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 27
+        }
+      ]
+    },
+    "customizer.page.title": {
+      "source": "Customization & request a quote",
+      "sourceHash": "914fa00fd22fe0d9",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 26
+        }
+      ]
+    },
+    "customizer.preview": {
+      "source": "Preview: {name}",
+      "sourceHash": "b654b8c2f035bc83",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 59
+        }
+      ]
+    },
+    "customizer.preview.disclaimer": {
+      "source": "This visualization is a concept preview only. It is not a production sample or a binding quote. Materials, finishes, dimensions, feasibility, price and lead time will be confirmed after technical review.",
+      "sourceHash": "37904f64e1571d5d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 145
+        }
+      ]
+    },
+    "customizer.preview.label": {
+      "source": "Concept preview",
+      "sourceHash": "305245dc4d0b1d69",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 143
+        }
+      ]
+    },
+    "customizer.preview.waiting": {
+      "source": "Your selections will shape the preview.",
+      "sourceHash": "0c9b59fd05330d9f",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 144
+        }
+      ]
+    },
+    "customizer.product.game_packaging": {
+      "source": "Paper games & gift packaging",
+      "sourceHash": "80abc0fbdd753ea1",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 48
+        }
+      ]
+    },
+    "customizer.product.game_packaging.help": {
+      "source": "A card, paper-game, gift-box or coordinated packaging direction.",
+      "sourceHash": "f918dfabe78fb79f",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 55
+        }
+      ]
+    },
+    "customizer.product.other": {
+      "source": "More ideas",
+      "sourceHash": "fcf8f9c1348b06ae",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 49
+        }
+      ]
+    },
+    "customizer.product.other_help": {
+      "source": "Describe your idea freely. You can also request support from a human creative adviser.",
+      "sourceHash": "625fae54bedad1f2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 50
+        }
+      ]
+    },
+    "customizer.product.other_label": {
+      "source": "Describe your idea",
+      "sourceHash": "57260354e46c06f7",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 51
+        }
+      ]
+    },
+    "customizer.product.other_placeholder": {
+      "source": "Tell us what you would like to make, how it will be used and what you want it to feel like.",
+      "sourceHash": "293c11f6f332424c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 52
+        }
+      ]
+    },
+    "customizer.product.paper_3d": {
+      "source": "3D paper or board puzzle",
+      "sourceHash": "2e6b0b30a4c5e0ca",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 47
+        }
+      ]
+    },
+    "customizer.product.paper_3d.help": {
+      "source": "A dimensional object assembled from printed paper components.",
+      "sourceHash": "e1e4369c60d8798d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 54
+        }
+      ]
+    },
+    "customizer.product.puzzle": {
+      "source": "Jigsaw product",
+      "sourceHash": "b88139a844b20251",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 46
+        }
+      ]
+    },
+    "customizer.product.puzzle.help": {
+      "source": "A flat jigsaw or art-led puzzle format.",
+      "sourceHash": "10052c3003986642",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 53
+        }
+      ]
+    },
+    "customizer.progress": {
+      "source": "Step {current} of 4",
+      "sourceHash": "13888e65d912ca4a",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 37
+        }
+      ]
+    },
+    "customizer.quote.continue": {
+      "source": "Continue to the quote form",
+      "sourceHash": "1ea448ef463e1d9e",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 146
+        }
+      ]
+    },
+    "customizer.quote.notice": {
+      "source": "No price is calculated automatically. Feasibility, price and lead time will be confirmed after technical review.",
+      "sourceHash": "1738117808396fb2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 148
+        }
+      ]
+    },
+    "customizer.quote.prepare": {
+      "source": "Prepare quote request",
+      "sourceHash": "4dc72476c633b6bd",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 147
+        }
+      ]
+    },
+    "customizer.shaped": {
+      "source": "{count}/4 choices set",
+      "sourceHash": "8d51fb1a609d609f",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 60
+        }
+      ]
+    },
+    "customizer.shaped_open": {
+      "source": "{count}/4 choices set · {open} open",
+      "sourceHash": "dc5a80986d48c4f6",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 61
+        }
+      ]
+    },
+    "customizer.status.missing": {
+      "source": "Complete the required fields to continue.",
+      "sourceHash": "81ba99d232a725f2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 163
+        }
+      ]
+    },
+    "customizer.status.optional": {
+      "source": "Optional",
+      "sourceHash": "59be71333c960fd0",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 162
+        }
+      ]
+    },
+    "customizer.status.required": {
+      "source": "Required",
+      "sourceHash": "4850b174b713d88c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 161
+        }
+      ]
+    },
+    "customizer.status.summary_ready": {
+      "source": "Brief ready to review",
+      "sourceHash": "1d260cf23fb46cf7",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 164
+        }
+      ]
+    },
+    "customizer.step.material.help": {
+      "source": "Select preferred materials and finishes. You can choose more than one option or leave items open.",
+      "sourceHash": "15f7f8cf7757417d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 43
+        }
+      ]
+    },
+    "customizer.step.material.number": {
+      "source": "03 / Material",
+      "sourceHash": "44209ec2bc2663ea",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 35
+        }
+      ]
+    },
+    "customizer.step.material.title": {
+      "source": "Materials & finishes",
+      "sourceHash": "a9009aa83f05e541",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 42
+        }
+      ]
+    },
+    "customizer.step.product.help": {
+      "source": "Choose the starting point closest to your idea. You can add details later.",
+      "sourceHash": "76ede206e4f6d72a",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 39
+        }
+      ]
+    },
+    "customizer.step.product.number": {
+      "source": "01 / Direction",
+      "sourceHash": "73db3d0b375247c4",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 33
+        }
+      ]
+    },
+    "customizer.step.product.title": {
+      "source": "Product direction",
+      "sourceHash": "f9edf99021c87e0b",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 38
+        }
+      ]
+    },
+    "customizer.step.structure.help": {
+      "source": "Choose an initial structural direction. Technical feasibility will be reviewed later.",
+      "sourceHash": "c02088ee961f4578",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 41
+        }
+      ]
+    },
+    "customizer.step.structure.number": {
+      "source": "02 / Structure",
+      "sourceHash": "9cc74b99824b51a0",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 34
+        }
+      ]
+    },
+    "customizer.step.structure.title": {
+      "source": "Structure & form",
+      "sourceHash": "0495e4d69aa7e85b",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 40
+        }
+      ]
+    },
+    "customizer.step.visual.help": {
+      "source": "Choose the visual direction closest to the result you have in mind.",
+      "sourceHash": "3a1c892512953df2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 45
+        }
+      ]
+    },
+    "customizer.step.visual.number": {
+      "source": "04 / Visual",
+      "sourceHash": "c4bd690b234f407b",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 36
+        }
+      ]
+    },
+    "customizer.step.visual.title": {
+      "source": "Visual style & identity",
+      "sourceHash": "b36632c96b2e0285",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 44
+        }
+      ]
+    },
+    "customizer.structure.cards_description": {
+      "source": "Cards, dividers and a fitted printed box",
+      "sourceHash": "2466624ad6ea91cd",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 74
+        }
+      ]
+    },
+    "customizer.structure.classic_description": {
+      "source": "Balanced tabs and familiar assembly",
+      "sourceHash": "a717249b1199797c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 67
+        }
+      ]
+    },
+    "customizer.structure.custom_shape": {
+      "source": "Custom shape & outline",
+      "sourceHash": "65c539d36a665fd8",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 89
+        }
+      ]
+    },
+    "customizer.structure.custom_shape_description": {
+      "source": "Rounded connections or a custom product outline",
+      "sourceHash": "0dbea09755bcb6f9",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 68
+        }
+      ]
+    },
+    "customizer.structure.flat": {
+      "source": "Classic flat format",
+      "sourceHash": "ec80c9fbfa1c6fd6",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 88
+        }
+      ]
+    },
+    "customizer.structure.foldable": {
+      "source": "Foldable or assemble-yourself structure",
+      "sourceHash": "ba1ea3a1fd7b3404",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 91
+        }
+      ]
+    },
+    "customizer.structure.foldable_description": {
+      "source": "Parts connect through folds, slots or simple assembly",
+      "sourceHash": "afac25cc1bf1b047",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 70
+        }
+      ]
+    },
+    "customizer.structure.game_description": {
+      "source": "Board, cards, rules and packaging as one set",
+      "sourceHash": "ac4782a3742253c5",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 73
+        }
+      ]
+    },
+    "customizer.structure.hybrid_description": {
+      "source": "Combine two or more paper product types",
+      "sourceHash": "bb6bb5f2ef91dbef",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 77
+        }
+      ]
+    },
+    "customizer.structure.layered": {
+      "source": "Layered dimensional construction",
+      "sourceHash": "8a472aa4e2990128",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 90
+        }
+      ]
+    },
+    "customizer.structure.layered_description": {
+      "source": "Printed layers build volume and depth",
+      "sourceHash": "3706e4b14855cabc",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 71
+        }
+      ]
+    },
+    "customizer.structure.open_description": {
+      "source": "Keep the construction undefined for co-creation",
+      "sourceHash": "9ea0f4b9d8784e18",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 76
+        }
+      ]
+    },
+    "customizer.structure.pack_description": {
+      "source": "A presentation box with coordinated inserts",
+      "sourceHash": "f4cfb1d9d63a83f4",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 75
+        }
+      ]
+    },
+    "customizer.structure.reference_description": {
+      "source": "Start from an existing object or image",
+      "sourceHash": "2ae2df3a134b37dc",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 78
+        }
+      ]
+    },
+    "customizer.structure.set": {
+      "source": "Coordinated product set",
+      "sourceHash": "fda06b3868af6fe8",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 92
+        }
+      ]
+    },
+    "customizer.structure.set_description": {
+      "source": "Multiple components combine into one coordinated product",
+      "sourceHash": "92cbf799eeeab50b",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 72
+        }
+      ]
+    },
+    "customizer.structure.unsure": {
+      "source": "To be defined",
+      "sourceHash": "31d17eb884e6f3fe",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 93
+        }
+      ]
+    },
+    "customizer.structure.unsure_description": {
+      "source": "Keep a special shape or construction open for review",
+      "sourceHash": "75ad0b48d3c354f2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 69
+        }
+      ]
+    },
+    "customizer.summary.audience": {
+      "source": "Audience",
+      "sourceHash": "545c02357695a6ff",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 134
+        }
+      ]
+    },
+    "customizer.summary.body": {
+      "source": "Your selections are collected here as provisional requirements and can be edited before you request a quote.",
+      "sourceHash": "b81f15279fbab226",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 126
+        }
+      ]
+    },
+    "customizer.summary.budget": {
+      "source": "Budget",
+      "sourceHash": "1c6225ec7092ad2f",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 136
+        }
+      ]
+    },
+    "customizer.summary.delivery": {
+      "source": "Delivery window",
+      "sourceHash": "4a4bd27030d2deaa",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 137
+        }
+      ]
+    },
+    "customizer.summary.empty": {
+      "source": "Make a few selections to create your brief.",
+      "sourceHash": "625c95a62181912d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 127
+        }
+      ]
+    },
+    "customizer.summary.finish": {
+      "source": "Finishes",
+      "sourceHash": "426962884f1959a2",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 131
+        }
+      ]
+    },
+    "customizer.summary.generated_label": {
+      "source": "Customization brief",
+      "sourceHash": "d3cb1ae47c969dc8",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 160
+        }
+      ]
+    },
+    "customizer.summary.material": {
+      "source": "Materials",
+      "sourceHash": "fd10a146e9625bfd",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 130
+        }
+      ]
+    },
+    "customizer.summary.notes": {
+      "source": "Additional notes",
+      "sourceHash": "5871e1abaa639712",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 139
+        }
+      ]
+    },
+    "customizer.summary.open_items": {
+      "source": "Items to define",
+      "sourceHash": "d6b347f2ce7fad0c",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 140
+        }
+      ]
+    },
+    "customizer.summary.product": {
+      "source": "Product direction",
+      "sourceHash": "f9edf99021c87e0b",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 128
+        }
+      ]
+    },
+    "customizer.summary.quantity": {
+      "source": "Quantity",
+      "sourceHash": "822bab8d41bca8d7",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 135
+        }
+      ]
+    },
+    "customizer.summary.reference": {
+      "source": "Style references",
+      "sourceHash": "880786a97e903197",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 138
+        }
+      ]
+    },
+    "customizer.summary.structure": {
+      "source": "Structure & form",
+      "sourceHash": "0495e4d69aa7e85b",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 129
+        }
+      ]
+    },
+    "customizer.summary.suggestion_tag": {
+      "source": "Indicative suggestion",
+      "sourceHash": "24306b958b9f88da",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 142
+        }
+      ]
+    },
+    "customizer.summary.title": {
+      "source": "Project brief summary",
+      "sourceHash": "1f4e77e98ac6f838",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 125
+        }
+      ]
+    },
+    "customizer.summary.uncertain_tag": {
+      "source": "To be confirmed",
+      "sourceHash": "4237b3b44dd9a860",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 141
+        }
+      ]
+    },
+    "customizer.summary.use_case": {
+      "source": "Intended use",
+      "sourceHash": "046def25f5b077ca",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 133
+        }
+      ]
+    },
+    "customizer.summary.visual": {
+      "source": "Visual style",
+      "sourceHash": "e00cf1143c6cdbec",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 132
+        }
+      ]
+    },
+    "customizer.visual.bold": {
+      "source": "Bold & energetic",
+      "sourceHash": "004d57d44d441713",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 107
+        }
+      ]
+    },
+    "customizer.visual.bold_description": {
+      "source": "Strong rhythm and distinct colour areas",
+      "sourceHash": "e7f44751bba93b4d",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 85
+        }
+      ]
+    },
+    "customizer.visual.brand": {
+      "source": "Follow an existing brand identity",
+      "sourceHash": "d656149d90fb64ec",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 108
+        }
+      ]
+    },
+    "customizer.visual.brand_description": {
+      "source": "A name, symbol or identity becomes the focal point",
+      "sourceHash": "a046acb0cef23d16",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 87
+        }
+      ]
+    },
+    "customizer.visual.illustrated": {
+      "source": "Playful & illustrated",
+      "sourceHash": "ade644603a96efe4",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 104
+        }
+      ]
+    },
+    "customizer.visual.illustrated_description": {
+      "source": "A visual narrative carried across the product",
+      "sourceHash": "be3e3e703d348e27",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 86
+        }
+      ]
+    },
+    "customizer.visual.minimal": {
+      "source": "Minimal & modern",
+      "sourceHash": "1936ec5e5270d5e3",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 103
+        }
+      ]
+    },
+    "customizer.visual.minimal_description": {
+      "source": "Clear hierarchy and restrained detail",
+      "sourceHash": "a63549201fb8b7b4",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 84
+        }
+      ]
+    },
+    "customizer.visual.natural": {
+      "source": "Natural & textural",
+      "sourceHash": "de8526a5163c4ec6",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 106
+        }
+      ]
+    },
+    "customizer.visual.refined": {
+      "source": "Premium & refined",
+      "sourceHash": "27eaa3b7d753bd09",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 105
+        }
+      ]
+    },
+    "customizer.waiting": {
+      "source": "Choose a direction",
+      "sourceHash": "c1120f24153bd83e",
+      "references": [
+        {
+          "page": "common",
+          "kind": "javascript",
+          "position": 58
         }
       ]
     },
@@ -5109,7 +6213,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 68
+          "position": 69
         }
       ]
     },
@@ -5142,7 +6246,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 74
+          "position": 75
         }
       ]
     },
@@ -5164,7 +6268,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 80
+          "position": 81
         }
       ]
     },
@@ -5175,7 +6279,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 86
+          "position": 87
         }
       ]
     },
@@ -5197,7 +6301,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 76
+          "position": 77
         }
       ]
     },
@@ -5208,7 +6312,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 98
+          "position": 99
         }
       ]
     },
@@ -5219,7 +6323,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 129
+          "position": 130
         }
       ]
     },
@@ -5246,7 +6350,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 94
+          "position": 95
         }
       ]
     },
@@ -5257,7 +6361,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 116
+          "position": 117
         }
       ]
     },
@@ -5268,7 +6372,7 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 73
+          "position": 74
         }
       ]
     },
@@ -5279,7 +6383,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 82
+          "position": 83
         }
       ]
     },
@@ -5290,7 +6394,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 122
+          "position": 123
         }
       ]
     },
@@ -5301,7 +6405,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 65
+          "position": 66
         }
       ]
     },
@@ -5312,7 +6416,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 88
+          "position": 89
         }
       ]
     },
@@ -5345,7 +6449,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 111
+          "position": 112
         }
       ]
     },
@@ -5356,7 +6460,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 155
+          "position": 156
         }
       ]
     },
@@ -5367,7 +6471,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 103
+          "position": 104
         }
       ]
     },
@@ -5378,7 +6482,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 113
+          "position": 114
         }
       ]
     },
@@ -5389,7 +6493,7 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 79
+          "position": 80
         }
       ]
     },
@@ -5400,7 +6504,7 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 85
+          "position": 86
         }
       ]
     },
@@ -5422,7 +6526,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 69
+          "position": 70
         }
       ]
     },
@@ -5433,7 +6537,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 131
+          "position": 132
         }
       ]
     },
@@ -5455,7 +6559,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 87
+          "position": 88
         }
       ]
     },
@@ -5499,7 +6603,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 118
+          "position": 119
         }
       ]
     },
@@ -5521,7 +6625,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 75
+          "position": 76
         }
       ]
     },
@@ -5532,7 +6636,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 109
+          "position": 110
         }
       ]
     },
@@ -5543,7 +6647,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 77
+          "position": 78
         }
       ]
     },
@@ -5609,7 +6713,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 78
+          "position": 79
         }
       ]
     },
@@ -5620,7 +6724,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 84
+          "position": 85
         }
       ]
     },
@@ -5631,7 +6735,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 124
+          "position": 125
         }
       ]
     },
@@ -5642,7 +6746,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 92
+          "position": 93
         }
       ]
     },
@@ -5653,7 +6757,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 135
+          "position": 136
         }
       ]
     },
@@ -5664,7 +6768,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 101
+          "position": 102
         }
       ]
     },
@@ -5686,7 +6790,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 89
+          "position": 90
         }
       ]
     },
@@ -5697,7 +6801,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 121
+          "position": 122
         }
       ]
     },
@@ -5708,7 +6812,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 139
+          "position": 140
         }
       ]
     },
@@ -5719,7 +6823,7 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 91
+          "position": 92
         }
       ]
     },
@@ -5741,7 +6845,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 133
+          "position": 134
         }
       ]
     },
@@ -5752,7 +6856,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 70
+          "position": 71
         }
       ]
     },
@@ -5779,7 +6883,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 125
+          "position": 126
         }
       ]
     },
@@ -5790,7 +6894,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 112
+          "position": 113
         }
       ]
     },
@@ -5801,7 +6905,7 @@
         {
           "page": "index",
           "kind": "text:span",
-          "position": 81
+          "position": 82
         }
       ]
     },
@@ -5823,7 +6927,7 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 99
+          "position": 100
         }
       ]
     },
@@ -5834,7 +6938,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 97
+          "position": 98
         }
       ]
     },
@@ -5845,7 +6949,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 71
+          "position": 72
         }
       ]
     },
@@ -5856,7 +6960,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 120
+          "position": 121
         }
       ]
     },
@@ -5867,7 +6971,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 105
+          "position": 106
         }
       ]
     },
@@ -5894,7 +6998,7 @@
         {
           "page": "index",
           "kind": "text:h2",
-          "position": 93
+          "position": 94
         }
       ]
     },
@@ -5905,7 +7009,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 83
+          "position": 84
         }
       ]
     },
@@ -5927,7 +7031,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 96
+          "position": 97
         }
       ]
     },
@@ -5938,7 +7042,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 100
+          "position": 101
         }
       ]
     },
@@ -5949,7 +7053,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 114
+          "position": 115
         }
       ]
     },
@@ -5960,7 +7064,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 64
+          "position": 65
         }
       ]
     },
@@ -5971,7 +7075,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 107
+          "position": 108
         }
       ]
     },
@@ -6015,7 +7119,7 @@
         {
           "page": "index",
           "kind": "attribute:alt",
-          "position": 123
+          "position": 124
         }
       ]
     },
@@ -6037,7 +7141,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 138
+          "position": 139
         }
       ]
     },
@@ -6048,7 +7152,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 140
+          "position": 141
         }
       ]
     },
@@ -6070,7 +7174,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 95
+          "position": 96
         }
       ]
     },
@@ -6092,7 +7196,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 127
+          "position": 128
         }
       ]
     },
@@ -6114,7 +7218,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 137
+          "position": 138
         }
       ]
     },
@@ -6136,7 +7240,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 66
+          "position": 67
         }
       ]
     },
@@ -6202,7 +7306,7 @@
         {
           "page": "index",
           "kind": "text:p",
-          "position": 126
+          "position": 127
         }
       ]
     },
@@ -6224,7 +7328,7 @@
         {
           "page": "index",
           "kind": "text:h3",
-          "position": 108
+          "position": 109
         }
       ]
     },
@@ -6235,7 +7339,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 90
+          "position": 91
         }
       ]
     },
@@ -6246,7 +7350,7 @@
         {
           "page": "index",
           "kind": "text:a",
-          "position": 72
+          "position": 73
         }
       ]
     },
@@ -6257,7 +7361,7 @@
         {
           "page": "index",
           "kind": "text:summary",
-          "position": 134
+          "position": 135
         }
       ]
     },
@@ -7735,7 +8839,7 @@
         {
           "page": "privacy",
           "kind": "text:h2",
-          "position": 51
+          "position": 53
         }
       ]
     },
@@ -7746,7 +8850,7 @@
         {
           "page": "privacy",
           "kind": "text:td",
-          "position": 35
+          "position": 37
         }
       ]
     },
@@ -7768,7 +8872,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 50
+          "position": 52
         }
       ]
     },
@@ -7779,7 +8883,7 @@
         {
           "page": "privacy",
           "kind": "text:h2",
-          "position": 41
+          "position": 43
         }
       ]
     },
@@ -7790,7 +8894,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 47
+          "position": 49
         }
       ]
     },
@@ -7812,7 +8916,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 40
+          "position": 42
         }
       ]
     },
@@ -7823,7 +8927,7 @@
         {
           "page": "privacy",
           "kind": "text:summary",
-          "position": 48
+          "position": 50
         }
       ]
     },
@@ -7839,13 +8943,24 @@
       ]
     },
     "privacy.how_the_web_form_works": {
+      "source": "How the customization studio works",
+      "sourceHash": "bc19db130213e082",
+      "references": [
+        {
+          "page": "privacy",
+          "kind": "text:th",
+          "position": 32
+        }
+      ]
+    },
+    "privacy.how_the_web_form_works_2": {
       "source": "How the web form works",
       "sourceHash": "43e60c675ce6d04c",
       "references": [
         {
           "page": "privacy",
           "kind": "text:th",
-          "position": 32
+          "position": 34
         }
       ]
     },
@@ -7856,7 +8971,7 @@
         {
           "page": "privacy",
           "kind": "text:td",
-          "position": 37
+          "position": 39
         }
       ]
     },
@@ -7878,7 +8993,7 @@
         {
           "page": "privacy",
           "kind": "text:th",
-          "position": 38
+          "position": 40
         }
       ]
     },
@@ -7933,7 +9048,7 @@
         {
           "page": "privacy",
           "kind": "text:td",
-          "position": 39
+          "position": 41
         }
       ]
     },
@@ -7944,7 +9059,7 @@
         {
           "page": "privacy",
           "kind": "text:h2",
-          "position": 55
+          "position": 57
         }
       ]
     },
@@ -7955,7 +9070,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 49
+          "position": 51
         }
       ]
     },
@@ -7966,7 +9081,7 @@
         {
           "page": "privacy",
           "kind": "text:th",
-          "position": 36
+          "position": 38
         }
       ]
     },
@@ -7977,18 +9092,29 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 43
+          "position": 45
         }
       ]
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "source": "The quote and contact forms prepare an email in your own email application. The website does not claim to upload or store those form entries. Information is received by Qinyi only when you review and send the email.",
-      "sourceHash": "36d9a4f2a499bc30",
+      "source": "Your selections and editable brief remain in your browser while you explore the concept. Adding the brief to the quote form does not submit it. If you choose human co-creation after selecting “More ideas”, the brief is sent to the support service to create a human-support request and becomes visible to authorized Qinyi service personnel.",
+      "sourceHash": "a3bbac2687499901",
       "references": [
         {
           "page": "privacy",
           "kind": "text:td",
           "position": 33
+        }
+      ]
+    },
+    "privacy.the_quote_and_contact_forms_prepare_an_2": {
+      "source": "The quote and contact forms prepare an email in your own email application. The website does not upload or store those form entries. Information is received by Qinyi only when you review and send the email, except for a customization brief deliberately sent through the human co-creation action described above.",
+      "sourceHash": "529053a269caf698",
+      "references": [
+        {
+          "page": "privacy",
+          "kind": "text:td",
+          "position": 35
         }
       ]
     },
@@ -8032,7 +9158,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 45
+          "position": 47
         }
       ]
     },
@@ -8043,7 +9169,7 @@
         {
           "page": "privacy",
           "kind": "text:summary",
-          "position": 42
+          "position": 44
         }
       ]
     },
@@ -8054,7 +9180,7 @@
         {
           "page": "privacy",
           "kind": "text:summary",
-          "position": 46
+          "position": 48
         }
       ]
     },
@@ -8065,7 +9191,7 @@
         {
           "page": "privacy",
           "kind": "text:summary",
-          "position": 44
+          "position": 46
         }
       ]
     },
@@ -8087,7 +9213,7 @@
         {
           "page": "privacy",
           "kind": "text:th",
-          "position": 34
+          "position": 36
         }
       ]
     },
@@ -8098,7 +9224,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 54
+          "position": 56
         }
       ]
     },
@@ -8109,7 +9235,7 @@
         {
           "page": "privacy",
           "kind": "text:p",
-          "position": 52
+          "position": 54
         }
       ]
     },
@@ -9541,7 +10667,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 43
+          "position": 39
         }
       ]
     },
@@ -9552,7 +10678,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 44
+          "position": 40
         }
       ]
     },
@@ -9561,9 +10687,20 @@
       "sourceHash": "90fbf706fc995653",
       "references": [
         {
+          "page": "common",
+          "kind": "javascript",
+          "position": 23
+        }
+      ]
+    },
+    "quote.a_concise_first_review_2": {
+      "source": "A concise first review.",
+      "sourceHash": "90fbf706fc995653",
+      "references": [
+        {
           "page": "quote",
           "kind": "text:h2",
-          "position": 28
+          "position": 24
         }
       ]
     },
@@ -9574,7 +10711,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 63
+          "position": 60
         }
       ]
     },
@@ -9585,7 +10722,7 @@
         {
           "page": "quote",
           "kind": "attribute:placeholder",
-          "position": 60
+          "position": 57
         }
       ]
     },
@@ -9596,7 +10733,7 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 73
+          "position": 70
         }
       ]
     },
@@ -9607,7 +10744,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 58
+          "position": 55
         }
       ]
     },
@@ -9618,7 +10755,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 46
+          "position": 42
         }
       ]
     },
@@ -9629,7 +10766,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 70
+          "position": 67
         }
       ]
     },
@@ -9640,7 +10777,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 31
+          "position": 27
         }
       ]
     },
@@ -9651,7 +10788,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 45
+          "position": 41
         }
       ]
     },
@@ -9662,7 +10799,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 41
+          "position": 37
         }
       ]
     },
@@ -9673,7 +10810,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 51
+          "position": 47
         }
       ]
     },
@@ -9684,7 +10821,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 30
+          "position": 26
         }
       ]
     },
@@ -9695,7 +10832,7 @@
         {
           "page": "quote",
           "kind": "text:h2",
-          "position": 66
+          "position": 63
         }
       ]
     },
@@ -9706,7 +10843,7 @@
         {
           "page": "quote",
           "kind": "text:h3",
-          "position": 89
+          "position": 86
         }
       ]
     },
@@ -9717,7 +10854,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 76
+          "position": 73
         }
       ]
     },
@@ -9728,7 +10865,7 @@
         {
           "page": "quote",
           "kind": "attribute:placeholder",
-          "position": 50
+          "position": 46
         }
       ]
     },
@@ -9739,7 +10876,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 49
+          "position": 45
         }
       ]
     },
@@ -9750,7 +10887,7 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 75
+          "position": 72
         }
       ]
     },
@@ -9761,7 +10898,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 77
+          "position": 74
         }
       ]
     },
@@ -9772,7 +10909,7 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 69
+          "position": 66
         }
       ]
     },
@@ -9783,7 +10920,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 47
+          "position": 43
         }
       ]
     },
@@ -9794,7 +10931,7 @@
         {
           "page": "quote",
           "kind": "attribute:placeholder",
-          "position": 56
+          "position": 52
         }
       ]
     },
@@ -9805,7 +10942,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 67
+          "position": 64
         }
       ]
     },
@@ -9816,7 +10953,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 42
+          "position": 38
         }
       ]
     },
@@ -9827,7 +10964,7 @@
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 57
+          "position": 53
         }
       ]
     },
@@ -9838,7 +10975,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 32
+          "position": 28
         }
       ]
     },
@@ -9849,7 +10986,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 48
+          "position": 44
         }
       ]
     },
@@ -9860,7 +10997,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 37
+          "position": 33
         }
       ]
     },
@@ -9871,7 +11008,7 @@
         {
           "page": "quote",
           "kind": "text:button",
-          "position": 64
+          "position": 61
         }
       ]
     },
@@ -9882,7 +11019,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 29
+          "position": 25
         }
       ]
     },
@@ -9893,7 +11030,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 68
+          "position": 65
         }
       ]
     },
@@ -9904,7 +11041,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 39
+          "position": 35
         }
       ]
     },
@@ -9915,7 +11052,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 54
+          "position": 50
         }
       ]
     },
@@ -9926,13 +11063,13 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 71
+          "position": 68
         }
       ]
     },
     "quote.request_a_custom_manufacturing_quote": {
-      "source": "Request a Custom Manufacturing Quote",
-      "sourceHash": "66048860303d9e27",
+      "source": "Customization and Quote",
+      "sourceHash": "ef32ec984a6986ba",
       "references": [
         {
           "page": "quote",
@@ -9942,8 +11079,8 @@
       ]
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "source": "Request a Custom Manufacturing Quote | Qinyi Printing",
-      "sourceHash": "fea8be71aa6cbafb",
+      "source": "Customization & Quote | Qinyi Printing",
+      "sourceHash": "827d1573efcaee66",
       "references": [
         {
           "page": "quote",
@@ -9959,7 +11096,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 74
+          "position": 71
         }
       ]
     },
@@ -9970,7 +11107,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 40
+          "position": 36
         }
       ]
     },
@@ -9979,15 +11116,15 @@
       "sourceHash": "732dd3c1a0565ed2",
       "references": [
         {
-          "page": "quote",
-          "kind": "text:p",
-          "position": 26
+          "page": "common",
+          "kind": "javascript",
+          "position": 21
         }
       ]
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
-      "source": "Start a two-step manufacturing RFQ for a custom puzzle, paper game, card product or printed package.",
-      "sourceHash": "4e37d90ab1adbf9f",
+      "source": "Create an editable product concept and continue to a manufacturing RFQ for a custom puzzle, paper game or printed package.",
+      "sourceHash": "eae7cb2bbcc61b8f",
       "references": [
         {
           "page": "quote",
@@ -9997,8 +11134,8 @@
       ]
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "source": "Start a two-step RFQ for custom puzzles, paper games, cards or printed packaging with Qinyi Printing in Dongguan, China.",
-      "sourceHash": "2426a0c5f16f240c",
+      "source": "Explore a guided product concept, create an editable customization brief and request a manufacturing quote from Qinyi Printing.",
+      "sourceHash": "6b6ef5c33a94f362",
       "references": [
         {
           "page": "quote",
@@ -10012,9 +11149,9 @@
       "sourceHash": "b662c6f4326ee3a4",
       "references": [
         {
-          "page": "quote",
-          "kind": "text:h1",
-          "position": 25
+          "page": "common",
+          "kind": "javascript",
+          "position": 20
         }
       ]
     },
@@ -10023,9 +11160,20 @@
       "sourceHash": "e32a2b28a767ef5e",
       "references": [
         {
+          "page": "common",
+          "kind": "javascript",
+          "position": 22
+        }
+      ]
+    },
+    "quote.step_1_of_2_2": {
+      "source": "Step 1 of 2",
+      "sourceHash": "e32a2b28a767ef5e",
+      "references": [
+        {
           "page": "quote",
           "kind": "text:p",
-          "position": 27
+          "position": 23
         }
       ]
     },
@@ -10036,7 +11184,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 65
+          "position": 62
         }
       ]
     },
@@ -10047,7 +11195,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 52
+          "position": 48
         }
       ]
     },
@@ -10058,7 +11206,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 33
+          "position": 29
         }
       ]
     },
@@ -10067,9 +11215,9 @@
       "sourceHash": "76ab0cd93471b22f",
       "references": [
         {
-          "page": "quote",
-          "kind": "text:p",
-          "position": 24
+          "page": "common",
+          "kind": "javascript",
+          "position": 19
         }
       ]
     },
@@ -10657,7 +11805,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 16
+          "position": 165
         }
       ]
     },
@@ -10668,7 +11816,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 17
+          "position": 166
         }
       ]
     },
@@ -10679,7 +11827,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 19
+          "position": 168
         }
       ]
     },
@@ -10690,7 +11838,7 @@
         {
           "page": "common",
           "kind": "javascript",
-          "position": 18
+          "position": 167
         }
       ]
     },

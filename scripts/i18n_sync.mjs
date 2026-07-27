@@ -12,6 +12,7 @@ const localeInfo = new Map([
 const requested = process.argv.slice(2);
 const locales = requested.length ? requested : [...localeInfo.keys()];
 const en = JSON.parse(await fs.readFile(path.join(root, 'locales/en.json'), 'utf8'));
+const sourceHashes = new Map(Object.entries(en.messages).map(([key, message]) => [key, message.sourceHash]));
 
 for (const locale of locales) {
   if (!localeInfo.has(locale)) throw new Error(`Unsupported locale: ${locale}`);
@@ -20,7 +21,8 @@ for (const locale of locales) {
   try { catalog = JSON.parse(await fs.readFile(file, 'utf8')); } catch {}
   const messages = {};
   for (const [key, source] of Object.entries(en.messages)) {
-    messages[key] = catalog.messages[key] || {
+    const current = catalog.messages[key];
+    messages[key] = current?.sourceHash === sourceHashes.get(key) ? current : {
       value: source.value,
       status: 'needs_review',
       sourceHash: source.sourceHash,

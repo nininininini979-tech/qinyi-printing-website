@@ -2,7 +2,7 @@
   "locale": "de",
   "languageName": "Deutsch",
   "direction": "ltr",
-  "updatedAt": "2026-07-26",
+  "updatedAt": "2026-07-27",
   "messages": {
     "about.a_manufacturing_team_for_custom_paper_products": {
       "value": "Ein Produktionsteam für besonderes Papierproduktmaterial.",
@@ -269,6 +269,11 @@
       "status": "needs_review",
       "sourceHash": "71414fb92a52d351"
     },
+    "common.customization_quote": {
+      "value": "Individualisierung und Angebot",
+      "status": "reviewed",
+      "sourceHash": "cf8ce130fa26ee10"
+    },
     "common.deutsch": {
       "value": "Deutsch",
       "status": "needs_review",
@@ -318,6 +323,11 @@
       "value": "Entdecken",
       "status": "needs_review",
       "sourceHash": "3b73900b8d29f963"
+    },
+    "common.floating.quote": {
+      "value": "Angebot anfordern",
+      "status": "reviewed",
+      "sourceHash": "724f2336bf690001"
     },
     "common.form.default_product": {
       "value": "Eigene Papierprodukte",
@@ -396,7 +406,7 @@
     },
     "common.materials": {
       "value": "Materialien",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "fd10a146e9625bfd"
     },
     "common.menu.close": {
@@ -429,6 +439,11 @@
       "status": "needs_review",
       "sourceHash": "2b5c3d26721ae9c3"
     },
+    "common.nav.custom_quote": {
+      "value": "Individualisierung & Angebotsanfrage",
+      "status": "reviewed",
+      "sourceHash": "bbf75a9ec534e238"
+    },
     "common.nav.manufacturing": {
       "value": "Fertigung & Qualität",
       "status": "needs_review",
@@ -451,7 +466,7 @@
     },
     "common.nav.quote": {
       "value": "Angebot anfordern",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "724f2336bf690001"
     },
     "common.nav.trade": {
@@ -753,6 +768,711 @@
       "value": "Thema",
       "status": "needs_review",
       "sourceHash": "7e61847d61d65d9e"
+    },
+    "customizer.action.back": {
+      "value": "Zurück",
+      "status": "reviewed",
+      "sourceHash": "76900f1bfd16c8d4"
+    },
+    "customizer.action.confirm": {
+      "value": "Auswahl bestätigen",
+      "status": "reviewed",
+      "sourceHash": "9ce9c379f3f4b337"
+    },
+    "customizer.action.edit": {
+      "value": "Bearbeiten",
+      "status": "reviewed",
+      "sourceHash": "464c4ffd019e1e96"
+    },
+    "customizer.action.finish": {
+      "value": "Konzeptbrief abschließen",
+      "status": "reviewed",
+      "sourceHash": "f704e27d24ce5bf8"
+    },
+    "customizer.action.next": {
+      "value": "Weiter",
+      "status": "reviewed",
+      "sourceHash": "31fbef162594de01"
+    },
+    "customizer.action.reset": {
+      "value": "Auswahl zurücksetzen",
+      "status": "reviewed",
+      "sourceHash": "a53881ba69df563d"
+    },
+    "customizer.action.start": {
+      "value": "Starten",
+      "status": "reviewed",
+      "sourceHash": "e4bb9f1ece9af926"
+    },
+    "customizer.brief.audience": {
+      "value": "Zielgruppe",
+      "status": "reviewed",
+      "sourceHash": "685b100332e1d6af"
+    },
+    "customizer.brief.audience_placeholder": {
+      "value": "Wer wird das Produkt erhalten, kaufen oder verwenden?",
+      "status": "reviewed",
+      "sourceHash": "718f247c7bb85722"
+    },
+    "customizer.brief.budget": {
+      "value": "Budgetrahmen",
+      "status": "reviewed",
+      "sourceHash": "8549fe0c32f90bbe"
+    },
+    "customizer.brief.budget_placeholder": {
+      "value": "Budgetspanne und Währung angeben",
+      "status": "reviewed",
+      "sourceHash": "54f6a2ec160833c8"
+    },
+    "customizer.brief.delivery": {
+      "value": "Gewünschter Lieferzeitraum",
+      "status": "reviewed",
+      "sourceHash": "48abddfa2566f81c"
+    },
+    "customizer.brief.delivery_placeholder": {
+      "value": "Zieltermin oder Zeitraum angeben",
+      "status": "reviewed",
+      "sourceHash": "f9435a85abf69ddf"
+    },
+    "customizer.brief.intro": {
+      "value": "Auch ungefähre Angaben sind hilfreich. Noch offene Punkte können später geklärt werden.",
+      "status": "reviewed",
+      "sourceHash": "bd02dd3cced86b00"
+    },
+    "customizer.brief.notes": {
+      "value": "Weitere Angaben",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.brief.notes_placeholder": {
+      "value": "Maße, Verpackung, Dateivorgaben oder weitere Details ergänzen",
+      "status": "reviewed",
+      "sourceHash": "1d3cc2ac67057106"
+    },
+    "customizer.brief.quantity": {
+      "value": "Mengenrahmen",
+      "status": "reviewed",
+      "sourceHash": "cb0e79f4d8d3c34f"
+    },
+    "customizer.brief.quantity_placeholder": {
+      "value": "Ungefähre Stückzahl angeben",
+      "status": "reviewed",
+      "sourceHash": "7f166f6508c82ea7"
+    },
+    "customizer.brief.reference": {
+      "value": "Stilreferenzen",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.brief.reference_placeholder": {
+      "value": "Stil beschreiben oder einen öffentlichen Referenzlink angeben",
+      "status": "reviewed",
+      "sourceHash": "9193edc379a9ba67"
+    },
+    "customizer.brief.title": {
+      "value": "Projektangaben ergänzen",
+      "status": "reviewed",
+      "sourceHash": "f64732d495f71fc2"
+    },
+    "customizer.brief.use_case": {
+      "value": "Einsatzbereich oder Anlass",
+      "status": "reviewed",
+      "sourceHash": "fdc8eab73a9c0950"
+    },
+    "customizer.brief.use_case_placeholder": {
+      "value": "Zum Beispiel Firmengeschenk, Bildung, Einzelhandel oder private Nutzung",
+      "status": "reviewed",
+      "sourceHash": "b425df88aa51b9a9"
+    },
+    "customizer.complete": {
+      "value": "Abgeschlossen",
+      "status": "reviewed",
+      "sourceHash": "143b270a32602d41"
+    },
+    "customizer.finish.board_description": {
+      "value": "Sichtbarer Papiercharakter und angenehme Haptik",
+      "status": "reviewed",
+      "sourceHash": "7c5babc52618bee3"
+    },
+    "customizer.finish.emboss": {
+      "value": "Hoch- oder Tiefprägung",
+      "status": "reviewed",
+      "sourceHash": "2ac2f3e7a1e8a454"
+    },
+    "customizer.finish.emboss_description": {
+      "value": "Erhabene oder vertiefte Details mit fühlbarer Tiefe",
+      "status": "reviewed",
+      "sourceHash": "a1344072151181ce"
+    },
+    "customizer.finish.foil": {
+      "value": "Heißfolienprägung",
+      "status": "reviewed",
+      "sourceHash": "a2903b0ec16ef8b8"
+    },
+    "customizer.finish.foil_description": {
+      "value": "Kontrollierte metallische Akzente für wichtige Details",
+      "status": "reviewed",
+      "sourceHash": "2529154a0987bc78"
+    },
+    "customizer.finish.lamination": {
+      "value": "Matte oder glänzende Folienkaschierung",
+      "status": "reviewed",
+      "sourceHash": "145850ffec2558c0"
+    },
+    "customizer.finish.lamination_description": {
+      "value": "Strapazierfähige matte oder glänzende Oberfläche",
+      "status": "reviewed",
+      "sourceHash": "8504b165b8ade421"
+    },
+    "customizer.finish.spot_uv": {
+      "value": "Partieller UV-Lack",
+      "status": "reviewed",
+      "sourceHash": "911e6c1f3f9a2619"
+    },
+    "customizer.finish.spot_uv_description": {
+      "value": "Selektiver Glanzkontrast auf bedruckten Flächen",
+      "status": "reviewed",
+      "sourceHash": "4467728fb381289d"
+    },
+    "customizer.finish.unsure": {
+      "value": "Veredelung noch offen",
+      "status": "reviewed",
+      "sourceHash": "dbd32129faa63f33"
+    },
+    "customizer.free_model": {
+      "value": "Offenes Konzept",
+      "status": "reviewed",
+      "sourceHash": "ed2b36c0c6d2cccc"
+    },
+    "customizer.handoff_ready": {
+      "value": "Support-Anfrage erstellt: {ticket}",
+      "status": "reviewed",
+      "sourceHash": "67fea34244d06647"
+    },
+    "customizer.home.body": {
+      "value": "Wählen Sie Produktrichtung, Aufbau, Materialien und Gestaltung. Daraus entsteht eine bearbeitbare Projektübersicht für die weitere Abstimmung.",
+      "status": "reviewed",
+      "sourceHash": "f8e8e6e43065d2d4"
+    },
+    "customizer.home.cta": {
+      "value": "Idee gestalten",
+      "status": "reviewed",
+      "sourceHash": "dc4313d81678924e"
+    },
+    "customizer.home.eyebrow": {
+      "value": "Geführte Produktindividualisierung",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.home.secondary_cta": {
+      "value": "Direkt zur Angebotsanfrage",
+      "status": "reviewed",
+      "sourceHash": "49eaeff513cfa46c"
+    },
+    "customizer.home.title": {
+      "value": "Noch kein ausgearbeitetes Konzept? Beginnen Sie mit einer Idee.",
+      "status": "reviewed",
+      "sourceHash": "b5724c23db303151"
+    },
+    "customizer.human.failed": {
+      "value": "Die Anfrage konnte nicht gesendet werden. Versuchen Sie es erneut oder fahren Sie mit dem Formular fort.",
+      "status": "reviewed",
+      "sourceHash": "742ec913c58aa0de"
+    },
+    "customizer.human.request": {
+      "value": "Persönliche Beratung anfragen",
+      "status": "reviewed",
+      "sourceHash": "bd1f92625f3bd20c"
+    },
+    "customizer.human.sending": {
+      "value": "Beratungsanfrage wird gesendet...",
+      "status": "reviewed",
+      "sourceHash": "b8f4f372213666e9"
+    },
+    "customizer.human.sent": {
+      "value": "Beratungsanfrage gesendet",
+      "status": "reviewed",
+      "sourceHash": "23055c7086f79c66"
+    },
+    "customizer.material.greyboard": {
+      "value": "Graupappe mit Papierkaschierung",
+      "status": "reviewed",
+      "sourceHash": "b876994ecaa7f417"
+    },
+    "customizer.material.recycled": {
+      "value": "Recyclingpapier",
+      "status": "reviewed",
+      "sourceHash": "de5f0927b7c8c8da"
+    },
+    "customizer.material.special_paper": {
+      "value": "Fein- oder Spezialpapier",
+      "status": "reviewed",
+      "sourceHash": "39cf1cc501ce0af5"
+    },
+    "customizer.material.unsure": {
+      "value": "Material noch offen",
+      "status": "reviewed",
+      "sourceHash": "c925a396530a16cc"
+    },
+    "customizer.model_paper_3d": {
+      "value": "3D-Papierkonzept",
+      "status": "reviewed",
+      "sourceHash": "788d8ccf070c769f"
+    },
+    "customizer.model_paper_goods": {
+      "value": "Papierproduktkonzept",
+      "status": "reviewed",
+      "sourceHash": "14889fb99ebbb0ce"
+    },
+    "customizer.model_puzzle": {
+      "value": "Puzzlekonzept",
+      "status": "reviewed",
+      "sourceHash": "a9775a1f025dd11a"
+    },
+    "customizer.name": {
+      "value": "Ideenstudio für individuelle Produkte",
+      "status": "reviewed",
+      "sourceHash": "a0a63e2ff2bf34f9"
+    },
+    "customizer.open": {
+      "value": "Offen",
+      "status": "reviewed",
+      "sourceHash": "ed077f3d8125d60d"
+    },
+    "customizer.page.eyebrow": {
+      "value": "Geführte Produktindividualisierung",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.page.intro": {
+      "value": "Entwickeln Sie eine erste Produktrichtung und übernehmen Sie die Projektübersicht anschließend in Ihre Angebotsanfrage.",
+      "status": "reviewed",
+      "sourceHash": "341ced65bd204b53"
+    },
+    "customizer.page.title": {
+      "value": "Individualisierung & Angebotsanfrage",
+      "status": "reviewed",
+      "sourceHash": "914fa00fd22fe0d9"
+    },
+    "customizer.preview": {
+      "value": "Vorschau: {name}",
+      "status": "reviewed",
+      "sourceHash": "b654b8c2f035bc83"
+    },
+    "customizer.preview.disclaimer": {
+      "value": "Diese Darstellung dient ausschließlich als konzeptionelle Vorschau. Sie ist weder ein Produktionsmuster noch ein verbindliches Angebot. Materialien, Veredelungen, Maße, Machbarkeit, Preis und Lieferzeit werden erst nach technischer Prüfung bestätigt.",
+      "status": "reviewed",
+      "sourceHash": "37904f64e1571d5d"
+    },
+    "customizer.preview.label": {
+      "value": "Konzeptvorschau",
+      "status": "reviewed",
+      "sourceHash": "305245dc4d0b1d69"
+    },
+    "customizer.preview.waiting": {
+      "value": "Ihre Auswahl gestaltet nach und nach die Vorschau.",
+      "status": "reviewed",
+      "sourceHash": "0c9b59fd05330d9f"
+    },
+    "customizer.product.game_packaging": {
+      "value": "Spiele aus Papier oder Karton & Geschenkverpackungen",
+      "status": "reviewed",
+      "sourceHash": "80abc0fbdd753ea1"
+    },
+    "customizer.product.game_packaging.help": {
+      "value": "Eine Karten-, Papierspiel-, Geschenkbox- oder abgestimmte Verpackungslösung.",
+      "status": "reviewed",
+      "sourceHash": "f918dfabe78fb79f"
+    },
+    "customizer.product.other": {
+      "value": "Weitere Idee",
+      "status": "reviewed",
+      "sourceHash": "fcf8f9c1348b06ae"
+    },
+    "customizer.product.other_help": {
+      "value": "Beschreiben Sie Ihre Idee frei. Auf Wunsch können Sie eine persönliche Beratung anfragen.",
+      "status": "reviewed",
+      "sourceHash": "625fae54bedad1f2"
+    },
+    "customizer.product.other_label": {
+      "value": "Idee beschreiben",
+      "status": "reviewed",
+      "sourceHash": "57260354e46c06f7"
+    },
+    "customizer.product.other_placeholder": {
+      "value": "Beschreiben Sie, was Sie herstellen möchten, wie es genutzt wird und welche Wirkung es haben soll.",
+      "status": "reviewed",
+      "sourceHash": "293c11f6f332424c"
+    },
+    "customizer.product.paper_3d": {
+      "value": "3D-Puzzle aus Papier oder Karton",
+      "status": "reviewed",
+      "sourceHash": "2e6b0b30a4c5e0ca"
+    },
+    "customizer.product.paper_3d.help": {
+      "value": "Ein räumliches Objekt aus zusammensetzbaren, bedruckten Papier- oder Kartonteilen.",
+      "status": "reviewed",
+      "sourceHash": "e1e4369c60d8798d"
+    },
+    "customizer.product.puzzle": {
+      "value": "Puzzleprodukt",
+      "status": "reviewed",
+      "sourceHash": "b88139a844b20251"
+    },
+    "customizer.product.puzzle.help": {
+      "value": "Ein flaches Puzzle oder ein bildorientiertes Kunstpuzzle.",
+      "status": "reviewed",
+      "sourceHash": "10052c3003986642"
+    },
+    "customizer.progress": {
+      "value": "Schritt {current} von 4",
+      "status": "reviewed",
+      "sourceHash": "13888e65d912ca4a"
+    },
+    "customizer.quote.continue": {
+      "value": "Mit der Angebotsanfrage fortfahren",
+      "status": "reviewed",
+      "sourceHash": "1ea448ef463e1d9e"
+    },
+    "customizer.quote.notice": {
+      "value": "Es wird kein Preis automatisch berechnet. Machbarkeit, Preis und Lieferzeit werden erst nach technischer Prüfung bestätigt.",
+      "status": "reviewed",
+      "sourceHash": "1738117808396fb2"
+    },
+    "customizer.quote.prepare": {
+      "value": "Angebotsanfrage vorbereiten",
+      "status": "reviewed",
+      "sourceHash": "4dc72476c633b6bd"
+    },
+    "customizer.shaped": {
+      "value": "{count}/4 Auswahlen festgelegt",
+      "status": "reviewed",
+      "sourceHash": "8d51fb1a609d609f"
+    },
+    "customizer.shaped_open": {
+      "value": "{count}/4 Auswahlen festgelegt · {open} offen",
+      "status": "reviewed",
+      "sourceHash": "dc5a80986d48c4f6"
+    },
+    "customizer.status.missing": {
+      "value": "Füllen Sie die erforderlichen Felder aus, um fortzufahren.",
+      "status": "reviewed",
+      "sourceHash": "81ba99d232a725f2"
+    },
+    "customizer.status.optional": {
+      "value": "Freiwillig",
+      "status": "reviewed",
+      "sourceHash": "59be71333c960fd0"
+    },
+    "customizer.status.required": {
+      "value": "Erforderlich",
+      "status": "reviewed",
+      "sourceHash": "4850b174b713d88c"
+    },
+    "customizer.status.summary_ready": {
+      "value": "Projektübersicht kann geprüft werden",
+      "status": "reviewed",
+      "sourceHash": "1d260cf23fb46cf7"
+    },
+    "customizer.step.material.help": {
+      "value": "Geben Sie Ihre Material- und Veredelungswünsche an. Mehrfachauswahl ist möglich; offene Punkte können später geklärt werden.",
+      "status": "reviewed",
+      "sourceHash": "15f7f8cf7757417d"
+    },
+    "customizer.step.material.number": {
+      "value": "03 / Werkstoff",
+      "status": "reviewed",
+      "sourceHash": "44209ec2bc2663ea"
+    },
+    "customizer.step.material.title": {
+      "value": "Materialien und Veredelungen",
+      "status": "reviewed",
+      "sourceHash": "a9009aa83f05e541"
+    },
+    "customizer.step.product.help": {
+      "value": "Wählen Sie den Ausgangspunkt, der Ihrer Idee am nächsten kommt. Details können Sie später ergänzen.",
+      "status": "reviewed",
+      "sourceHash": "76ede206e4f6d72a"
+    },
+    "customizer.step.product.number": {
+      "value": "01 / Richtung",
+      "status": "reviewed",
+      "sourceHash": "73db3d0b375247c4"
+    },
+    "customizer.step.product.title": {
+      "value": "Produktrichtung",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.step.structure.help": {
+      "value": "Wählen Sie eine erste Konstruktionsrichtung. Die technische Machbarkeit wird anschließend geprüft.",
+      "status": "reviewed",
+      "sourceHash": "c02088ee961f4578"
+    },
+    "customizer.step.structure.number": {
+      "value": "02 / Struktur",
+      "status": "reviewed",
+      "sourceHash": "9cc74b99824b51a0"
+    },
+    "customizer.step.structure.title": {
+      "value": "Struktur und Form",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.step.visual.help": {
+      "value": "Wählen Sie die visuelle Richtung, die dem gewünschten Erscheinungsbild am nächsten kommt.",
+      "status": "reviewed",
+      "sourceHash": "3a1c892512953df2"
+    },
+    "customizer.step.visual.number": {
+      "value": "04 / Gestaltung",
+      "status": "reviewed",
+      "sourceHash": "c4bd690b234f407b"
+    },
+    "customizer.step.visual.title": {
+      "value": "Visueller Stil und Markenwelt",
+      "status": "reviewed",
+      "sourceHash": "b36632c96b2e0285"
+    },
+    "customizer.structure.cards_description": {
+      "value": "Karten, Trennelemente und passgenaue bedruckte Box",
+      "status": "reviewed",
+      "sourceHash": "2466624ad6ea91cd"
+    },
+    "customizer.structure.classic_description": {
+      "value": "Ausgewogene Verzahnungen und vertraute Montage",
+      "status": "reviewed",
+      "sourceHash": "a717249b1199797c"
+    },
+    "customizer.structure.custom_shape": {
+      "value": "Individuelle Form und Kontur",
+      "status": "reviewed",
+      "sourceHash": "65c539d36a665fd8"
+    },
+    "customizer.structure.custom_shape_description": {
+      "value": "Gerundete Verbindungen oder individuelle Produktkontur",
+      "status": "reviewed",
+      "sourceHash": "0dbea09755bcb6f9"
+    },
+    "customizer.structure.flat": {
+      "value": "Klassische flache Ausführung",
+      "status": "reviewed",
+      "sourceHash": "ec80c9fbfa1c6fd6"
+    },
+    "customizer.structure.foldable": {
+      "value": "Falt- oder Steckkonstruktion",
+      "status": "reviewed",
+      "sourceHash": "ba1ea3a1fd7b3404"
+    },
+    "customizer.structure.foldable_description": {
+      "value": "Teile werden durch Falten, Schlitze oder einfache Montage verbunden",
+      "status": "reviewed",
+      "sourceHash": "afac25cc1bf1b047"
+    },
+    "customizer.structure.game_description": {
+      "value": "Spielbrett, Karten, Regeln und Verpackung als ein Set",
+      "status": "reviewed",
+      "sourceHash": "ac4782a3742253c5"
+    },
+    "customizer.structure.hybrid_description": {
+      "value": "Zwei oder mehr Papierproduktarten kombinieren",
+      "status": "reviewed",
+      "sourceHash": "bb6bb5f2ef91dbef"
+    },
+    "customizer.structure.layered": {
+      "value": "Mehrlagige 3D-Ausführung",
+      "status": "reviewed",
+      "sourceHash": "8a472aa4e2990128"
+    },
+    "customizer.structure.layered_description": {
+      "value": "Bedruckte Lagen erzeugen Volumen und Tiefe",
+      "status": "reviewed",
+      "sourceHash": "3706e4b14855cabc"
+    },
+    "customizer.structure.open_description": {
+      "value": "Konstruktion für die gemeinsame Entwicklung offenhalten",
+      "status": "reviewed",
+      "sourceHash": "9ea0f4b9d8784e18"
+    },
+    "customizer.structure.pack_description": {
+      "value": "Präsentationsbox mit abgestimmten Einlagen",
+      "status": "reviewed",
+      "sourceHash": "f4cfb1d9d63a83f4"
+    },
+    "customizer.structure.reference_description": {
+      "value": "Von einem bestehenden Objekt oder Bild ausgehen",
+      "status": "reviewed",
+      "sourceHash": "2ae2df3a134b37dc"
+    },
+    "customizer.structure.set": {
+      "value": "Kombiniertes Set",
+      "status": "reviewed",
+      "sourceHash": "fda06b3868af6fe8"
+    },
+    "customizer.structure.set_description": {
+      "value": "Mehrere Komponenten ergeben ein abgestimmtes Produkt",
+      "status": "reviewed",
+      "sourceHash": "92cbf799eeeab50b"
+    },
+    "customizer.structure.unsure": {
+      "value": "Noch offen",
+      "status": "reviewed",
+      "sourceHash": "31d17eb884e6f3fe"
+    },
+    "customizer.structure.unsure_description": {
+      "value": "Sonderform oder Konstruktion für die Prüfung offenhalten",
+      "status": "reviewed",
+      "sourceHash": "75ad0b48d3c354f2"
+    },
+    "customizer.summary.audience": {
+      "value": "Zielgruppe",
+      "status": "reviewed",
+      "sourceHash": "545c02357695a6ff"
+    },
+    "customizer.summary.body": {
+      "value": "Ihre Auswahl wird hier als vorläufige Projektbeschreibung zusammengefasst und kann vor der Angebotsanfrage bearbeitet werden.",
+      "status": "reviewed",
+      "sourceHash": "b81f15279fbab226"
+    },
+    "customizer.summary.budget": {
+      "value": "Budgetrahmen",
+      "status": "reviewed",
+      "sourceHash": "1c6225ec7092ad2f"
+    },
+    "customizer.summary.delivery": {
+      "value": "Lieferzeitraum",
+      "status": "reviewed",
+      "sourceHash": "4a4bd27030d2deaa"
+    },
+    "customizer.summary.empty": {
+      "value": "Treffen Sie eine Auswahl, um die Projektübersicht zu erstellen.",
+      "status": "reviewed",
+      "sourceHash": "625c95a62181912d"
+    },
+    "customizer.summary.finish": {
+      "value": "Veredelungen",
+      "status": "reviewed",
+      "sourceHash": "426962884f1959a2"
+    },
+    "customizer.summary.generated_label": {
+      "value": "Individualisierungsübersicht",
+      "status": "reviewed",
+      "sourceHash": "d3cb1ae47c969dc8"
+    },
+    "customizer.summary.material": {
+      "value": "Materialien",
+      "status": "reviewed",
+      "sourceHash": "fd10a146e9625bfd"
+    },
+    "customizer.summary.notes": {
+      "value": "Weitere Angaben",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.summary.open_items": {
+      "value": "Noch offene Punkte",
+      "status": "reviewed",
+      "sourceHash": "d6b347f2ce7fad0c"
+    },
+    "customizer.summary.product": {
+      "value": "Produktrichtung",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.summary.quantity": {
+      "value": "Menge",
+      "status": "reviewed",
+      "sourceHash": "822bab8d41bca8d7"
+    },
+    "customizer.summary.reference": {
+      "value": "Stilreferenzen",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.summary.structure": {
+      "value": "Struktur und Form",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.summary.suggestion_tag": {
+      "value": "Unverbindliche Empfehlung",
+      "status": "reviewed",
+      "sourceHash": "24306b958b9f88da"
+    },
+    "customizer.summary.title": {
+      "value": "Projektübersicht",
+      "status": "reviewed",
+      "sourceHash": "1f4e77e98ac6f838"
+    },
+    "customizer.summary.uncertain_tag": {
+      "value": "Noch zu bestätigen",
+      "status": "reviewed",
+      "sourceHash": "4237b3b44dd9a860"
+    },
+    "customizer.summary.use_case": {
+      "value": "Einsatzbereich",
+      "status": "reviewed",
+      "sourceHash": "046def25f5b077ca"
+    },
+    "customizer.summary.visual": {
+      "value": "Visueller Stil",
+      "status": "reviewed",
+      "sourceHash": "e00cf1143c6cdbec"
+    },
+    "customizer.visual.bold": {
+      "value": "Ausdrucksstark und lebendig",
+      "status": "reviewed",
+      "sourceHash": "004d57d44d441713"
+    },
+    "customizer.visual.bold_description": {
+      "value": "Starker Rhythmus und klar abgegrenzte Farbflächen",
+      "status": "reviewed",
+      "sourceHash": "e7f44751bba93b4d"
+    },
+    "customizer.visual.brand": {
+      "value": "Bestehende Markenoptik übernehmen",
+      "status": "reviewed",
+      "sourceHash": "d656149d90fb64ec"
+    },
+    "customizer.visual.brand_description": {
+      "value": "Name, Symbol oder Identität bilden den visuellen Schwerpunkt",
+      "status": "reviewed",
+      "sourceHash": "a046acb0cef23d16"
+    },
+    "customizer.visual.illustrated": {
+      "value": "Verspielt und illustrativ",
+      "status": "reviewed",
+      "sourceHash": "ade644603a96efe4"
+    },
+    "customizer.visual.illustrated_description": {
+      "value": "Eine visuelle Geschichte über das gesamte Produkt",
+      "status": "reviewed",
+      "sourceHash": "be3e3e703d348e27"
+    },
+    "customizer.visual.minimal": {
+      "value": "Minimalistisch und modern",
+      "status": "reviewed",
+      "sourceHash": "1936ec5e5270d5e3"
+    },
+    "customizer.visual.minimal_description": {
+      "value": "Klare Hierarchie und zurückhaltende Details",
+      "status": "reviewed",
+      "sourceHash": "a63549201fb8b7b4"
+    },
+    "customizer.visual.natural": {
+      "value": "Natürlich und materialbetont",
+      "status": "reviewed",
+      "sourceHash": "de8526a5163c4ec6"
+    },
+    "customizer.visual.refined": {
+      "value": "Hochwertig und elegant",
+      "status": "reviewed",
+      "sourceHash": "27eaa3b7d753bd09"
+    },
+    "customizer.waiting": {
+      "value": "Richtung auswählen",
+      "status": "reviewed",
+      "sourceHash": "c1120f24153bd83e"
     },
     "faq.01_company_manufacturing_fit": {
       "value": "01 / Unternehmen und Herstellungsanpassung",
@@ -2560,8 +3280,13 @@
       "sourceHash": "ebf8d8110850dcdf"
     },
     "privacy.how_the_web_form_works": {
-      "value": "Wie das Webformular funktioniert",
-      "status": "needs_review",
+      "value": "So funktioniert das Ideenstudio",
+      "status": "reviewed",
+      "sourceHash": "bc19db130213e082"
+    },
+    "privacy.how_the_web_form_works_2": {
+      "value": "So funktioniert das Webformular",
+      "status": "reviewed",
       "sourceHash": "43e60c675ce6d04c"
     },
     "privacy.information_is_kept_only_for_as_long": {
@@ -2625,9 +3350,14 @@
       "sourceHash": "2514aeb0555faeee"
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "value": "Die Angebots- und Kontaktformulare erstellen eine E-Mail in Ihrem eigenen E-Mail-Programm. Die Website gibt nicht vor, diese Formulareinträge hochzuladen oder zu speichern. Informationen werden von Qinyi nur dann empfangen, wenn Sie die E-Mail überprüfen und senden.",
-      "status": "needs_review",
-      "sourceHash": "36d9a4f2a499bc30"
+      "value": "Während Sie das Konzept erkunden, bleiben Ihre Auswahl und die bearbeitbare Übersicht in Ihrem Browser. Das Übernehmen in das Anfrageformular sendet noch keine Daten. Fordern Sie nach „Weitere Idee“ eine persönliche Mitentwicklung an, wird die Übersicht an den Supportdienst gesendet, um eine Anfrage zu erstellen, und für autorisierte Qinyi-Mitarbeiter sichtbar.",
+      "status": "reviewed",
+      "sourceHash": "a3bbac2687499901"
+    },
+    "privacy.the_quote_and_contact_forms_prepare_an_2": {
+      "value": "Anfrage- und Kontaktformulare bereiten eine E-Mail in Ihrer eigenen E-Mail-Anwendung vor. Die Website lädt oder speichert diese Angaben nicht. Qinyi erhält die Informationen erst, wenn Sie die E-Mail prüfen und senden, ausgenommen eine bewusst über die oben beschriebene Mitentwicklungsfunktion gesendete Individualisierungsübersicht.",
+      "status": "reviewed",
+      "sourceHash": "529053a269caf698"
     },
     "privacy.this_notice_explains_what_happens_when_a": {
       "value": "Diese Mitteilung erklärt, was passiert, wenn ein potenzieller Kunde oder Geschäftskontakt eine Anfrage oder Projektmaterialien an Qinyi Printing sendet.",
@@ -3326,6 +4056,11 @@
     },
     "quote.a_concise_first_review": {
       "value": "Eine präzise erste Prüfung.",
+      "status": "reviewed",
+      "sourceHash": "90fbf706fc995653"
+    },
+    "quote.a_concise_first_review_2": {
+      "value": "A concise first review.",
       "status": "needs_review",
       "sourceHash": "90fbf706fc995653"
     },
@@ -3495,14 +4230,14 @@
       "sourceHash": "7577a5a98323aaf3"
     },
     "quote.request_a_custom_manufacturing_quote": {
-      "value": "Individuelles Fertigungsangebot anfordern",
-      "status": "needs_review",
-      "sourceHash": "66048860303d9e27"
+      "value": "Individualisierung und Angebot",
+      "status": "reviewed",
+      "sourceHash": "ef32ec984a6986ba"
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "value": "Individuelles Fertigungsangebot anfordern | Qinyi Printing",
-      "status": "needs_review",
-      "sourceHash": "fea8be71aa6cbafb"
+      "value": "Individualisierung und Angebot | Qinyi Printing",
+      "status": "reviewed",
+      "sourceHash": "827d1573efcaee66"
     },
     "quote.review_result": {
       "value": "Prüfergebnis",
@@ -3515,27 +4250,32 @@
       "sourceHash": "5994bea3d662c0b7"
     },
     "quote.send_a_short_project_outline_first_qinyi": {
-      "value": "Senden Sie zuerst eine kurze Projektbeschreibung. Qinyi prüft die Fertigungseignung und fordert dann die für die Preisgestaltung erforderlichen Zeichnungen, Grafiken und detaillierten Spezifikationen an.",
-      "status": "needs_review",
+      "value": "Senden Sie zunächst eine kurze Projektbeschreibung. Qinyi prüft die Fertigungseignung und fordert anschließend die für die Preisermittlung erforderlichen Zeichnungen, Druckdaten und detaillierten Spezifikationen an.",
+      "status": "reviewed",
       "sourceHash": "732dd3c1a0565ed2"
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
-      "value": "Starten Sie eine zweistufige Fertigungs-RFQ für ein individuelles Puzzle, Papierspiel, Kartenprodukt oder bedruckte Verpackung.",
-      "status": "needs_review",
-      "sourceHash": "4e37d90ab1adbf9f"
+      "value": "Erstellen Sie ein bearbeitbares Produktkonzept und fahren Sie mit einer Fertigungs-RFQ für ein individuelles Puzzle, Papierspiel oder eine bedruckte Verpackung fort.",
+      "status": "reviewed",
+      "sourceHash": "eae7cb2bbcc61b8f"
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "value": "Starten Sie eine zweistufige RFQ für individuelle Puzzles, Papierspiele, Karten oder bedruckte Verpackungen mit Qinyi Printing in Dongguan, China.",
-      "status": "needs_review",
-      "sourceHash": "2426a0c5f16f240c"
+      "value": "Entwickeln Sie ein geführtes Produktkonzept, erstellen Sie eine bearbeitbare Individualisierungsübersicht und fragen Sie bei Qinyi Printing ein Fertigungsangebot an.",
+      "status": "reviewed",
+      "sourceHash": "6b6ef5c33a94f362"
     },
     "quote.start_with_the_essentials": {
       "value": "Beginnen Sie mit dem Wesentlichen.",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "b662c6f4326ee3a4"
     },
     "quote.step_1_of_2": {
       "value": "Schritt 1 von 2",
+      "status": "reviewed",
+      "sourceHash": "e32a2b28a767ef5e"
+    },
+    "quote.step_1_of_2_2": {
+      "value": "Step 1 of 2",
       "status": "needs_review",
       "sourceHash": "e32a2b28a767ef5e"
     },
@@ -3556,7 +4296,7 @@
     },
     "quote.two_step_rfq": {
       "value": "Zweistufige RFQ",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "76ab0cd93471b22f"
     },
     "solutions.a_clearer_handoff": {

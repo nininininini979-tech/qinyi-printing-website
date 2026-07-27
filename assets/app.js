@@ -44,6 +44,14 @@ document.documentElement.lang = i18n.locale;
 document.documentElement.dir = i18n.locale === 'ar' ? 'rtl' : 'ltr';
 document.documentElement.style.setProperty('--rfq-production-brief', JSON.stringify(t('common.rfq.production_brief')));
 
+if (currentPage === 'quote.html') {
+  document.title = `${t('customizer.page.title')} | Qinyi Printing`;
+}
+
+document.querySelectorAll('.nav-actions a[href="quote.html"]').forEach((link) => {
+  link.textContent = t('common.nav.custom_quote');
+});
+
 const menuButton = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 const primaryNavigation = [
@@ -63,7 +71,7 @@ if (navLinks) {
   navLinks.insertAdjacentHTML('beforeend', [
     ['contact.html', 'common.nav.contact'],
     ['privacy.html', 'common.nav.privacy'],
-    ['quote.html', 'common.nav.quote'],
+    ['quote.html', 'common.nav.custom_quote'],
   ].map(([href, key]) => `<a class="mobile-nav-only" href="${href}">${t(key)}</a>`).join(''));
 }
 
@@ -161,13 +169,11 @@ document.querySelectorAll('a[href^="tel:"]').forEach((link) => link.addEventList
   window.dataLayer.push({ event: 'phone_click' });
 }));
 
-if (currentPage !== 'quote.html') {
-  const mobileQuote = document.createElement('a');
-  mobileQuote.className = 'mobile-rfq';
-  mobileQuote.href = 'quote.html';
-  mobileQuote.textContent = t('common.nav.quote');
-  document.body.appendChild(mobileQuote);
-}
+const mobileQuote = document.createElement('a');
+mobileQuote.className = 'mobile-rfq';
+mobileQuote.href = currentPage === 'quote.html' ? '#rfq' : 'quote.html#rfq';
+mobileQuote.textContent = t('common.floating.quote');
+document.body.appendChild(mobileQuote);
 
 const supportLabels = {
   en: { open: 'Open Qinyi AI Support', title: 'Qinyi AI Support', close: 'Close support', full: 'Open full page' },
@@ -222,15 +228,24 @@ function installSupportWidget() {
     launcher.focus();
   }
 
-  function openSupport() {
-    if (!frame.src) frame.src = embeddedUrl.href;
+  function openSupport(event) {
+    const ticketId = event?.detail?.ticketId;
+    if (ticketId) {
+      const ticketUrl = new URL(embeddedUrl);
+      ticketUrl.searchParams.set('ticket', ticketId);
+      frame.src = ticketUrl.href;
+    } else if (!frame.src) {
+      frame.src = embeddedUrl.href;
+    }
     layer.hidden = false;
     document.body.classList.add('support-open');
     launcher.setAttribute('aria-expanded', 'true');
     closeButton.focus();
   }
 
-  launcher.addEventListener('click', openSupport);
+  document.addEventListener('qinyi:open-support', openSupport);
+
+  launcher.addEventListener('click', () => openSupport());
   closeButton.addEventListener('click', closeSupport);
   scrim.addEventListener('click', closeSupport);
   document.addEventListener('keydown', (event) => {

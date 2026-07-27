@@ -2,7 +2,7 @@
   "locale": "en",
   "languageName": "English",
   "direction": "ltr",
-  "updatedAt": "2026-07-26",
+  "updatedAt": "2026-07-27",
   "messages": {
     "about.a_manufacturing_team_for_custom_paper_products": {
       "value": "A manufacturing team for custom paper products.",
@@ -269,6 +269,11 @@
       "status": "source",
       "sourceHash": "71414fb92a52d351"
     },
+    "common.customization_quote": {
+      "value": "Customization & quote",
+      "status": "source",
+      "sourceHash": "cf8ce130fa26ee10"
+    },
     "common.deutsch": {
       "value": "Deutsch",
       "status": "source",
@@ -318,6 +323,11 @@
       "value": "Explore",
       "status": "source",
       "sourceHash": "3b73900b8d29f963"
+    },
+    "common.floating.quote": {
+      "value": "Request a quote",
+      "status": "source",
+      "sourceHash": "724f2336bf690001"
     },
     "common.form.default_product": {
       "value": "Custom paper product",
@@ -428,6 +438,11 @@
       "value": "Contact",
       "status": "source",
       "sourceHash": "2b5c3d26721ae9c3"
+    },
+    "common.nav.custom_quote": {
+      "value": "Customize & request a quote",
+      "status": "source",
+      "sourceHash": "bbf75a9ec534e238"
     },
     "common.nav.manufacturing": {
       "value": "Manufacturing & Quality",
@@ -753,6 +768,711 @@
       "value": "Topic",
       "status": "source",
       "sourceHash": "7e61847d61d65d9e"
+    },
+    "customizer.action.back": {
+      "value": "Back",
+      "status": "source",
+      "sourceHash": "76900f1bfd16c8d4"
+    },
+    "customizer.action.confirm": {
+      "value": "Confirm selection",
+      "status": "source",
+      "sourceHash": "9ce9c379f3f4b337"
+    },
+    "customizer.action.edit": {
+      "value": "Edit",
+      "status": "source",
+      "sourceHash": "464c4ffd019e1e96"
+    },
+    "customizer.action.finish": {
+      "value": "Complete concept brief",
+      "status": "source",
+      "sourceHash": "f704e27d24ce5bf8"
+    },
+    "customizer.action.next": {
+      "value": "Continue",
+      "status": "source",
+      "sourceHash": "31fbef162594de01"
+    },
+    "customizer.action.reset": {
+      "value": "Reset selections",
+      "status": "source",
+      "sourceHash": "a53881ba69df563d"
+    },
+    "customizer.action.start": {
+      "value": "Start",
+      "status": "source",
+      "sourceHash": "e4bb9f1ece9af926"
+    },
+    "customizer.brief.audience": {
+      "value": "Intended audience",
+      "status": "source",
+      "sourceHash": "685b100332e1d6af"
+    },
+    "customizer.brief.audience_placeholder": {
+      "value": "Who will receive, buy or use the product?",
+      "status": "source",
+      "sourceHash": "718f247c7bb85722"
+    },
+    "customizer.brief.budget": {
+      "value": "Indicative budget",
+      "status": "source",
+      "sourceHash": "8549fe0c32f90bbe"
+    },
+    "customizer.brief.budget_placeholder": {
+      "value": "Enter a range and currency",
+      "status": "source",
+      "sourceHash": "54f6a2ec160833c8"
+    },
+    "customizer.brief.delivery": {
+      "value": "Preferred delivery window",
+      "status": "source",
+      "sourceHash": "48abddfa2566f81c"
+    },
+    "customizer.brief.delivery_placeholder": {
+      "value": "Enter a target date or period",
+      "status": "source",
+      "sourceHash": "f9435a85abf69ddf"
+    },
+    "customizer.brief.intro": {
+      "value": "Approximate information is useful. Mark anything that still needs discussion.",
+      "status": "source",
+      "sourceHash": "bd02dd3cced86b00"
+    },
+    "customizer.brief.notes": {
+      "value": "Additional notes",
+      "status": "source",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.brief.notes_placeholder": {
+      "value": "Add dimensions, packaging needs, file requirements or other details",
+      "status": "source",
+      "sourceHash": "1d3cc2ac67057106"
+    },
+    "customizer.brief.quantity": {
+      "value": "Quantity range",
+      "status": "source",
+      "sourceHash": "cb0e79f4d8d3c34f"
+    },
+    "customizer.brief.quantity_placeholder": {
+      "value": "Enter an approximate quantity",
+      "status": "source",
+      "sourceHash": "7f166f6508c82ea7"
+    },
+    "customizer.brief.reference": {
+      "value": "Style references",
+      "status": "source",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.brief.reference_placeholder": {
+      "value": "Describe the style or add a public reference link",
+      "status": "source",
+      "sourceHash": "9193edc379a9ba67"
+    },
+    "customizer.brief.title": {
+      "value": "Add your project expectations",
+      "status": "source",
+      "sourceHash": "f64732d495f71fc2"
+    },
+    "customizer.brief.use_case": {
+      "value": "Intended use or occasion",
+      "status": "source",
+      "sourceHash": "fdc8eab73a9c0950"
+    },
+    "customizer.brief.use_case_placeholder": {
+      "value": "For example: corporate gift, education, retail or personal use",
+      "status": "source",
+      "sourceHash": "b425df88aa51b9a9"
+    },
+    "customizer.complete": {
+      "value": "Complete",
+      "status": "source",
+      "sourceHash": "143b270a32602d41"
+    },
+    "customizer.finish.board_description": {
+      "value": "Visible paper character and tactile warmth",
+      "status": "source",
+      "sourceHash": "7c5babc52618bee3"
+    },
+    "customizer.finish.emboss": {
+      "value": "Embossing or debossing",
+      "status": "source",
+      "sourceHash": "2ac2f3e7a1e8a454"
+    },
+    "customizer.finish.emboss_description": {
+      "value": "Raised or pressed detail with tactile depth",
+      "status": "source",
+      "sourceHash": "a1344072151181ce"
+    },
+    "customizer.finish.foil": {
+      "value": "Foil stamping",
+      "status": "source",
+      "sourceHash": "a2903b0ec16ef8b8"
+    },
+    "customizer.finish.foil_description": {
+      "value": "Controlled metallic highlights for key details",
+      "status": "source",
+      "sourceHash": "2529154a0987bc78"
+    },
+    "customizer.finish.lamination": {
+      "value": "Matte or gloss lamination",
+      "status": "source",
+      "sourceHash": "145850ffec2558c0"
+    },
+    "customizer.finish.lamination_description": {
+      "value": "A durable matte or gloss surface",
+      "status": "source",
+      "sourceHash": "8504b165b8ade421"
+    },
+    "customizer.finish.spot_uv": {
+      "value": "Spot UV",
+      "status": "source",
+      "sourceHash": "911e6c1f3f9a2619"
+    },
+    "customizer.finish.spot_uv_description": {
+      "value": "Selective gloss contrast on printed areas",
+      "status": "source",
+      "sourceHash": "4467728fb381289d"
+    },
+    "customizer.finish.unsure": {
+      "value": "Finish to be defined",
+      "status": "source",
+      "sourceHash": "dbd32129faa63f33"
+    },
+    "customizer.free_model": {
+      "value": "Open concept",
+      "status": "source",
+      "sourceHash": "ed2b36c0c6d2cccc"
+    },
+    "customizer.handoff_ready": {
+      "value": "Human-support request created: {ticket}",
+      "status": "source",
+      "sourceHash": "67fea34244d06647"
+    },
+    "customizer.home.body": {
+      "value": "Choose a product direction, structure, materials and visual style to create an editable initial brief that we can review with you.",
+      "status": "source",
+      "sourceHash": "f8e8e6e43065d2d4"
+    },
+    "customizer.home.cta": {
+      "value": "Start customizing",
+      "status": "source",
+      "sourceHash": "dc4313d81678924e"
+    },
+    "customizer.home.eyebrow": {
+      "value": "Guided customization",
+      "status": "source",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.home.secondary_cta": {
+      "value": "Go directly to the quote form",
+      "status": "source",
+      "sourceHash": "49eaeff513cfa46c"
+    },
+    "customizer.home.title": {
+      "value": "Do not have a complete concept yet? Start with an idea.",
+      "status": "source",
+      "sourceHash": "b5724c23db303151"
+    },
+    "customizer.human.failed": {
+      "value": "The request could not be sent. Try again or continue with the quote form.",
+      "status": "source",
+      "sourceHash": "742ec913c58aa0de"
+    },
+    "customizer.human.request": {
+      "value": "Request a human creative adviser",
+      "status": "source",
+      "sourceHash": "bd1f92625f3bd20c"
+    },
+    "customizer.human.sending": {
+      "value": "Sending adviser request...",
+      "status": "source",
+      "sourceHash": "b8f4f372213666e9"
+    },
+    "customizer.human.sent": {
+      "value": "Adviser request sent",
+      "status": "source",
+      "sourceHash": "23055c7086f79c66"
+    },
+    "customizer.material.greyboard": {
+      "value": "Paper-wrapped greyboard",
+      "status": "source",
+      "sourceHash": "b876994ecaa7f417"
+    },
+    "customizer.material.recycled": {
+      "value": "Recycled paper",
+      "status": "source",
+      "sourceHash": "de5f0927b7c8c8da"
+    },
+    "customizer.material.special_paper": {
+      "value": "Creative or specialty paper",
+      "status": "source",
+      "sourceHash": "39cf1cc501ce0af5"
+    },
+    "customizer.material.unsure": {
+      "value": "Material to be defined",
+      "status": "source",
+      "sourceHash": "c925a396530a16cc"
+    },
+    "customizer.model_paper_3d": {
+      "value": "3D paper concept",
+      "status": "source",
+      "sourceHash": "788d8ccf070c769f"
+    },
+    "customizer.model_paper_goods": {
+      "value": "Paper goods concept",
+      "status": "source",
+      "sourceHash": "14889fb99ebbb0ce"
+    },
+    "customizer.model_puzzle": {
+      "value": "Puzzle concept",
+      "status": "source",
+      "sourceHash": "a9775a1f025dd11a"
+    },
+    "customizer.name": {
+      "value": "Inspiration Customization Studio",
+      "status": "source",
+      "sourceHash": "a0a63e2ff2bf34f9"
+    },
+    "customizer.open": {
+      "value": "Open",
+      "status": "source",
+      "sourceHash": "ed077f3d8125d60d"
+    },
+    "customizer.page.eyebrow": {
+      "value": "Guided customization",
+      "status": "source",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.page.intro": {
+      "value": "Shape an initial product direction, then carry the resulting brief into your quote request.",
+      "status": "source",
+      "sourceHash": "341ced65bd204b53"
+    },
+    "customizer.page.title": {
+      "value": "Customization & request a quote",
+      "status": "source",
+      "sourceHash": "914fa00fd22fe0d9"
+    },
+    "customizer.preview": {
+      "value": "Preview: {name}",
+      "status": "source",
+      "sourceHash": "b654b8c2f035bc83"
+    },
+    "customizer.preview.disclaimer": {
+      "value": "This visualization is a concept preview only. It is not a production sample or a binding quote. Materials, finishes, dimensions, feasibility, price and lead time will be confirmed after technical review.",
+      "status": "source",
+      "sourceHash": "37904f64e1571d5d"
+    },
+    "customizer.preview.label": {
+      "value": "Concept preview",
+      "status": "source",
+      "sourceHash": "305245dc4d0b1d69"
+    },
+    "customizer.preview.waiting": {
+      "value": "Your selections will shape the preview.",
+      "status": "source",
+      "sourceHash": "0c9b59fd05330d9f"
+    },
+    "customizer.product.game_packaging": {
+      "value": "Paper games & gift packaging",
+      "status": "source",
+      "sourceHash": "80abc0fbdd753ea1"
+    },
+    "customizer.product.game_packaging.help": {
+      "value": "A card, paper-game, gift-box or coordinated packaging direction.",
+      "status": "source",
+      "sourceHash": "f918dfabe78fb79f"
+    },
+    "customizer.product.other": {
+      "value": "More ideas",
+      "status": "source",
+      "sourceHash": "fcf8f9c1348b06ae"
+    },
+    "customizer.product.other_help": {
+      "value": "Describe your idea freely. You can also request support from a human creative adviser.",
+      "status": "source",
+      "sourceHash": "625fae54bedad1f2"
+    },
+    "customizer.product.other_label": {
+      "value": "Describe your idea",
+      "status": "source",
+      "sourceHash": "57260354e46c06f7"
+    },
+    "customizer.product.other_placeholder": {
+      "value": "Tell us what you would like to make, how it will be used and what you want it to feel like.",
+      "status": "source",
+      "sourceHash": "293c11f6f332424c"
+    },
+    "customizer.product.paper_3d": {
+      "value": "3D paper or board puzzle",
+      "status": "source",
+      "sourceHash": "2e6b0b30a4c5e0ca"
+    },
+    "customizer.product.paper_3d.help": {
+      "value": "A dimensional object assembled from printed paper components.",
+      "status": "source",
+      "sourceHash": "e1e4369c60d8798d"
+    },
+    "customizer.product.puzzle": {
+      "value": "Jigsaw product",
+      "status": "source",
+      "sourceHash": "b88139a844b20251"
+    },
+    "customizer.product.puzzle.help": {
+      "value": "A flat jigsaw or art-led puzzle format.",
+      "status": "source",
+      "sourceHash": "10052c3003986642"
+    },
+    "customizer.progress": {
+      "value": "Step {current} of 4",
+      "status": "source",
+      "sourceHash": "13888e65d912ca4a"
+    },
+    "customizer.quote.continue": {
+      "value": "Continue to the quote form",
+      "status": "source",
+      "sourceHash": "1ea448ef463e1d9e"
+    },
+    "customizer.quote.notice": {
+      "value": "No price is calculated automatically. Feasibility, price and lead time will be confirmed after technical review.",
+      "status": "source",
+      "sourceHash": "1738117808396fb2"
+    },
+    "customizer.quote.prepare": {
+      "value": "Prepare quote request",
+      "status": "source",
+      "sourceHash": "4dc72476c633b6bd"
+    },
+    "customizer.shaped": {
+      "value": "{count}/4 choices set",
+      "status": "source",
+      "sourceHash": "8d51fb1a609d609f"
+    },
+    "customizer.shaped_open": {
+      "value": "{count}/4 choices set · {open} open",
+      "status": "source",
+      "sourceHash": "dc5a80986d48c4f6"
+    },
+    "customizer.status.missing": {
+      "value": "Complete the required fields to continue.",
+      "status": "source",
+      "sourceHash": "81ba99d232a725f2"
+    },
+    "customizer.status.optional": {
+      "value": "Optional",
+      "status": "source",
+      "sourceHash": "59be71333c960fd0"
+    },
+    "customizer.status.required": {
+      "value": "Required",
+      "status": "source",
+      "sourceHash": "4850b174b713d88c"
+    },
+    "customizer.status.summary_ready": {
+      "value": "Brief ready to review",
+      "status": "source",
+      "sourceHash": "1d260cf23fb46cf7"
+    },
+    "customizer.step.material.help": {
+      "value": "Select preferred materials and finishes. You can choose more than one option or leave items open.",
+      "status": "source",
+      "sourceHash": "15f7f8cf7757417d"
+    },
+    "customizer.step.material.number": {
+      "value": "03 / Material",
+      "status": "source",
+      "sourceHash": "44209ec2bc2663ea"
+    },
+    "customizer.step.material.title": {
+      "value": "Materials & finishes",
+      "status": "source",
+      "sourceHash": "a9009aa83f05e541"
+    },
+    "customizer.step.product.help": {
+      "value": "Choose the starting point closest to your idea. You can add details later.",
+      "status": "source",
+      "sourceHash": "76ede206e4f6d72a"
+    },
+    "customizer.step.product.number": {
+      "value": "01 / Direction",
+      "status": "source",
+      "sourceHash": "73db3d0b375247c4"
+    },
+    "customizer.step.product.title": {
+      "value": "Product direction",
+      "status": "source",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.step.structure.help": {
+      "value": "Choose an initial structural direction. Technical feasibility will be reviewed later.",
+      "status": "source",
+      "sourceHash": "c02088ee961f4578"
+    },
+    "customizer.step.structure.number": {
+      "value": "02 / Structure",
+      "status": "source",
+      "sourceHash": "9cc74b99824b51a0"
+    },
+    "customizer.step.structure.title": {
+      "value": "Structure & form",
+      "status": "source",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.step.visual.help": {
+      "value": "Choose the visual direction closest to the result you have in mind.",
+      "status": "source",
+      "sourceHash": "3a1c892512953df2"
+    },
+    "customizer.step.visual.number": {
+      "value": "04 / Visual",
+      "status": "source",
+      "sourceHash": "c4bd690b234f407b"
+    },
+    "customizer.step.visual.title": {
+      "value": "Visual style & identity",
+      "status": "source",
+      "sourceHash": "b36632c96b2e0285"
+    },
+    "customizer.structure.cards_description": {
+      "value": "Cards, dividers and a fitted printed box",
+      "status": "source",
+      "sourceHash": "2466624ad6ea91cd"
+    },
+    "customizer.structure.classic_description": {
+      "value": "Balanced tabs and familiar assembly",
+      "status": "source",
+      "sourceHash": "a717249b1199797c"
+    },
+    "customizer.structure.custom_shape": {
+      "value": "Custom shape & outline",
+      "status": "source",
+      "sourceHash": "65c539d36a665fd8"
+    },
+    "customizer.structure.custom_shape_description": {
+      "value": "Rounded connections or a custom product outline",
+      "status": "source",
+      "sourceHash": "0dbea09755bcb6f9"
+    },
+    "customizer.structure.flat": {
+      "value": "Classic flat format",
+      "status": "source",
+      "sourceHash": "ec80c9fbfa1c6fd6"
+    },
+    "customizer.structure.foldable": {
+      "value": "Foldable or assemble-yourself structure",
+      "status": "source",
+      "sourceHash": "ba1ea3a1fd7b3404"
+    },
+    "customizer.structure.foldable_description": {
+      "value": "Parts connect through folds, slots or simple assembly",
+      "status": "source",
+      "sourceHash": "afac25cc1bf1b047"
+    },
+    "customizer.structure.game_description": {
+      "value": "Board, cards, rules and packaging as one set",
+      "status": "source",
+      "sourceHash": "ac4782a3742253c5"
+    },
+    "customizer.structure.hybrid_description": {
+      "value": "Combine two or more paper product types",
+      "status": "source",
+      "sourceHash": "bb6bb5f2ef91dbef"
+    },
+    "customizer.structure.layered": {
+      "value": "Layered dimensional construction",
+      "status": "source",
+      "sourceHash": "8a472aa4e2990128"
+    },
+    "customizer.structure.layered_description": {
+      "value": "Printed layers build volume and depth",
+      "status": "source",
+      "sourceHash": "3706e4b14855cabc"
+    },
+    "customizer.structure.open_description": {
+      "value": "Keep the construction undefined for co-creation",
+      "status": "source",
+      "sourceHash": "9ea0f4b9d8784e18"
+    },
+    "customizer.structure.pack_description": {
+      "value": "A presentation box with coordinated inserts",
+      "status": "source",
+      "sourceHash": "f4cfb1d9d63a83f4"
+    },
+    "customizer.structure.reference_description": {
+      "value": "Start from an existing object or image",
+      "status": "source",
+      "sourceHash": "2ae2df3a134b37dc"
+    },
+    "customizer.structure.set": {
+      "value": "Coordinated product set",
+      "status": "source",
+      "sourceHash": "fda06b3868af6fe8"
+    },
+    "customizer.structure.set_description": {
+      "value": "Multiple components combine into one coordinated product",
+      "status": "source",
+      "sourceHash": "92cbf799eeeab50b"
+    },
+    "customizer.structure.unsure": {
+      "value": "To be defined",
+      "status": "source",
+      "sourceHash": "31d17eb884e6f3fe"
+    },
+    "customizer.structure.unsure_description": {
+      "value": "Keep a special shape or construction open for review",
+      "status": "source",
+      "sourceHash": "75ad0b48d3c354f2"
+    },
+    "customizer.summary.audience": {
+      "value": "Audience",
+      "status": "source",
+      "sourceHash": "545c02357695a6ff"
+    },
+    "customizer.summary.body": {
+      "value": "Your selections are collected here as provisional requirements and can be edited before you request a quote.",
+      "status": "source",
+      "sourceHash": "b81f15279fbab226"
+    },
+    "customizer.summary.budget": {
+      "value": "Budget",
+      "status": "source",
+      "sourceHash": "1c6225ec7092ad2f"
+    },
+    "customizer.summary.delivery": {
+      "value": "Delivery window",
+      "status": "source",
+      "sourceHash": "4a4bd27030d2deaa"
+    },
+    "customizer.summary.empty": {
+      "value": "Make a few selections to create your brief.",
+      "status": "source",
+      "sourceHash": "625c95a62181912d"
+    },
+    "customizer.summary.finish": {
+      "value": "Finishes",
+      "status": "source",
+      "sourceHash": "426962884f1959a2"
+    },
+    "customizer.summary.generated_label": {
+      "value": "Customization brief",
+      "status": "source",
+      "sourceHash": "d3cb1ae47c969dc8"
+    },
+    "customizer.summary.material": {
+      "value": "Materials",
+      "status": "source",
+      "sourceHash": "fd10a146e9625bfd"
+    },
+    "customizer.summary.notes": {
+      "value": "Additional notes",
+      "status": "source",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.summary.open_items": {
+      "value": "Items to define",
+      "status": "source",
+      "sourceHash": "d6b347f2ce7fad0c"
+    },
+    "customizer.summary.product": {
+      "value": "Product direction",
+      "status": "source",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.summary.quantity": {
+      "value": "Quantity",
+      "status": "source",
+      "sourceHash": "822bab8d41bca8d7"
+    },
+    "customizer.summary.reference": {
+      "value": "Style references",
+      "status": "source",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.summary.structure": {
+      "value": "Structure & form",
+      "status": "source",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.summary.suggestion_tag": {
+      "value": "Indicative suggestion",
+      "status": "source",
+      "sourceHash": "24306b958b9f88da"
+    },
+    "customizer.summary.title": {
+      "value": "Project brief summary",
+      "status": "source",
+      "sourceHash": "1f4e77e98ac6f838"
+    },
+    "customizer.summary.uncertain_tag": {
+      "value": "To be confirmed",
+      "status": "source",
+      "sourceHash": "4237b3b44dd9a860"
+    },
+    "customizer.summary.use_case": {
+      "value": "Intended use",
+      "status": "source",
+      "sourceHash": "046def25f5b077ca"
+    },
+    "customizer.summary.visual": {
+      "value": "Visual style",
+      "status": "source",
+      "sourceHash": "e00cf1143c6cdbec"
+    },
+    "customizer.visual.bold": {
+      "value": "Bold & energetic",
+      "status": "source",
+      "sourceHash": "004d57d44d441713"
+    },
+    "customizer.visual.bold_description": {
+      "value": "Strong rhythm and distinct colour areas",
+      "status": "source",
+      "sourceHash": "e7f44751bba93b4d"
+    },
+    "customizer.visual.brand": {
+      "value": "Follow an existing brand identity",
+      "status": "source",
+      "sourceHash": "d656149d90fb64ec"
+    },
+    "customizer.visual.brand_description": {
+      "value": "A name, symbol or identity becomes the focal point",
+      "status": "source",
+      "sourceHash": "a046acb0cef23d16"
+    },
+    "customizer.visual.illustrated": {
+      "value": "Playful & illustrated",
+      "status": "source",
+      "sourceHash": "ade644603a96efe4"
+    },
+    "customizer.visual.illustrated_description": {
+      "value": "A visual narrative carried across the product",
+      "status": "source",
+      "sourceHash": "be3e3e703d348e27"
+    },
+    "customizer.visual.minimal": {
+      "value": "Minimal & modern",
+      "status": "source",
+      "sourceHash": "1936ec5e5270d5e3"
+    },
+    "customizer.visual.minimal_description": {
+      "value": "Clear hierarchy and restrained detail",
+      "status": "source",
+      "sourceHash": "a63549201fb8b7b4"
+    },
+    "customizer.visual.natural": {
+      "value": "Natural & textural",
+      "status": "source",
+      "sourceHash": "de8526a5163c4ec6"
+    },
+    "customizer.visual.refined": {
+      "value": "Premium & refined",
+      "status": "source",
+      "sourceHash": "27eaa3b7d753bd09"
+    },
+    "customizer.waiting": {
+      "value": "Choose a direction",
+      "status": "source",
+      "sourceHash": "c1120f24153bd83e"
     },
     "faq.01_company_manufacturing_fit": {
       "value": "01 / Company & manufacturing fit",
@@ -2560,6 +3280,11 @@
       "sourceHash": "ebf8d8110850dcdf"
     },
     "privacy.how_the_web_form_works": {
+      "value": "How the customization studio works",
+      "status": "source",
+      "sourceHash": "bc19db130213e082"
+    },
+    "privacy.how_the_web_form_works_2": {
       "value": "How the web form works",
       "status": "source",
       "sourceHash": "43e60c675ce6d04c"
@@ -2625,9 +3350,14 @@
       "sourceHash": "2514aeb0555faeee"
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "value": "The quote and contact forms prepare an email in your own email application. The website does not claim to upload or store those form entries. Information is received by Qinyi only when you review and send the email.",
+      "value": "Your selections and editable brief remain in your browser while you explore the concept. Adding the brief to the quote form does not submit it. If you choose human co-creation after selecting “More ideas”, the brief is sent to the support service to create a human-support request and becomes visible to authorized Qinyi service personnel.",
       "status": "source",
-      "sourceHash": "36d9a4f2a499bc30"
+      "sourceHash": "a3bbac2687499901"
+    },
+    "privacy.the_quote_and_contact_forms_prepare_an_2": {
+      "value": "The quote and contact forms prepare an email in your own email application. The website does not upload or store those form entries. Information is received by Qinyi only when you review and send the email, except for a customization brief deliberately sent through the human co-creation action described above.",
+      "status": "source",
+      "sourceHash": "529053a269caf698"
     },
     "privacy.this_notice_explains_what_happens_when_a": {
       "value": "This notice explains what happens when a prospective customer or business contact sends Qinyi Printing an enquiry or project material.",
@@ -3329,6 +4059,11 @@
       "status": "source",
       "sourceHash": "90fbf706fc995653"
     },
+    "quote.a_concise_first_review_2": {
+      "value": "A concise first review.",
+      "status": "source",
+      "sourceHash": "90fbf706fc995653"
+    },
     "quote.and_consent_to_qinyi_using_these_details": {
       "value": "and consent to Qinyi Printing using these details to review and respond to this enquiry.",
       "status": "source",
@@ -3495,14 +4230,14 @@
       "sourceHash": "7577a5a98323aaf3"
     },
     "quote.request_a_custom_manufacturing_quote": {
-      "value": "Request a Custom Manufacturing Quote",
+      "value": "Customization and Quote",
       "status": "source",
-      "sourceHash": "66048860303d9e27"
+      "sourceHash": "ef32ec984a6986ba"
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "value": "Request a Custom Manufacturing Quote | Qinyi Printing",
+      "value": "Customization & Quote | Qinyi Printing",
       "status": "source",
-      "sourceHash": "fea8be71aa6cbafb"
+      "sourceHash": "827d1573efcaee66"
     },
     "quote.review_result": {
       "value": "Review result",
@@ -3520,14 +4255,14 @@
       "sourceHash": "732dd3c1a0565ed2"
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
-      "value": "Start a two-step manufacturing RFQ for a custom puzzle, paper game, card product or printed package.",
+      "value": "Create an editable product concept and continue to a manufacturing RFQ for a custom puzzle, paper game or printed package.",
       "status": "source",
-      "sourceHash": "4e37d90ab1adbf9f"
+      "sourceHash": "eae7cb2bbcc61b8f"
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "value": "Start a two-step RFQ for custom puzzles, paper games, cards or printed packaging with Qinyi Printing in Dongguan, China.",
+      "value": "Explore a guided product concept, create an editable customization brief and request a manufacturing quote from Qinyi Printing.",
       "status": "source",
-      "sourceHash": "2426a0c5f16f240c"
+      "sourceHash": "6b6ef5c33a94f362"
     },
     "quote.start_with_the_essentials": {
       "value": "Start with the essentials.",
@@ -3535,6 +4270,11 @@
       "sourceHash": "b662c6f4326ee3a4"
     },
     "quote.step_1_of_2": {
+      "value": "Step 1 of 2",
+      "status": "source",
+      "sourceHash": "e32a2b28a767ef5e"
+    },
+    "quote.step_1_of_2_2": {
       "value": "Step 1 of 2",
       "status": "source",
       "sourceHash": "e32a2b28a767ef5e"

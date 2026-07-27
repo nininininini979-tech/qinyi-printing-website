@@ -2,7 +2,7 @@
   "locale": "ko",
   "languageName": "한국어",
   "direction": "ltr",
-  "updatedAt": "2026-07-26",
+  "updatedAt": "2026-07-27",
   "messages": {
     "about.a_manufacturing_team_for_custom_paper_products": {
       "value": "고객 특수 제품을 제조하는 팀",
@@ -269,6 +269,11 @@
       "status": "needs_review",
       "sourceHash": "71414fb92a52d351"
     },
+    "common.customization_quote": {
+      "value": "맞춤 제작 및 견적",
+      "status": "reviewed",
+      "sourceHash": "cf8ce130fa26ee10"
+    },
     "common.deutsch": {
       "value": "독일어",
       "status": "needs_review",
@@ -318,6 +323,11 @@
       "value": "探索",
       "status": "needs_review",
       "sourceHash": "3b73900b8d29f963"
+    },
+    "common.floating.quote": {
+      "value": "견적 요청",
+      "status": "reviewed",
+      "sourceHash": "724f2336bf690001"
     },
     "common.form.default_product": {
       "value": "맞춤 종이 제품",
@@ -396,7 +406,7 @@
     },
     "common.materials": {
       "value": "재료",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "fd10a146e9625bfd"
     },
     "common.menu.close": {
@@ -429,6 +439,11 @@
       "status": "needs_review",
       "sourceHash": "2b5c3d26721ae9c3"
     },
+    "common.nav.custom_quote": {
+      "value": "맞춤 제작 및 견적 요청",
+      "status": "reviewed",
+      "sourceHash": "bbf75a9ec534e238"
+    },
     "common.nav.manufacturing": {
       "value": "생산 및 품질",
       "status": "needs_review",
@@ -451,7 +466,7 @@
     },
     "common.nav.quote": {
       "value": "견적 요청",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "724f2336bf690001"
     },
     "common.nav.trade": {
@@ -753,6 +768,711 @@
       "value": "제목",
       "status": "needs_review",
       "sourceHash": "7e61847d61d65d9e"
+    },
+    "customizer.action.back": {
+      "value": "뒤로",
+      "status": "reviewed",
+      "sourceHash": "76900f1bfd16c8d4"
+    },
+    "customizer.action.confirm": {
+      "value": "선택 확인",
+      "status": "reviewed",
+      "sourceHash": "9ce9c379f3f4b337"
+    },
+    "customizer.action.edit": {
+      "value": "수정",
+      "status": "reviewed",
+      "sourceHash": "464c4ffd019e1e96"
+    },
+    "customizer.action.finish": {
+      "value": "콘셉트 요약 완료",
+      "status": "reviewed",
+      "sourceHash": "f704e27d24ce5bf8"
+    },
+    "customizer.action.next": {
+      "value": "계속",
+      "status": "reviewed",
+      "sourceHash": "31fbef162594de01"
+    },
+    "customizer.action.reset": {
+      "value": "선택 초기화",
+      "status": "reviewed",
+      "sourceHash": "a53881ba69df563d"
+    },
+    "customizer.action.start": {
+      "value": "시작",
+      "status": "reviewed",
+      "sourceHash": "e4bb9f1ece9af926"
+    },
+    "customizer.brief.audience": {
+      "value": "대상 고객",
+      "status": "reviewed",
+      "sourceHash": "685b100332e1d6af"
+    },
+    "customizer.brief.audience_placeholder": {
+      "value": "누가 이 제품을 받고, 구매하고, 사용하나요?",
+      "status": "reviewed",
+      "sourceHash": "718f247c7bb85722"
+    },
+    "customizer.brief.budget": {
+      "value": "참고 예산",
+      "status": "reviewed",
+      "sourceHash": "8549fe0c32f90bbe"
+    },
+    "customizer.brief.budget_placeholder": {
+      "value": "예산 범위와 통화 입력",
+      "status": "reviewed",
+      "sourceHash": "54f6a2ec160833c8"
+    },
+    "customizer.brief.delivery": {
+      "value": "희망 납기",
+      "status": "reviewed",
+      "sourceHash": "48abddfa2566f81c"
+    },
+    "customizer.brief.delivery_placeholder": {
+      "value": "목표 날짜 또는 기간 입력",
+      "status": "reviewed",
+      "sourceHash": "f9435a85abf69ddf"
+    },
+    "customizer.brief.intro": {
+      "value": "대략적인 정보도 도움이 됩니다. 미정 항목은 상담할 내용으로 남겨 둘 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "bd02dd3cced86b00"
+    },
+    "customizer.brief.notes": {
+      "value": "추가 메모",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.brief.notes_placeholder": {
+      "value": "크기, 포장, 파일 요건 또는 기타 세부 사항 입력",
+      "status": "reviewed",
+      "sourceHash": "1d3cc2ac67057106"
+    },
+    "customizer.brief.quantity": {
+      "value": "수량 범위",
+      "status": "reviewed",
+      "sourceHash": "cb0e79f4d8d3c34f"
+    },
+    "customizer.brief.quantity_placeholder": {
+      "value": "대략적인 수량 입력",
+      "status": "reviewed",
+      "sourceHash": "7f166f6508c82ea7"
+    },
+    "customizer.brief.reference": {
+      "value": "스타일 참고 자료",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.brief.reference_placeholder": {
+      "value": "스타일을 설명하거나 공개 가능한 참고 링크 추가",
+      "status": "reviewed",
+      "sourceHash": "9193edc379a9ba67"
+    },
+    "customizer.brief.title": {
+      "value": "프로젝트 기대 정보",
+      "status": "reviewed",
+      "sourceHash": "f64732d495f71fc2"
+    },
+    "customizer.brief.use_case": {
+      "value": "용도 또는 사용 상황",
+      "status": "reviewed",
+      "sourceHash": "fdc8eab73a9c0950"
+    },
+    "customizer.brief.use_case_placeholder": {
+      "value": "예: 기업 선물, 교육, 소매 판매, 개인 사용",
+      "status": "reviewed",
+      "sourceHash": "b425df88aa51b9a9"
+    },
+    "customizer.complete": {
+      "value": "완료",
+      "status": "reviewed",
+      "sourceHash": "143b270a32602d41"
+    },
+    "customizer.finish.board_description": {
+      "value": "종이 특성이 드러나는 따뜻한 촉감",
+      "status": "reviewed",
+      "sourceHash": "7c5babc52618bee3"
+    },
+    "customizer.finish.emboss": {
+      "value": "엠보싱 또는 디보싱",
+      "status": "reviewed",
+      "sourceHash": "2ac2f3e7a1e8a454"
+    },
+    "customizer.finish.emboss_description": {
+      "value": "돌출 또는 압입 디테일로 촉각적 깊이 형성",
+      "status": "reviewed",
+      "sourceHash": "a1344072151181ce"
+    },
+    "customizer.finish.foil": {
+      "value": "박 인쇄",
+      "status": "reviewed",
+      "sourceHash": "a2903b0ec16ef8b8"
+    },
+    "customizer.finish.foil_description": {
+      "value": "핵심 세부 요소에 절제된 금속성 포인트",
+      "status": "reviewed",
+      "sourceHash": "2529154a0987bc78"
+    },
+    "customizer.finish.lamination": {
+      "value": "무광 또는 유광 라미네이팅",
+      "status": "reviewed",
+      "sourceHash": "145850ffec2558c0"
+    },
+    "customizer.finish.lamination_description": {
+      "value": "내구성 있는 무광 또는 유광 표면",
+      "status": "reviewed",
+      "sourceHash": "8504b165b8ade421"
+    },
+    "customizer.finish.spot_uv": {
+      "value": "부분 UV",
+      "status": "reviewed",
+      "sourceHash": "911e6c1f3f9a2619"
+    },
+    "customizer.finish.spot_uv_description": {
+      "value": "인쇄 영역에 선택적 광택 대비",
+      "status": "reviewed",
+      "sourceHash": "4467728fb381289d"
+    },
+    "customizer.finish.unsure": {
+      "value": "표면 가공 미정",
+      "status": "reviewed",
+      "sourceHash": "dbd32129faa63f33"
+    },
+    "customizer.free_model": {
+      "value": "열린 콘셉트",
+      "status": "reviewed",
+      "sourceHash": "ed2b36c0c6d2cccc"
+    },
+    "customizer.handoff_ready": {
+      "value": "상담 요청 생성: {ticket}",
+      "status": "reviewed",
+      "sourceHash": "67fea34244d06647"
+    },
+    "customizer.home.body": {
+      "value": "제품 방향, 구조, 소재, 비주얼 스타일을 선택해 함께 검토하고 수정할 수 있는 초기 요약을 만드세요.",
+      "status": "reviewed",
+      "sourceHash": "f8e8e6e43065d2d4"
+    },
+    "customizer.home.cta": {
+      "value": "맞춤 제작 시작",
+      "status": "reviewed",
+      "sourceHash": "dc4313d81678924e"
+    },
+    "customizer.home.eyebrow": {
+      "value": "단계별 맞춤 제작",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.home.secondary_cta": {
+      "value": "견적 양식으로 바로 이동",
+      "status": "reviewed",
+      "sourceHash": "49eaeff513cfa46c"
+    },
+    "customizer.home.title": {
+      "value": "아직 완성된 기획이 없으신가요? 하나의 아이디어에서 시작하세요.",
+      "status": "reviewed",
+      "sourceHash": "b5724c23db303151"
+    },
+    "customizer.human.failed": {
+      "value": "요청을 보내지 못했습니다. 다시 시도하거나 견적 양식으로 계속해 주세요.",
+      "status": "reviewed",
+      "sourceHash": "742ec913c58aa0de"
+    },
+    "customizer.human.request": {
+      "value": "담당자에게 기획 상담 요청",
+      "status": "reviewed",
+      "sourceHash": "bd1f92625f3bd20c"
+    },
+    "customizer.human.sending": {
+      "value": "상담 요청을 보내는 중...",
+      "status": "reviewed",
+      "sourceHash": "b8f4f372213666e9"
+    },
+    "customizer.human.sent": {
+      "value": "상담 요청을 보냈습니다",
+      "status": "reviewed",
+      "sourceHash": "23055c7086f79c66"
+    },
+    "customizer.material.greyboard": {
+      "value": "종이 합지 회색판지",
+      "status": "reviewed",
+      "sourceHash": "b876994ecaa7f417"
+    },
+    "customizer.material.recycled": {
+      "value": "재생지",
+      "status": "reviewed",
+      "sourceHash": "de5f0927b7c8c8da"
+    },
+    "customizer.material.special_paper": {
+      "value": "팬시지 또는 특수지",
+      "status": "reviewed",
+      "sourceHash": "39cf1cc501ce0af5"
+    },
+    "customizer.material.unsure": {
+      "value": "소재 미정",
+      "status": "reviewed",
+      "sourceHash": "c925a396530a16cc"
+    },
+    "customizer.model_paper_3d": {
+      "value": "3D 종이 콘셉트",
+      "status": "reviewed",
+      "sourceHash": "788d8ccf070c769f"
+    },
+    "customizer.model_paper_goods": {
+      "value": "종이 제품 콘셉트",
+      "status": "reviewed",
+      "sourceHash": "14889fb99ebbb0ce"
+    },
+    "customizer.model_puzzle": {
+      "value": "퍼즐 콘셉트",
+      "status": "reviewed",
+      "sourceHash": "a9775a1f025dd11a"
+    },
+    "customizer.name": {
+      "value": "아이디어 맞춤 제작 스튜디오",
+      "status": "reviewed",
+      "sourceHash": "a0a63e2ff2bf34f9"
+    },
+    "customizer.open": {
+      "value": "미정",
+      "status": "reviewed",
+      "sourceHash": "ed077f3d8125d60d"
+    },
+    "customizer.page.eyebrow": {
+      "value": "단계별 맞춤 제작",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.page.intro": {
+      "value": "제품의 초기 방향을 구성한 뒤 생성된 요약을 견적 요청서에 이어서 사용할 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "341ced65bd204b53"
+    },
+    "customizer.page.title": {
+      "value": "맞춤 제작 및 견적 요청",
+      "status": "reviewed",
+      "sourceHash": "914fa00fd22fe0d9"
+    },
+    "customizer.preview": {
+      "value": "미리보기: {name}",
+      "status": "reviewed",
+      "sourceHash": "b654b8c2f035bc83"
+    },
+    "customizer.preview.disclaimer": {
+      "value": "이 화면은 콘셉트 확인용이며 생산 샘플이나 확정 견적이 아닙니다. 소재, 가공, 크기, 실현 가능성, 가격 및 납기는 기술 검토 후 확정됩니다.",
+      "status": "reviewed",
+      "sourceHash": "37904f64e1571d5d"
+    },
+    "customizer.preview.label": {
+      "value": "콘셉트 미리보기",
+      "status": "reviewed",
+      "sourceHash": "305245dc4d0b1d69"
+    },
+    "customizer.preview.waiting": {
+      "value": "선택 내용에 따라 미리보기가 구성됩니다.",
+      "status": "reviewed",
+      "sourceHash": "0c9b59fd05330d9f"
+    },
+    "customizer.product.game_packaging": {
+      "value": "종이 게임 및 선물 패키지",
+      "status": "reviewed",
+      "sourceHash": "80abc0fbdd753ea1"
+    },
+    "customizer.product.game_packaging.help": {
+      "value": "카드, 종이 게임, 선물 상자 또는 통합 패키지 방향입니다.",
+      "status": "reviewed",
+      "sourceHash": "f918dfabe78fb79f"
+    },
+    "customizer.product.other": {
+      "value": "다른 아이디어",
+      "status": "reviewed",
+      "sourceHash": "fcf8f9c1348b06ae"
+    },
+    "customizer.product.other_help": {
+      "value": "아이디어를 자유롭게 설명하거나 담당자의 기획 상담을 요청할 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "625fae54bedad1f2"
+    },
+    "customizer.product.other_label": {
+      "value": "아이디어 설명",
+      "status": "reviewed",
+      "sourceHash": "57260354e46c06f7"
+    },
+    "customizer.product.other_placeholder": {
+      "value": "만들고 싶은 제품, 사용 방식, 원하는 느낌을 알려 주세요.",
+      "status": "reviewed",
+      "sourceHash": "293c11f6f332424c"
+    },
+    "customizer.product.paper_3d": {
+      "value": "3D 종이·보드 퍼즐",
+      "status": "reviewed",
+      "sourceHash": "2e6b0b30a4c5e0ca"
+    },
+    "customizer.product.paper_3d.help": {
+      "value": "인쇄된 종이·보드 부품을 조립해 만드는 입체 제품입니다.",
+      "status": "reviewed",
+      "sourceHash": "e1e4369c60d8798d"
+    },
+    "customizer.product.puzzle": {
+      "value": "직소 퍼즐 작품",
+      "status": "reviewed",
+      "sourceHash": "b88139a844b20251"
+    },
+    "customizer.product.puzzle.help": {
+      "value": "평면 직소 퍼즐 또는 이미지 중심의 아트 퍼즐 형식입니다.",
+      "status": "reviewed",
+      "sourceHash": "10052c3003986642"
+    },
+    "customizer.progress": {
+      "value": "4단계 중 {current}단계",
+      "status": "reviewed",
+      "sourceHash": "13888e65d912ca4a"
+    },
+    "customizer.quote.continue": {
+      "value": "견적 양식으로 계속",
+      "status": "reviewed",
+      "sourceHash": "1ea448ef463e1d9e"
+    },
+    "customizer.quote.notice": {
+      "value": "가격은 자동 계산되지 않습니다. 실현 가능성, 가격 및 납기는 기술 검토 후 확정됩니다.",
+      "status": "reviewed",
+      "sourceHash": "1738117808396fb2"
+    },
+    "customizer.quote.prepare": {
+      "value": "견적 요청 준비",
+      "status": "reviewed",
+      "sourceHash": "4dc72476c633b6bd"
+    },
+    "customizer.shaped": {
+      "value": "4개 중 {count}개 선택 완료",
+      "status": "reviewed",
+      "sourceHash": "8d51fb1a609d609f"
+    },
+    "customizer.shaped_open": {
+      "value": "4개 중 {count}개 선택 완료 · {open}개 미정",
+      "status": "reviewed",
+      "sourceHash": "dc5a80986d48c4f6"
+    },
+    "customizer.status.missing": {
+      "value": "계속하려면 필수 항목을 입력해 주세요.",
+      "status": "reviewed",
+      "sourceHash": "81ba99d232a725f2"
+    },
+    "customizer.status.optional": {
+      "value": "선택",
+      "status": "reviewed",
+      "sourceHash": "59be71333c960fd0"
+    },
+    "customizer.status.required": {
+      "value": "필수",
+      "status": "reviewed",
+      "sourceHash": "4850b174b713d88c"
+    },
+    "customizer.status.summary_ready": {
+      "value": "요약을 검토할 수 있습니다",
+      "status": "reviewed",
+      "sourceHash": "1d260cf23fb46cf7"
+    },
+    "customizer.step.material.help": {
+      "value": "선호하는 소재와 표면 가공을 선택하세요. 복수 선택하거나 미정으로 둘 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "15f7f8cf7757417d"
+    },
+    "customizer.step.material.number": {
+      "value": "03 / 소재",
+      "status": "reviewed",
+      "sourceHash": "44209ec2bc2663ea"
+    },
+    "customizer.step.material.title": {
+      "value": "소재와 표면 가공",
+      "status": "reviewed",
+      "sourceHash": "a9009aa83f05e541"
+    },
+    "customizer.step.product.help": {
+      "value": "아이디어와 가장 가까운 출발점을 선택하세요. 세부 사항은 나중에 추가할 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "76ede206e4f6d72a"
+    },
+    "customizer.step.product.number": {
+      "value": "01 / 방향",
+      "status": "reviewed",
+      "sourceHash": "73db3d0b375247c4"
+    },
+    "customizer.step.product.title": {
+      "value": "제품 방향",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.step.structure.help": {
+      "value": "초기 구조 방향을 선택하세요. 기술적 실현 가능성은 이후 검토합니다.",
+      "status": "reviewed",
+      "sourceHash": "c02088ee961f4578"
+    },
+    "customizer.step.structure.number": {
+      "value": "02 / 구조",
+      "status": "reviewed",
+      "sourceHash": "9cc74b99824b51a0"
+    },
+    "customizer.step.structure.title": {
+      "value": "구조와 형태",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.step.visual.help": {
+      "value": "원하는 결과물의 느낌과 가장 가까운 비주얼 방향을 선택하세요.",
+      "status": "reviewed",
+      "sourceHash": "3a1c892512953df2"
+    },
+    "customizer.step.visual.number": {
+      "value": "04 / 비주얼",
+      "status": "reviewed",
+      "sourceHash": "c4bd690b234f407b"
+    },
+    "customizer.step.visual.title": {
+      "value": "비주얼 스타일과 개성",
+      "status": "reviewed",
+      "sourceHash": "b36632c96b2e0285"
+    },
+    "customizer.structure.cards_description": {
+      "value": "카드, 칸막이, 맞춤형 인쇄 상자",
+      "status": "reviewed",
+      "sourceHash": "2466624ad6ea91cd"
+    },
+    "customizer.structure.classic_description": {
+      "value": "균형 잡힌 맞물림과 익숙한 조립 방식",
+      "status": "reviewed",
+      "sourceHash": "a717249b1199797c"
+    },
+    "customizer.structure.custom_shape": {
+      "value": "맞춤 형태 및 외곽선",
+      "status": "reviewed",
+      "sourceHash": "65c539d36a665fd8"
+    },
+    "customizer.structure.custom_shape_description": {
+      "value": "둥근 연결 또는 맞춤 제품 외곽선",
+      "status": "reviewed",
+      "sourceHash": "0dbea09755bcb6f9"
+    },
+    "customizer.structure.flat": {
+      "value": "클래식 평면 형식",
+      "status": "reviewed",
+      "sourceHash": "ec80c9fbfa1c6fd6"
+    },
+    "customizer.structure.foldable": {
+      "value": "접이식 또는 조립식 구조",
+      "status": "reviewed",
+      "sourceHash": "ba1ea3a1fd7b3404"
+    },
+    "customizer.structure.foldable_description": {
+      "value": "접기, 끼우기 또는 간단한 조립으로 부품 연결",
+      "status": "reviewed",
+      "sourceHash": "afac25cc1bf1b047"
+    },
+    "customizer.structure.game_description": {
+      "value": "보드, 카드, 규칙, 패키지를 하나의 세트로 구성",
+      "status": "reviewed",
+      "sourceHash": "ac4782a3742253c5"
+    },
+    "customizer.structure.hybrid_description": {
+      "value": "두 가지 이상의 종이 제품 유형 결합",
+      "status": "reviewed",
+      "sourceHash": "bb6bb5f2ef91dbef"
+    },
+    "customizer.structure.layered": {
+      "value": "다층 입체 구조",
+      "status": "reviewed",
+      "sourceHash": "8a472aa4e2990128"
+    },
+    "customizer.structure.layered_description": {
+      "value": "인쇄된 레이어가 부피와 깊이를 형성",
+      "status": "reviewed",
+      "sourceHash": "3706e4b14855cabc"
+    },
+    "customizer.structure.open_description": {
+      "value": "공동 개발을 위해 구조를 미정으로 유지",
+      "status": "reviewed",
+      "sourceHash": "9ea0f4b9d8784e18"
+    },
+    "customizer.structure.pack_description": {
+      "value": "통일된 내부 구성품이 있는 프레젠테이션 상자",
+      "status": "reviewed",
+      "sourceHash": "f4cfb1d9d63a83f4"
+    },
+    "customizer.structure.reference_description": {
+      "value": "기존 물체나 이미지에서 개발 시작",
+      "status": "reviewed",
+      "sourceHash": "2ae2df3a134b37dc"
+    },
+    "customizer.structure.set": {
+      "value": "구성품 세트",
+      "status": "reviewed",
+      "sourceHash": "fda06b3868af6fe8"
+    },
+    "customizer.structure.set_description": {
+      "value": "여러 구성품을 하나의 통합 제품으로 구성",
+      "status": "reviewed",
+      "sourceHash": "92cbf799eeeab50b"
+    },
+    "customizer.structure.unsure": {
+      "value": "미정",
+      "status": "reviewed",
+      "sourceHash": "31d17eb884e6f3fe"
+    },
+    "customizer.structure.unsure_description": {
+      "value": "특수 형태나 구조를 검토 전까지 미정으로 유지",
+      "status": "reviewed",
+      "sourceHash": "75ad0b48d3c354f2"
+    },
+    "customizer.summary.audience": {
+      "value": "대상 고객",
+      "status": "reviewed",
+      "sourceHash": "545c02357695a6ff"
+    },
+    "customizer.summary.body": {
+      "value": "선택 내용은 잠정 요구 사항으로 정리되며 견적 요청 전에 수정할 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "b81f15279fbab226"
+    },
+    "customizer.summary.budget": {
+      "value": "예산",
+      "status": "reviewed",
+      "sourceHash": "1c6225ec7092ad2f"
+    },
+    "customizer.summary.delivery": {
+      "value": "희망 납기",
+      "status": "reviewed",
+      "sourceHash": "4a4bd27030d2deaa"
+    },
+    "customizer.summary.empty": {
+      "value": "몇 가지 항목을 선택하면 요약이 생성됩니다.",
+      "status": "reviewed",
+      "sourceHash": "625c95a62181912d"
+    },
+    "customizer.summary.finish": {
+      "value": "표면 가공",
+      "status": "reviewed",
+      "sourceHash": "426962884f1959a2"
+    },
+    "customizer.summary.generated_label": {
+      "value": "맞춤 제작 요약",
+      "status": "reviewed",
+      "sourceHash": "d3cb1ae47c969dc8"
+    },
+    "customizer.summary.material": {
+      "value": "소재",
+      "status": "reviewed",
+      "sourceHash": "fd10a146e9625bfd"
+    },
+    "customizer.summary.notes": {
+      "value": "추가 메모",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.summary.open_items": {
+      "value": "미정 항목",
+      "status": "reviewed",
+      "sourceHash": "d6b347f2ce7fad0c"
+    },
+    "customizer.summary.product": {
+      "value": "제품 방향",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.summary.quantity": {
+      "value": "수량",
+      "status": "reviewed",
+      "sourceHash": "822bab8d41bca8d7"
+    },
+    "customizer.summary.reference": {
+      "value": "스타일 참고 자료",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.summary.structure": {
+      "value": "구조와 형태",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.summary.suggestion_tag": {
+      "value": "참고 제안",
+      "status": "reviewed",
+      "sourceHash": "24306b958b9f88da"
+    },
+    "customizer.summary.title": {
+      "value": "프로젝트 요구 사항 요약",
+      "status": "reviewed",
+      "sourceHash": "1f4e77e98ac6f838"
+    },
+    "customizer.summary.uncertain_tag": {
+      "value": "확인 필요",
+      "status": "reviewed",
+      "sourceHash": "4237b3b44dd9a860"
+    },
+    "customizer.summary.use_case": {
+      "value": "용도",
+      "status": "reviewed",
+      "sourceHash": "046def25f5b077ca"
+    },
+    "customizer.summary.visual": {
+      "value": "비주얼 스타일",
+      "status": "reviewed",
+      "sourceHash": "e00cf1143c6cdbec"
+    },
+    "customizer.visual.bold": {
+      "value": "대담하고 역동적인 스타일",
+      "status": "reviewed",
+      "sourceHash": "004d57d44d441713"
+    },
+    "customizer.visual.bold_description": {
+      "value": "강한 리듬과 뚜렷한 색상 영역",
+      "status": "reviewed",
+      "sourceHash": "e7f44751bba93b4d"
+    },
+    "customizer.visual.brand": {
+      "value": "기존 브랜드 아이덴티티 유지",
+      "status": "reviewed",
+      "sourceHash": "d656149d90fb64ec"
+    },
+    "customizer.visual.brand_description": {
+      "value": "이름, 상징 또는 아이덴티티를 시각적 중심으로 표현",
+      "status": "reviewed",
+      "sourceHash": "a046acb0cef23d16"
+    },
+    "customizer.visual.illustrated": {
+      "value": "재미있는 일러스트",
+      "status": "reviewed",
+      "sourceHash": "ade644603a96efe4"
+    },
+    "customizer.visual.illustrated_description": {
+      "value": "제품 전체에 이어지는 시각적 이야기",
+      "status": "reviewed",
+      "sourceHash": "be3e3e703d348e27"
+    },
+    "customizer.visual.minimal": {
+      "value": "미니멀 및 모던",
+      "status": "reviewed",
+      "sourceHash": "1936ec5e5270d5e3"
+    },
+    "customizer.visual.minimal_description": {
+      "value": "명확한 위계와 절제된 디테일",
+      "status": "reviewed",
+      "sourceHash": "a63549201fb8b7b4"
+    },
+    "customizer.visual.natural": {
+      "value": "자연스러운 질감",
+      "status": "reviewed",
+      "sourceHash": "de8526a5163c4ec6"
+    },
+    "customizer.visual.refined": {
+      "value": "고급스럽고 세련된 스타일",
+      "status": "reviewed",
+      "sourceHash": "27eaa3b7d753bd09"
+    },
+    "customizer.waiting": {
+      "value": "방향 선택",
+      "status": "reviewed",
+      "sourceHash": "c1120f24153bd83e"
     },
     "faq.01_company_manufacturing_fit": {
       "value": "01 / 회사 및 제조 적합성",
@@ -2560,8 +3280,13 @@
       "sourceHash": "ebf8d8110850dcdf"
     },
     "privacy.how_the_web_form_works": {
-      "value": "웹 양식 작동 방식",
-      "status": "needs_review",
+      "value": "맞춤 제작 스튜디오의 정보 처리 방식",
+      "status": "reviewed",
+      "sourceHash": "bc19db130213e082"
+    },
+    "privacy.how_the_web_form_works_2": {
+      "value": "웹 양식의 정보 처리 방식",
+      "status": "reviewed",
       "sourceHash": "43e60c675ce6d04c"
     },
     "privacy.information_is_kept_only_for_as_long": {
@@ -2625,9 +3350,14 @@
       "sourceHash": "2514aeb0555faeee"
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "value": "견적 및 문의 양식은 귀하의 이메일 애플리케이션에서 이메일을 준비합니다. 웹사이트는 해당 양식 항목을 업로드하거나 저장하지 않습니다. 귀하가 이메일을 검토하고 보낼 때만 Qinyi가 정보를 수신합니다.",
-      "status": "needs_review",
-      "sourceHash": "36d9a4f2a499bc30"
+      "value": "콘셉트를 탐색하는 동안 선택 내용과 수정 가능한 요약은 브라우저에 유지됩니다. 견적 양식에 추가해도 제출되지 않습니다. ‘다른 아이디어’를 선택한 뒤 담당자 공동 기획을 요청하면, 요약이 상담 요청 생성을 위해 지원 서비스로 전송되고 권한이 있는 Qinyi 담당자가 확인할 수 있습니다.",
+      "status": "reviewed",
+      "sourceHash": "a3bbac2687499901"
+    },
+    "privacy.the_quote_and_contact_forms_prepare_an_2": {
+      "value": "견적 및 문의 양식은 사용자의 이메일 앱에서 보낼 메일을 준비합니다. 웹사이트는 입력 내용을 업로드하거나 저장하지 않습니다. Qinyi는 사용자가 내용을 검토하고 이메일을 보낸 후에만 정보를 받습니다. 단, 위의 공동 기획 기능으로 사용자가 명시적으로 보낸 맞춤 제작 요약은 예외입니다.",
+      "status": "reviewed",
+      "sourceHash": "529053a269caf698"
     },
     "privacy.this_notice_explains_what_happens_when_a": {
       "value": "본 고지는 잠재 고객 또는 비즈니스 연락처가 Qinyi Printing에 문의나 프로젝트 자료를 보낼 때 발생하는 상황을 설명합니다.",
@@ -3325,7 +4055,12 @@
       "sourceHash": "6edaa2e170b7def6"
     },
     "quote.a_concise_first_review": {
-      "value": "간결한 첫 번째 검토.",
+      "value": "간결한 1차 검토.",
+      "status": "reviewed",
+      "sourceHash": "90fbf706fc995653"
+    },
+    "quote.a_concise_first_review_2": {
+      "value": "A concise first review.",
       "status": "needs_review",
       "sourceHash": "90fbf706fc995653"
     },
@@ -3495,14 +4230,14 @@
       "sourceHash": "7577a5a98323aaf3"
     },
     "quote.request_a_custom_manufacturing_quote": {
-      "value": "맞춤 제조 견적 요청",
-      "status": "needs_review",
-      "sourceHash": "66048860303d9e27"
+      "value": "맞춤 제작 및 견적",
+      "status": "reviewed",
+      "sourceHash": "ef32ec984a6986ba"
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "value": "맞춤 제조 견적 요청 | Qinyi Printing",
-      "status": "needs_review",
-      "sourceHash": "fea8be71aa6cbafb"
+      "value": "맞춤 제작 및 견적 | Qinyi Printing",
+      "status": "reviewed",
+      "sourceHash": "827d1573efcaee66"
     },
     "quote.review_result": {
       "value": "검토 결과",
@@ -3515,27 +4250,32 @@
       "sourceHash": "5994bea3d662c0b7"
     },
     "quote.send_a_short_project_outline_first_qinyi": {
-      "value": "먼저 간단한 프로젝트 개요를 보내주세요. Qinyi가 제조 적합성을 검토한 후 가격 책정에 필요한 도면, 아트워크 및 상세 사양을 요청할 것입니다.",
-      "status": "needs_review",
+      "value": "먼저 간단한 프로젝트 개요를 보내 주세요. Qinyi가 제조 적합성을 검토한 뒤 가격 산정에 필요한 도면, 아트워크 및 상세 사양을 요청합니다.",
+      "status": "reviewed",
       "sourceHash": "732dd3c1a0565ed2"
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
-      "value": "맞춤 퍼즐, 종이 게임, 카드 제품 또는 인쇄 포장에 대한 2단계 제조 RFQ를 시작하세요.",
-      "status": "needs_review",
-      "sourceHash": "4e37d90ab1adbf9f"
+      "value": "수정 가능한 제품 콘셉트를 만들고 맞춤 퍼즐, 종이 게임 또는 인쇄 패키지 제조 RFQ로 계속 진행하세요.",
+      "status": "reviewed",
+      "sourceHash": "eae7cb2bbcc61b8f"
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "value": "중국 동관에 위치한 Qinyi Printing에서 맞춤 퍼즐, 종이 게임, 카드 또는 인쇄 포장에 대한 2단계 RFQ를 시작하세요.",
-      "status": "needs_review",
-      "sourceHash": "2426a0c5f16f240c"
+      "value": "단계별 제품 콘셉트를 탐색하고, 수정 가능한 맞춤 제작 요약을 만든 뒤 Qinyi Printing에 제조 견적을 요청하세요.",
+      "status": "reviewed",
+      "sourceHash": "6b6ef5c33a94f362"
     },
     "quote.start_with_the_essentials": {
-      "value": "필수 사항부터 시작하세요.",
-      "status": "needs_review",
+      "value": "기본 정보부터 시작하세요.",
+      "status": "reviewed",
       "sourceHash": "b662c6f4326ee3a4"
     },
     "quote.step_1_of_2": {
-      "value": "1단계 (총 2단계)",
+      "value": "2단계 중 1단계",
+      "status": "reviewed",
+      "sourceHash": "e32a2b28a767ef5e"
+    },
+    "quote.step_1_of_2_2": {
+      "value": "Step 1 of 2",
       "status": "needs_review",
       "sourceHash": "e32a2b28a767ef5e"
     },
@@ -3556,7 +4296,7 @@
     },
     "quote.two_step_rfq": {
       "value": "2단계 RFQ",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "76ab0cd93471b22f"
     },
     "solutions.a_clearer_handoff": {

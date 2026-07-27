@@ -2,7 +2,7 @@
   "locale": "ja",
   "languageName": "日本語",
   "direction": "ltr",
-  "updatedAt": "2026-07-26",
+  "updatedAt": "2026-07-27",
   "messages": {
     "about.a_manufacturing_team_for_custom_paper_products": {
       "value": "カスタム紙製品の生産チームについて",
@@ -269,6 +269,11 @@
       "status": "needs_review",
       "sourceHash": "71414fb92a52d351"
     },
+    "common.customization_quote": {
+      "value": "カスタマイズと見積もり",
+      "status": "reviewed",
+      "sourceHash": "cf8ce130fa26ee10"
+    },
     "common.deutsch": {
       "value": "Deutsch",
       "status": "needs_review",
@@ -318,6 +323,11 @@
       "value": "探索",
       "status": "needs_review",
       "sourceHash": "3b73900b8d29f963"
+    },
+    "common.floating.quote": {
+      "value": "見積もりを依頼",
+      "status": "reviewed",
+      "sourceHash": "724f2336bf690001"
     },
     "common.form.default_product": {
       "value": "カスタマイズされた紙製品",
@@ -396,7 +406,7 @@
     },
     "common.materials": {
       "value": "材料",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "fd10a146e9625bfd"
     },
     "common.menu.close": {
@@ -429,6 +439,11 @@
       "status": "needs_review",
       "sourceHash": "2b5c3d26721ae9c3"
     },
+    "common.nav.custom_quote": {
+      "value": "カスタマイズ・見積もり依頼",
+      "status": "reviewed",
+      "sourceHash": "bbf75a9ec534e238"
+    },
     "common.nav.manufacturing": {
       "value": "製造・品質管理",
       "status": "needs_review",
@@ -451,7 +466,7 @@
     },
     "common.nav.quote": {
       "value": "見積もりを依頼",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "724f2336bf690001"
     },
     "common.nav.trade": {
@@ -753,6 +768,711 @@
       "value": "主題",
       "status": "needs_review",
       "sourceHash": "7e61847d61d65d9e"
+    },
+    "customizer.action.back": {
+      "value": "戻る",
+      "status": "reviewed",
+      "sourceHash": "76900f1bfd16c8d4"
+    },
+    "customizer.action.confirm": {
+      "value": "選択を確定",
+      "status": "reviewed",
+      "sourceHash": "9ce9c379f3f4b337"
+    },
+    "customizer.action.edit": {
+      "value": "編集",
+      "status": "reviewed",
+      "sourceHash": "464c4ffd019e1e96"
+    },
+    "customizer.action.finish": {
+      "value": "コンセプト概要を完成",
+      "status": "reviewed",
+      "sourceHash": "f704e27d24ce5bf8"
+    },
+    "customizer.action.next": {
+      "value": "続ける",
+      "status": "reviewed",
+      "sourceHash": "31fbef162594de01"
+    },
+    "customizer.action.reset": {
+      "value": "選択をリセット",
+      "status": "reviewed",
+      "sourceHash": "a53881ba69df563d"
+    },
+    "customizer.action.start": {
+      "value": "開始",
+      "status": "reviewed",
+      "sourceHash": "e4bb9f1ece9af926"
+    },
+    "customizer.brief.audience": {
+      "value": "対象者",
+      "status": "reviewed",
+      "sourceHash": "685b100332e1d6af"
+    },
+    "customizer.brief.audience_placeholder": {
+      "value": "誰が受け取り、購入し、使用する製品ですか？",
+      "status": "reviewed",
+      "sourceHash": "718f247c7bb85722"
+    },
+    "customizer.brief.budget": {
+      "value": "参考予算",
+      "status": "reviewed",
+      "sourceHash": "8549fe0c32f90bbe"
+    },
+    "customizer.brief.budget_placeholder": {
+      "value": "予算範囲と通貨を入力",
+      "status": "reviewed",
+      "sourceHash": "54f6a2ec160833c8"
+    },
+    "customizer.brief.delivery": {
+      "value": "希望納期",
+      "status": "reviewed",
+      "sourceHash": "48abddfa2566f81c"
+    },
+    "customizer.brief.delivery_placeholder": {
+      "value": "目標日または期間を入力",
+      "status": "reviewed",
+      "sourceHash": "f9435a85abf69ddf"
+    },
+    "customizer.brief.intro": {
+      "value": "概算情報でも役立ちます。未確定項目は相談事項として残せます。",
+      "status": "reviewed",
+      "sourceHash": "bd02dd3cced86b00"
+    },
+    "customizer.brief.notes": {
+      "value": "補足事項",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.brief.notes_placeholder": {
+      "value": "寸法、包装、ファイル要件、その他の詳細を入力",
+      "status": "reviewed",
+      "sourceHash": "1d3cc2ac67057106"
+    },
+    "customizer.brief.quantity": {
+      "value": "数量の目安",
+      "status": "reviewed",
+      "sourceHash": "cb0e79f4d8d3c34f"
+    },
+    "customizer.brief.quantity_placeholder": {
+      "value": "おおよその数量を入力",
+      "status": "reviewed",
+      "sourceHash": "7f166f6508c82ea7"
+    },
+    "customizer.brief.reference": {
+      "value": "スタイル参考",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.brief.reference_placeholder": {
+      "value": "スタイルを説明するか、公開可能な参考リンクを追加",
+      "status": "reviewed",
+      "sourceHash": "9193edc379a9ba67"
+    },
+    "customizer.brief.title": {
+      "value": "プロジェクトの希望情報",
+      "status": "reviewed",
+      "sourceHash": "f64732d495f71fc2"
+    },
+    "customizer.brief.use_case": {
+      "value": "用途・利用シーン",
+      "status": "reviewed",
+      "sourceHash": "fdc8eab73a9c0950"
+    },
+    "customizer.brief.use_case_placeholder": {
+      "value": "例：企業ギフト、教育、店頭販売、個人利用",
+      "status": "reviewed",
+      "sourceHash": "b425df88aa51b9a9"
+    },
+    "customizer.complete": {
+      "value": "完了",
+      "status": "reviewed",
+      "sourceHash": "143b270a32602d41"
+    },
+    "customizer.finish.board_description": {
+      "value": "紙らしさが見える温かい手触り",
+      "status": "reviewed",
+      "sourceHash": "7c5babc52618bee3"
+    },
+    "customizer.finish.emboss": {
+      "value": "エンボス・デボス",
+      "status": "reviewed",
+      "sourceHash": "2ac2f3e7a1e8a454"
+    },
+    "customizer.finish.emboss_description": {
+      "value": "浮き出しまたは押し込みによる触覚的な奥行き",
+      "status": "reviewed",
+      "sourceHash": "a1344072151181ce"
+    },
+    "customizer.finish.foil": {
+      "value": "箔押し",
+      "status": "reviewed",
+      "sourceHash": "a2903b0ec16ef8b8"
+    },
+    "customizer.finish.foil_description": {
+      "value": "重要な細部に制御された金属調アクセント",
+      "status": "reviewed",
+      "sourceHash": "2529154a0987bc78"
+    },
+    "customizer.finish.lamination": {
+      "value": "マット・グロスラミネート",
+      "status": "reviewed",
+      "sourceHash": "145850ffec2558c0"
+    },
+    "customizer.finish.lamination_description": {
+      "value": "耐久性のあるマットまたは光沢表面",
+      "status": "reviewed",
+      "sourceHash": "8504b165b8ade421"
+    },
+    "customizer.finish.spot_uv": {
+      "value": "部分 UV",
+      "status": "reviewed",
+      "sourceHash": "911e6c1f3f9a2619"
+    },
+    "customizer.finish.spot_uv_description": {
+      "value": "印刷部分に選択的な光沢コントラスト",
+      "status": "reviewed",
+      "sourceHash": "4467728fb381289d"
+    },
+    "customizer.finish.unsure": {
+      "value": "表面加工は未定",
+      "status": "reviewed",
+      "sourceHash": "dbd32129faa63f33"
+    },
+    "customizer.free_model": {
+      "value": "オープンコンセプト",
+      "status": "reviewed",
+      "sourceHash": "ed2b36c0c6d2cccc"
+    },
+    "customizer.handoff_ready": {
+      "value": "担当者への相談依頼を作成しました：{ticket}",
+      "status": "reviewed",
+      "sourceHash": "67fea34244d06647"
+    },
+    "customizer.home.body": {
+      "value": "製品タイプ、構造、素材、ビジュアルスタイルを選び、相談しながら編集できる初期概要を作成します。",
+      "status": "reviewed",
+      "sourceHash": "f8e8e6e43065d2d4"
+    },
+    "customizer.home.cta": {
+      "value": "カスタマイズを始める",
+      "status": "reviewed",
+      "sourceHash": "dc4313d81678924e"
+    },
+    "customizer.home.eyebrow": {
+      "value": "ガイド付きカスタマイズ",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.home.secondary_cta": {
+      "value": "見積もりフォームへ直接進む",
+      "status": "reviewed",
+      "sourceHash": "49eaeff513cfa46c"
+    },
+    "customizer.home.title": {
+      "value": "まだ具体的な企画がなくても、ひとつのアイデアから始められます。",
+      "status": "reviewed",
+      "sourceHash": "b5724c23db303151"
+    },
+    "customizer.human.failed": {
+      "value": "送信できませんでした。再試行するか、見積もりフォームへ進んでください。",
+      "status": "reviewed",
+      "sourceHash": "742ec913c58aa0de"
+    },
+    "customizer.human.request": {
+      "value": "担当者に企画相談を依頼",
+      "status": "reviewed",
+      "sourceHash": "bd1f92625f3bd20c"
+    },
+    "customizer.human.sending": {
+      "value": "相談依頼を送信しています...",
+      "status": "reviewed",
+      "sourceHash": "b8f4f372213666e9"
+    },
+    "customizer.human.sent": {
+      "value": "相談依頼を送信しました",
+      "status": "reviewed",
+      "sourceHash": "23055c7086f79c66"
+    },
+    "customizer.material.greyboard": {
+      "value": "紙貼りグレーボード",
+      "status": "reviewed",
+      "sourceHash": "b876994ecaa7f417"
+    },
+    "customizer.material.recycled": {
+      "value": "再生紙",
+      "status": "reviewed",
+      "sourceHash": "de5f0927b7c8c8da"
+    },
+    "customizer.material.special_paper": {
+      "value": "ファンシーペーパー・特殊紙",
+      "status": "reviewed",
+      "sourceHash": "39cf1cc501ce0af5"
+    },
+    "customizer.material.unsure": {
+      "value": "素材は未定",
+      "status": "reviewed",
+      "sourceHash": "c925a396530a16cc"
+    },
+    "customizer.model_paper_3d": {
+      "value": "3D 紙製品コンセプト",
+      "status": "reviewed",
+      "sourceHash": "788d8ccf070c769f"
+    },
+    "customizer.model_paper_goods": {
+      "value": "紙製品コンセプト",
+      "status": "reviewed",
+      "sourceHash": "14889fb99ebbb0ce"
+    },
+    "customizer.model_puzzle": {
+      "value": "パズルコンセプト",
+      "status": "reviewed",
+      "sourceHash": "a9775a1f025dd11a"
+    },
+    "customizer.name": {
+      "value": "アイデア・カスタマイズスタジオ",
+      "status": "reviewed",
+      "sourceHash": "a0a63e2ff2bf34f9"
+    },
+    "customizer.open": {
+      "value": "未定",
+      "status": "reviewed",
+      "sourceHash": "ed077f3d8125d60d"
+    },
+    "customizer.page.eyebrow": {
+      "value": "ガイド付きカスタマイズ",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.page.intro": {
+      "value": "製品の方向性を組み立て、作成した概要をそのまま見積もり依頼に引き継げます。",
+      "status": "reviewed",
+      "sourceHash": "341ced65bd204b53"
+    },
+    "customizer.page.title": {
+      "value": "カスタマイズ・見積もり依頼",
+      "status": "reviewed",
+      "sourceHash": "914fa00fd22fe0d9"
+    },
+    "customizer.preview": {
+      "value": "プレビュー：{name}",
+      "status": "reviewed",
+      "sourceHash": "b654b8c2f035bc83"
+    },
+    "customizer.preview.disclaimer": {
+      "value": "この表示はコンセプト確認用であり、量産サンプルまたは確定見積もりではありません。素材、加工、寸法、実現可能性、価格、納期は技術確認後に確定します。",
+      "status": "reviewed",
+      "sourceHash": "37904f64e1571d5d"
+    },
+    "customizer.preview.label": {
+      "value": "コンセプトプレビュー",
+      "status": "reviewed",
+      "sourceHash": "305245dc4d0b1d69"
+    },
+    "customizer.preview.waiting": {
+      "value": "選択内容に合わせてプレビューが変化します。",
+      "status": "reviewed",
+      "sourceHash": "0c9b59fd05330d9f"
+    },
+    "customizer.product.game_packaging": {
+      "value": "紙製ゲーム・ギフトパッケージ",
+      "status": "reviewed",
+      "sourceHash": "80abc0fbdd753ea1"
+    },
+    "customizer.product.game_packaging.help": {
+      "value": "カード、紙製ゲーム、ギフトボックス、または統一したパッケージの方向性です。",
+      "status": "reviewed",
+      "sourceHash": "f918dfabe78fb79f"
+    },
+    "customizer.product.other": {
+      "value": "その他のアイデア",
+      "status": "reviewed",
+      "sourceHash": "fcf8f9c1348b06ae"
+    },
+    "customizer.product.other_help": {
+      "value": "アイデアを自由に記入してください。担当者による企画相談も依頼できます。",
+      "status": "reviewed",
+      "sourceHash": "625fae54bedad1f2"
+    },
+    "customizer.product.other_label": {
+      "value": "アイデアを説明してください",
+      "status": "reviewed",
+      "sourceHash": "57260354e46c06f7"
+    },
+    "customizer.product.other_placeholder": {
+      "value": "作りたいもの、使い方、表現したい雰囲気をお知らせください。",
+      "status": "reviewed",
+      "sourceHash": "293c11f6f332424c"
+    },
+    "customizer.product.paper_3d": {
+      "value": "3D 紙・ボードパズル",
+      "status": "reviewed",
+      "sourceHash": "2e6b0b30a4c5e0ca"
+    },
+    "customizer.product.paper_3d.help": {
+      "value": "印刷した紙・ボード部品を組み立てる立体物です。",
+      "status": "reviewed",
+      "sourceHash": "e1e4369c60d8798d"
+    },
+    "customizer.product.puzzle": {
+      "value": "ジグソーパズル作品",
+      "status": "reviewed",
+      "sourceHash": "b88139a844b20251"
+    },
+    "customizer.product.puzzle.help": {
+      "value": "平面ジグソー、またはビジュアルを主役にしたアートパズル形式です。",
+      "status": "reviewed",
+      "sourceHash": "10052c3003986642"
+    },
+    "customizer.progress": {
+      "value": "4 ステップ中 {current} ステップ目",
+      "status": "reviewed",
+      "sourceHash": "13888e65d912ca4a"
+    },
+    "customizer.quote.continue": {
+      "value": "見積もりフォームへ進む",
+      "status": "reviewed",
+      "sourceHash": "1ea448ef463e1d9e"
+    },
+    "customizer.quote.notice": {
+      "value": "価格は自動計算されません。実現可能性、価格、納期は技術確認後に確定します。",
+      "status": "reviewed",
+      "sourceHash": "1738117808396fb2"
+    },
+    "customizer.quote.prepare": {
+      "value": "見積もり依頼を準備",
+      "status": "reviewed",
+      "sourceHash": "4dc72476c633b6bd"
+    },
+    "customizer.shaped": {
+      "value": "4 項目中 {count} 項目を設定",
+      "status": "reviewed",
+      "sourceHash": "8d51fb1a609d609f"
+    },
+    "customizer.shaped_open": {
+      "value": "4 項目中 {count} 項目を設定・{open} 項目は未定",
+      "status": "reviewed",
+      "sourceHash": "dc5a80986d48c4f6"
+    },
+    "customizer.status.missing": {
+      "value": "続けるには必須項目を入力してください。",
+      "status": "reviewed",
+      "sourceHash": "81ba99d232a725f2"
+    },
+    "customizer.status.optional": {
+      "value": "任意",
+      "status": "reviewed",
+      "sourceHash": "59be71333c960fd0"
+    },
+    "customizer.status.required": {
+      "value": "必須",
+      "status": "reviewed",
+      "sourceHash": "4850b174b713d88c"
+    },
+    "customizer.status.summary_ready": {
+      "value": "概要を確認できます",
+      "status": "reviewed",
+      "sourceHash": "1d260cf23fb46cf7"
+    },
+    "customizer.step.material.help": {
+      "value": "希望する素材と表面加工を選択してください。複数選択や未定のままにすることもできます。",
+      "status": "reviewed",
+      "sourceHash": "15f7f8cf7757417d"
+    },
+    "customizer.step.material.number": {
+      "value": "03 / 素材",
+      "status": "reviewed",
+      "sourceHash": "44209ec2bc2663ea"
+    },
+    "customizer.step.material.title": {
+      "value": "素材と表面加工",
+      "status": "reviewed",
+      "sourceHash": "a9009aa83f05e541"
+    },
+    "customizer.step.product.help": {
+      "value": "アイデアに最も近い出発点を選んでください。詳細は後から追加できます。",
+      "status": "reviewed",
+      "sourceHash": "76ede206e4f6d72a"
+    },
+    "customizer.step.product.number": {
+      "value": "01 / 方向性",
+      "status": "reviewed",
+      "sourceHash": "73db3d0b375247c4"
+    },
+    "customizer.step.product.title": {
+      "value": "製品の方向性",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.step.structure.help": {
+      "value": "最初の構造方向を選択してください。技術的な実現可能性は後で確認します。",
+      "status": "reviewed",
+      "sourceHash": "c02088ee961f4578"
+    },
+    "customizer.step.structure.number": {
+      "value": "02 / 構造",
+      "status": "reviewed",
+      "sourceHash": "9cc74b99824b51a0"
+    },
+    "customizer.step.structure.title": {
+      "value": "構造と形状",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.step.visual.help": {
+      "value": "希望する仕上がりに最も近いビジュアル方向を選択してください。",
+      "status": "reviewed",
+      "sourceHash": "3a1c892512953df2"
+    },
+    "customizer.step.visual.number": {
+      "value": "04 / ビジュアル",
+      "status": "reviewed",
+      "sourceHash": "c4bd690b234f407b"
+    },
+    "customizer.step.visual.title": {
+      "value": "ビジュアルスタイルと個性",
+      "status": "reviewed",
+      "sourceHash": "b36632c96b2e0285"
+    },
+    "customizer.structure.cards_description": {
+      "value": "カード、仕切り、専用印刷箱",
+      "status": "reviewed",
+      "sourceHash": "2466624ad6ea91cd"
+    },
+    "customizer.structure.classic_description": {
+      "value": "バランスのよいかみ合わせと馴染みのある組み立て方",
+      "status": "reviewed",
+      "sourceHash": "a717249b1199797c"
+    },
+    "customizer.structure.custom_shape": {
+      "value": "オリジナル形状・輪郭",
+      "status": "reviewed",
+      "sourceHash": "65c539d36a665fd8"
+    },
+    "customizer.structure.custom_shape_description": {
+      "value": "丸みのある接続またはオリジナル製品輪郭",
+      "status": "reviewed",
+      "sourceHash": "0dbea09755bcb6f9"
+    },
+    "customizer.structure.flat": {
+      "value": "クラシックな平面形式",
+      "status": "reviewed",
+      "sourceHash": "ec80c9fbfa1c6fd6"
+    },
+    "customizer.structure.foldable": {
+      "value": "折り・組み立て構造",
+      "status": "reviewed",
+      "sourceHash": "ba1ea3a1fd7b3404"
+    },
+    "customizer.structure.foldable_description": {
+      "value": "折り、差し込み、簡単な組み立てで部品を接続",
+      "status": "reviewed",
+      "sourceHash": "afac25cc1bf1b047"
+    },
+    "customizer.structure.game_description": {
+      "value": "ボード、カード、ルール、包装を一つのセットに構成",
+      "status": "reviewed",
+      "sourceHash": "ac4782a3742253c5"
+    },
+    "customizer.structure.hybrid_description": {
+      "value": "2 種類以上の紙製品を組み合わせる",
+      "status": "reviewed",
+      "sourceHash": "bb6bb5f2ef91dbef"
+    },
+    "customizer.structure.layered": {
+      "value": "多層立体構造",
+      "status": "reviewed",
+      "sourceHash": "8a472aa4e2990128"
+    },
+    "customizer.structure.layered_description": {
+      "value": "印刷した層でボリュームと奥行きを形成",
+      "status": "reviewed",
+      "sourceHash": "3706e4b14855cabc"
+    },
+    "customizer.structure.open_description": {
+      "value": "共同開発のため構造を未定にする",
+      "status": "reviewed",
+      "sourceHash": "9ea0f4b9d8784e18"
+    },
+    "customizer.structure.pack_description": {
+      "value": "統一した中仕切りを備えたプレゼンテーションボックス",
+      "status": "reviewed",
+      "sourceHash": "f4cfb1d9d63a83f4"
+    },
+    "customizer.structure.reference_description": {
+      "value": "既存の物品や画像から開発を始める",
+      "status": "reviewed",
+      "sourceHash": "2ae2df3a134b37dc"
+    },
+    "customizer.structure.set": {
+      "value": "組み合わせセット",
+      "status": "reviewed",
+      "sourceHash": "fda06b3868af6fe8"
+    },
+    "customizer.structure.set_description": {
+      "value": "複数の部品を一つの統一製品に構成",
+      "status": "reviewed",
+      "sourceHash": "92cbf799eeeab50b"
+    },
+    "customizer.structure.unsure": {
+      "value": "未定",
+      "status": "reviewed",
+      "sourceHash": "31d17eb884e6f3fe"
+    },
+    "customizer.structure.unsure_description": {
+      "value": "特殊な形状や構造を技術確認まで未定にする",
+      "status": "reviewed",
+      "sourceHash": "75ad0b48d3c354f2"
+    },
+    "customizer.summary.audience": {
+      "value": "対象者",
+      "status": "reviewed",
+      "sourceHash": "545c02357695a6ff"
+    },
+    "customizer.summary.body": {
+      "value": "選択内容は暫定要件として整理され、見積もり依頼前に編集できます。",
+      "status": "reviewed",
+      "sourceHash": "b81f15279fbab226"
+    },
+    "customizer.summary.budget": {
+      "value": "予算",
+      "status": "reviewed",
+      "sourceHash": "1c6225ec7092ad2f"
+    },
+    "customizer.summary.delivery": {
+      "value": "希望納期",
+      "status": "reviewed",
+      "sourceHash": "4a4bd27030d2deaa"
+    },
+    "customizer.summary.empty": {
+      "value": "いくつかの項目を選ぶと概要が作成されます。",
+      "status": "reviewed",
+      "sourceHash": "625c95a62181912d"
+    },
+    "customizer.summary.finish": {
+      "value": "表面加工",
+      "status": "reviewed",
+      "sourceHash": "426962884f1959a2"
+    },
+    "customizer.summary.generated_label": {
+      "value": "カスタマイズ概要",
+      "status": "reviewed",
+      "sourceHash": "d3cb1ae47c969dc8"
+    },
+    "customizer.summary.material": {
+      "value": "素材",
+      "status": "reviewed",
+      "sourceHash": "fd10a146e9625bfd"
+    },
+    "customizer.summary.notes": {
+      "value": "補足事項",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.summary.open_items": {
+      "value": "未確定項目",
+      "status": "reviewed",
+      "sourceHash": "d6b347f2ce7fad0c"
+    },
+    "customizer.summary.product": {
+      "value": "製品の方向性",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.summary.quantity": {
+      "value": "数量",
+      "status": "reviewed",
+      "sourceHash": "822bab8d41bca8d7"
+    },
+    "customizer.summary.reference": {
+      "value": "スタイル参考",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.summary.structure": {
+      "value": "構造と形状",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.summary.suggestion_tag": {
+      "value": "参考提案",
+      "status": "reviewed",
+      "sourceHash": "24306b958b9f88da"
+    },
+    "customizer.summary.title": {
+      "value": "プロジェクト概要",
+      "status": "reviewed",
+      "sourceHash": "1f4e77e98ac6f838"
+    },
+    "customizer.summary.uncertain_tag": {
+      "value": "要確認",
+      "status": "reviewed",
+      "sourceHash": "4237b3b44dd9a860"
+    },
+    "customizer.summary.use_case": {
+      "value": "用途",
+      "status": "reviewed",
+      "sourceHash": "046def25f5b077ca"
+    },
+    "customizer.summary.visual": {
+      "value": "ビジュアルスタイル",
+      "status": "reviewed",
+      "sourceHash": "e00cf1143c6cdbec"
+    },
+    "customizer.visual.bold": {
+      "value": "大胆・エネルギッシュ",
+      "status": "reviewed",
+      "sourceHash": "004d57d44d441713"
+    },
+    "customizer.visual.bold_description": {
+      "value": "力強いリズムと明確な色面",
+      "status": "reviewed",
+      "sourceHash": "e7f44751bba93b4d"
+    },
+    "customizer.visual.brand": {
+      "value": "既存ブランドの表現を踏襲",
+      "status": "reviewed",
+      "sourceHash": "d656149d90fb64ec"
+    },
+    "customizer.visual.brand_description": {
+      "value": "名称、シンボル、アイデンティティを視覚的な焦点にする",
+      "status": "reviewed",
+      "sourceHash": "a046acb0cef23d16"
+    },
+    "customizer.visual.illustrated": {
+      "value": "遊び心のあるイラスト",
+      "status": "reviewed",
+      "sourceHash": "ade644603a96efe4"
+    },
+    "customizer.visual.illustrated_description": {
+      "value": "製品全体に展開するビジュアルストーリー",
+      "status": "reviewed",
+      "sourceHash": "be3e3e703d348e27"
+    },
+    "customizer.visual.minimal": {
+      "value": "ミニマル・モダン",
+      "status": "reviewed",
+      "sourceHash": "1936ec5e5270d5e3"
+    },
+    "customizer.visual.minimal_description": {
+      "value": "明確な情報階層と抑制したディテール",
+      "status": "reviewed",
+      "sourceHash": "a63549201fb8b7b4"
+    },
+    "customizer.visual.natural": {
+      "value": "自然な素材感",
+      "status": "reviewed",
+      "sourceHash": "de8526a5163c4ec6"
+    },
+    "customizer.visual.refined": {
+      "value": "上質・洗練",
+      "status": "reviewed",
+      "sourceHash": "27eaa3b7d753bd09"
+    },
+    "customizer.waiting": {
+      "value": "方向性を選択",
+      "status": "reviewed",
+      "sourceHash": "c1120f24153bd83e"
     },
     "faq.01_company_manufacturing_fit": {
       "value": "01 / 会社と製造の適合性",
@@ -2560,8 +3280,13 @@
       "sourceHash": "ebf8d8110850dcdf"
     },
     "privacy.how_the_web_form_works": {
-      "value": "Webフォームの仕組み",
-      "status": "needs_review",
+      "value": "カスタマイズスタジオでの情報の扱い",
+      "status": "reviewed",
+      "sourceHash": "bc19db130213e082"
+    },
+    "privacy.how_the_web_form_works_2": {
+      "value": "ウェブフォームでの情報の扱い",
+      "status": "reviewed",
       "sourceHash": "43e60c675ce6d04c"
     },
     "privacy.information_is_kept_only_for_as_long": {
@@ -2625,9 +3350,14 @@
       "sourceHash": "2514aeb0555faeee"
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "value": "見積もりフォームとお問い合わせフォームは、お客様のメールアプリケーションでメールを作成します。当ウェブサイトはそれらのフォーム入力をアップロードまたは保存することはありません。情報は、お客様がメールを確認して送信した場合にのみQinyiが受信します。",
-      "status": "needs_review",
-      "sourceHash": "36d9a4f2a499bc30"
+      "value": "コンセプトの検討中、選択内容と編集可能な概要はブラウザ内に保持されます。見積もりフォームに追加しても送信はされません。「その他のアイデア」を選んだ後に担当者との共同企画を依頼した場合、概要はサポートサービスに送信され、担当者相談が作成され、権限を持つ Qinyi の担当者が閲覧できます。",
+      "status": "reviewed",
+      "sourceHash": "a3bbac2687499901"
+    },
+    "privacy.the_quote_and_contact_forms_prepare_an_2": {
+      "value": "見積もり・お問い合わせフォームは、お使いのメールアプリで送信用メールを作成します。ウェブサイト自体は入力内容をアップロードまたは保存しません。Qinyi が情報を受け取るのは、内容を確認してメールを送信した後です。ただし、上記の共同企画操作で明示的に送信した概要は除きます。",
+      "status": "reviewed",
+      "sourceHash": "529053a269caf698"
     },
     "privacy.this_notice_explains_what_happens_when_a": {
       "value": "この通知は、見込み顧客またはビジネスコンタクトがQinyi Printingにお問い合わせやプロジェクト資料を送信した場合の取り扱いについて説明します。",
@@ -3325,7 +4055,12 @@
       "sourceHash": "6edaa2e170b7def6"
     },
     "quote.a_concise_first_review": {
-      "value": "簡潔な初回レビュー",
+      "value": "簡潔な初回確認。",
+      "status": "reviewed",
+      "sourceHash": "90fbf706fc995653"
+    },
+    "quote.a_concise_first_review_2": {
+      "value": "A concise first review.",
       "status": "needs_review",
       "sourceHash": "90fbf706fc995653"
     },
@@ -3495,14 +4230,14 @@
       "sourceHash": "7577a5a98323aaf3"
     },
     "quote.request_a_custom_manufacturing_quote": {
-      "value": "カスタム製造見積もりを依頼する",
-      "status": "needs_review",
-      "sourceHash": "66048860303d9e27"
+      "value": "カスタマイズと見積もり",
+      "status": "reviewed",
+      "sourceHash": "ef32ec984a6986ba"
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "value": "カスタム製造見積もりを依頼する | Qinyi Printing",
-      "status": "needs_review",
-      "sourceHash": "fea8be71aa6cbafb"
+      "value": "カスタマイズと見積もり | Qinyi Printing",
+      "status": "reviewed",
+      "sourceHash": "827d1573efcaee66"
     },
     "quote.review_result": {
       "value": "レビュー結果",
@@ -3515,27 +4250,32 @@
       "sourceHash": "5994bea3d662c0b7"
     },
     "quote.send_a_short_project_outline_first_qinyi": {
-      "value": "まずは簡単なプロジェクト概要をお送りください。Qinyiが製造適合性を確認し、見積もりに必要な図面、アートワーク、詳細仕様を依頼します。",
-      "status": "needs_review",
+      "value": "まず簡単なプロジェクト概要をお送りください。Qinyi が製造適合性を確認し、価格算出に必要な図面、アートワーク、詳細仕様を後ほど依頼します。",
+      "status": "reviewed",
       "sourceHash": "732dd3c1a0565ed2"
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
-      "value": "カスタムパズル、ペーパーゲーム、カード製品、印刷パッケージの2段階製造RFQを開始します。",
-      "status": "needs_review",
-      "sourceHash": "4e37d90ab1adbf9f"
+      "value": "編集可能な製品コンセプトを作成し、オリジナルパズル、紙製ゲーム、印刷パッケージの製造 RFQ に進めます。",
+      "status": "reviewed",
+      "sourceHash": "eae7cb2bbcc61b8f"
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "value": "中国東莞のQinyi Printingで、カスタムパズル、ペーパーゲーム、カード、印刷パッケージの2段階RFQを開始します。",
-      "status": "needs_review",
-      "sourceHash": "2426a0c5f16f240c"
+      "value": "ガイド付き製品コンセプトを検討し、編集可能なカスタマイズ概要を作成して、Qinyi Printing に製造見積もりを依頼できます。",
+      "status": "reviewed",
+      "sourceHash": "6b6ef5c33a94f362"
     },
     "quote.start_with_the_essentials": {
-      "value": "基本から始めましょう。",
-      "status": "needs_review",
+      "value": "基本情報から始めます。",
+      "status": "reviewed",
       "sourceHash": "b662c6f4326ee3a4"
     },
     "quote.step_1_of_2": {
-      "value": "ステップ1/2",
+      "value": "2 ステップ中 1 ステップ目",
+      "status": "reviewed",
+      "sourceHash": "e32a2b28a767ef5e"
+    },
+    "quote.step_1_of_2_2": {
+      "value": "Step 1 of 2",
       "status": "needs_review",
       "sourceHash": "e32a2b28a767ef5e"
     },
@@ -3555,8 +4295,8 @@
       "sourceHash": "a15c1c4cee08a63e"
     },
     "quote.two_step_rfq": {
-      "value": "2段階RFQ",
-      "status": "needs_review",
+      "value": "2 段階 RFQ",
+      "status": "reviewed",
       "sourceHash": "76ab0cd93471b22f"
     },
     "solutions.a_clearer_handoff": {

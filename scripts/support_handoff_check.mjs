@@ -2,15 +2,19 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 
 const root = new URL("../", import.meta.url);
-const [supportJs, supportCss, supportI18n, supportHtml] = await Promise.all([
+const [supportJs, supportCss, supportI18n, supportHtml, appJs, customizerJs] = await Promise.all([
   readFile(new URL("assets/support.js", root), "utf8"),
   readFile(new URL("assets/support.css", root), "utf8"),
   readFile(new URL("assets/support-i18n.js", root), "utf8"),
   readFile(new URL("ai-support.html", root), "utf8"),
+  readFile(new URL("assets/app.js", root), "utf8"),
+  readFile(new URL("assets/customizer.js", root), "utf8"),
 ]);
 
 assert.doesNotThrow(() => new Function(supportJs), "support.js must parse");
 assert.doesNotThrow(() => new Function(supportI18n), "support-i18n.js must parse");
+assert.doesNotThrow(() => new Function(appJs), "app.js must parse");
+assert.doesNotThrow(() => new Function(customizerJs), "customizer.js must parse");
 
 for (const status of ["waiting_human", "acknowledged", "human_active", "resolved"]) {
   assert.match(supportJs, new RegExp(`\\b${status}\\b`), `missing ${status} state`);
@@ -34,5 +38,11 @@ for (const key of ["handoffWaitingTitle", "handoffWaitingBadge", "handoffWaiting
   const matches = supportI18n.match(new RegExp(`${key}:`, "g")) || [];
   assert.equal(matches.length, 2, `${key} must exist in Chinese and English`);
 }
+
+assert.match(customizerJs, /if \(!ticketId \|\| \(action && action !== "handoff"\)\)/, "customizer must require a confirmed handoff ticket");
+assert.match(customizerJs, /new AbortController\(\)[\s\S]*?controller\.abort\(\)/, "customizer handoff must have a request timeout");
+assert.match(customizerJs, /qinyi:open-support[\s\S]*?ticketId/, "customizer must pass the new ticket to the support widget");
+assert.match(customizerJs, /event\.persisted[\s\S]*?resizeObserver\.disconnect\(\)/, "3D cleanup must preserve bfcache and disconnect observers on final exit");
+assert.match(appJs, /ticketUrl\.searchParams\.set\('ticket', ticketId\)[\s\S]*?frame\.src = ticketUrl\.href/, "loaded support iframe must refresh onto a newly created ticket");
 
 console.log("Support handoff contract check passed.");

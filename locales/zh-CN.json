@@ -2,7 +2,7 @@
   "locale": "zh-CN",
   "languageName": "简体中文",
   "direction": "ltr",
-  "updatedAt": "2026-07-26",
+  "updatedAt": "2026-07-27",
   "messages": {
     "about.a_manufacturing_team_for_custom_paper_products": {
       "value": "定制纸制品的制造团队。",
@@ -269,6 +269,11 @@
       "status": "needs_review",
       "sourceHash": "71414fb92a52d351"
     },
+    "common.customization_quote": {
+      "value": "定制化与报价",
+      "status": "reviewed",
+      "sourceHash": "cf8ce130fa26ee10"
+    },
     "common.deutsch": {
       "value": "Deutsch",
       "status": "needs_review",
@@ -318,6 +323,11 @@
       "value": "探索",
       "status": "needs_review",
       "sourceHash": "3b73900b8d29f963"
+    },
+    "common.floating.quote": {
+      "value": "索取报价",
+      "status": "reviewed",
+      "sourceHash": "724f2336bf690001"
     },
     "common.form.default_product": {
       "value": "定制纸制品",
@@ -396,7 +406,7 @@
     },
     "common.materials": {
       "value": "材料",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "fd10a146e9625bfd"
     },
     "common.menu.close": {
@@ -429,6 +439,11 @@
       "status": "needs_review",
       "sourceHash": "2b5c3d26721ae9c3"
     },
+    "common.nav.custom_quote": {
+      "value": "定制化与索取报价",
+      "status": "reviewed",
+      "sourceHash": "bbf75a9ec534e238"
+    },
     "common.nav.manufacturing": {
       "value": "制造与质量",
       "status": "needs_review",
@@ -451,7 +466,7 @@
     },
     "common.nav.quote": {
       "value": "索取报价",
-      "status": "needs_review",
+      "status": "reviewed",
       "sourceHash": "724f2336bf690001"
     },
     "common.nav.trade": {
@@ -753,6 +768,711 @@
       "value": "话题",
       "status": "needs_review",
       "sourceHash": "7e61847d61d65d9e"
+    },
+    "customizer.action.back": {
+      "value": "返回",
+      "status": "reviewed",
+      "sourceHash": "76900f1bfd16c8d4"
+    },
+    "customizer.action.confirm": {
+      "value": "确认选择",
+      "status": "reviewed",
+      "sourceHash": "9ce9c379f3f4b337"
+    },
+    "customizer.action.edit": {
+      "value": "修改",
+      "status": "reviewed",
+      "sourceHash": "464c4ffd019e1e96"
+    },
+    "customizer.action.finish": {
+      "value": "完成概念需求",
+      "status": "reviewed",
+      "sourceHash": "f704e27d24ce5bf8"
+    },
+    "customizer.action.next": {
+      "value": "继续",
+      "status": "reviewed",
+      "sourceHash": "31fbef162594de01"
+    },
+    "customizer.action.reset": {
+      "value": "重新选择",
+      "status": "reviewed",
+      "sourceHash": "a53881ba69df563d"
+    },
+    "customizer.action.start": {
+      "value": "开始",
+      "status": "reviewed",
+      "sourceHash": "e4bb9f1ece9af926"
+    },
+    "customizer.brief.audience": {
+      "value": "目标受众",
+      "status": "reviewed",
+      "sourceHash": "685b100332e1d6af"
+    },
+    "customizer.brief.audience_placeholder": {
+      "value": "谁会收到、购买或使用这个产品？",
+      "status": "reviewed",
+      "sourceHash": "718f247c7bb85722"
+    },
+    "customizer.brief.budget": {
+      "value": "参考预算",
+      "status": "reviewed",
+      "sourceHash": "8549fe0c32f90bbe"
+    },
+    "customizer.brief.budget_placeholder": {
+      "value": "填写预算范围与币种",
+      "status": "reviewed",
+      "sourceHash": "54f6a2ec160833c8"
+    },
+    "customizer.brief.delivery": {
+      "value": "期望交付时间",
+      "status": "reviewed",
+      "sourceHash": "48abddfa2566f81c"
+    },
+    "customizer.brief.delivery_placeholder": {
+      "value": "填写目标日期或时间范围",
+      "status": "reviewed",
+      "sourceHash": "f9435a85abf69ddf"
+    },
+    "customizer.brief.intro": {
+      "value": "大致信息也有帮助；尚未确定的项目可以保留待讨论。",
+      "status": "reviewed",
+      "sourceHash": "bd02dd3cced86b00"
+    },
+    "customizer.brief.notes": {
+      "value": "补充说明",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.brief.notes_placeholder": {
+      "value": "补充尺寸、包装、文件要求或其他细节",
+      "status": "reviewed",
+      "sourceHash": "1d3cc2ac67057106"
+    },
+    "customizer.brief.quantity": {
+      "value": "数量范围",
+      "status": "reviewed",
+      "sourceHash": "cb0e79f4d8d3c34f"
+    },
+    "customizer.brief.quantity_placeholder": {
+      "value": "填写大致数量",
+      "status": "reviewed",
+      "sourceHash": "7f166f6508c82ea7"
+    },
+    "customizer.brief.reference": {
+      "value": "参考风格",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.brief.reference_placeholder": {
+      "value": "描述风格或添加可公开访问的参考链接",
+      "status": "reviewed",
+      "sourceHash": "9193edc379a9ba67"
+    },
+    "customizer.brief.title": {
+      "value": "补充项目期望",
+      "status": "reviewed",
+      "sourceHash": "f64732d495f71fc2"
+    },
+    "customizer.brief.use_case": {
+      "value": "使用场景或用途",
+      "status": "reviewed",
+      "sourceHash": "fdc8eab73a9c0950"
+    },
+    "customizer.brief.use_case_placeholder": {
+      "value": "例如：企业礼品、教育、零售或个人使用",
+      "status": "reviewed",
+      "sourceHash": "b425df88aa51b9a9"
+    },
+    "customizer.complete": {
+      "value": "完成",
+      "status": "reviewed",
+      "sourceHash": "143b270a32602d41"
+    },
+    "customizer.finish.board_description": {
+      "value": "呈现纸张本身的质感与触感温度",
+      "status": "reviewed",
+      "sourceHash": "7c5babc52618bee3"
+    },
+    "customizer.finish.emboss": {
+      "value": "压凸或压凹",
+      "status": "reviewed",
+      "sourceHash": "2ac2f3e7a1e8a454"
+    },
+    "customizer.finish.emboss_description": {
+      "value": "通过压凸或压凹形成触觉层次",
+      "status": "reviewed",
+      "sourceHash": "a1344072151181ce"
+    },
+    "customizer.finish.foil": {
+      "value": "烫印",
+      "status": "reviewed",
+      "sourceHash": "a2903b0ec16ef8b8"
+    },
+    "customizer.finish.foil_description": {
+      "value": "在重点细节使用可控的金属光泽",
+      "status": "reviewed",
+      "sourceHash": "2529154a0987bc78"
+    },
+    "customizer.finish.lamination": {
+      "value": "哑膜或亮膜",
+      "status": "reviewed",
+      "sourceHash": "145850ffec2558c0"
+    },
+    "customizer.finish.lamination_description": {
+      "value": "耐用的哑光或亮光表面",
+      "status": "reviewed",
+      "sourceHash": "8504b165b8ade421"
+    },
+    "customizer.finish.spot_uv": {
+      "value": "局部 UV",
+      "status": "reviewed",
+      "sourceHash": "911e6c1f3f9a2619"
+    },
+    "customizer.finish.spot_uv_description": {
+      "value": "在印刷区域形成选择性的亮光对比",
+      "status": "reviewed",
+      "sourceHash": "4467728fb381289d"
+    },
+    "customizer.finish.unsure": {
+      "value": "表面工艺待确定",
+      "status": "reviewed",
+      "sourceHash": "dbd32129faa63f33"
+    },
+    "customizer.free_model": {
+      "value": "开放式概念",
+      "status": "reviewed",
+      "sourceHash": "ed2b36c0c6d2cccc"
+    },
+    "customizer.handoff_ready": {
+      "value": "人工客服请求已创建：{ticket}",
+      "status": "reviewed",
+      "sourceHash": "67fea34244d06647"
+    },
+    "customizer.home.body": {
+      "value": "选择产品方向、结构、材质与视觉风格，形成一份可修改的初步需求摘要，由我们与您继续评审。",
+      "status": "reviewed",
+      "sourceHash": "f8e8e6e43065d2d4"
+    },
+    "customizer.home.cta": {
+      "value": "开始定制",
+      "status": "reviewed",
+      "sourceHash": "dc4313d81678924e"
+    },
+    "customizer.home.eyebrow": {
+      "value": "引导式定制",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.home.secondary_cta": {
+      "value": "直接进入报价表",
+      "status": "reviewed",
+      "sourceHash": "49eaeff513cfa46c"
+    },
+    "customizer.home.title": {
+      "value": "还没有完整方案？从一个想法开始。",
+      "status": "reviewed",
+      "sourceHash": "b5724c23db303151"
+    },
+    "customizer.human.failed": {
+      "value": "暂时无法发送请求，请重试或继续填写报价表。",
+      "status": "reviewed",
+      "sourceHash": "742ec913c58aa0de"
+    },
+    "customizer.human.request": {
+      "value": "请求人工创意顾问",
+      "status": "reviewed",
+      "sourceHash": "bd1f92625f3bd20c"
+    },
+    "customizer.human.sending": {
+      "value": "正在发送顾问请求...",
+      "status": "reviewed",
+      "sourceHash": "b8f4f372213666e9"
+    },
+    "customizer.human.sent": {
+      "value": "顾问请求已发送",
+      "status": "reviewed",
+      "sourceHash": "23055c7086f79c66"
+    },
+    "customizer.material.greyboard": {
+      "value": "纸张裱贴灰板",
+      "status": "reviewed",
+      "sourceHash": "b876994ecaa7f417"
+    },
+    "customizer.material.recycled": {
+      "value": "再生纸",
+      "status": "reviewed",
+      "sourceHash": "de5f0927b7c8c8da"
+    },
+    "customizer.material.special_paper": {
+      "value": "创意纸或特种纸",
+      "status": "reviewed",
+      "sourceHash": "39cf1cc501ce0af5"
+    },
+    "customizer.material.unsure": {
+      "value": "材质待确定",
+      "status": "reviewed",
+      "sourceHash": "c925a396530a16cc"
+    },
+    "customizer.model_paper_3d": {
+      "value": "3D 纸艺概念",
+      "status": "reviewed",
+      "sourceHash": "788d8ccf070c769f"
+    },
+    "customizer.model_paper_goods": {
+      "value": "纸制品概念",
+      "status": "reviewed",
+      "sourceHash": "14889fb99ebbb0ce"
+    },
+    "customizer.model_puzzle": {
+      "value": "拼图概念",
+      "status": "reviewed",
+      "sourceHash": "a9775a1f025dd11a"
+    },
+    "customizer.name": {
+      "value": "灵感定制工作室",
+      "status": "reviewed",
+      "sourceHash": "a0a63e2ff2bf34f9"
+    },
+    "customizer.open": {
+      "value": "开放",
+      "status": "reviewed",
+      "sourceHash": "ed077f3d8125d60d"
+    },
+    "customizer.page.eyebrow": {
+      "value": "引导式定制",
+      "status": "reviewed",
+      "sourceHash": "f80d654f7a96b53a"
+    },
+    "customizer.page.intro": {
+      "value": "先形成初步产品方向，再将生成的需求摘要带入报价申请。",
+      "status": "reviewed",
+      "sourceHash": "341ced65bd204b53"
+    },
+    "customizer.page.title": {
+      "value": "定制化与索取报价",
+      "status": "reviewed",
+      "sourceHash": "914fa00fd22fe0d9"
+    },
+    "customizer.preview": {
+      "value": "预览：{name}",
+      "status": "reviewed",
+      "sourceHash": "b654b8c2f035bc83"
+    },
+    "customizer.preview.disclaimer": {
+      "value": "此画面仅为概念预览，不是生产样品或具有约束力的报价。材料、工艺、尺寸、可行性、价格与交期将在技术评审后确认。",
+      "status": "reviewed",
+      "sourceHash": "37904f64e1571d5d"
+    },
+    "customizer.preview.label": {
+      "value": "概念预览",
+      "status": "reviewed",
+      "sourceHash": "305245dc4d0b1d69"
+    },
+    "customizer.preview.waiting": {
+      "value": "您的选择将逐步形成预览。",
+      "status": "reviewed",
+      "sourceHash": "0c9b59fd05330d9f"
+    },
+    "customizer.product.game_packaging": {
+      "value": "纸质游戏与礼品包装",
+      "status": "reviewed",
+      "sourceHash": "80abc0fbdd753ea1"
+    },
+    "customizer.product.game_packaging.help": {
+      "value": "卡牌、纸质游戏、礼品盒或配套包装方向。",
+      "status": "reviewed",
+      "sourceHash": "f918dfabe78fb79f"
+    },
+    "customizer.product.other": {
+      "value": "更多想法",
+      "status": "reviewed",
+      "sourceHash": "fcf8f9c1348b06ae"
+    },
+    "customizer.product.other_help": {
+      "value": "自由描述您的想法，也可以请求人工创意顾问协助。",
+      "status": "reviewed",
+      "sourceHash": "625fae54bedad1f2"
+    },
+    "customizer.product.other_label": {
+      "value": "描述您的想法",
+      "status": "reviewed",
+      "sourceHash": "57260354e46c06f7"
+    },
+    "customizer.product.other_placeholder": {
+      "value": "告诉我们您想制作什么、如何使用，以及希望它呈现怎样的感受。",
+      "status": "reviewed",
+      "sourceHash": "293c11f6f332424c"
+    },
+    "customizer.product.paper_3d": {
+      "value": "3D 纸质拼图",
+      "status": "reviewed",
+      "sourceHash": "2e6b0b30a4c5e0ca"
+    },
+    "customizer.product.paper_3d.help": {
+      "value": "使用印刷纸质部件组装成立体物件。",
+      "status": "reviewed",
+      "sourceHash": "e1e4369c60d8798d"
+    },
+    "customizer.product.puzzle": {
+      "value": "拼图作品",
+      "status": "reviewed",
+      "sourceHash": "b88139a844b20251"
+    },
+    "customizer.product.puzzle.help": {
+      "value": "平面拼图或以图像内容为核心的艺术拼图形式。",
+      "status": "reviewed",
+      "sourceHash": "10052c3003986642"
+    },
+    "customizer.progress": {
+      "value": "第 {current} 步，共 4 步",
+      "status": "reviewed",
+      "sourceHash": "13888e65d912ca4a"
+    },
+    "customizer.quote.continue": {
+      "value": "继续填写报价表",
+      "status": "reviewed",
+      "sourceHash": "1ea448ef463e1d9e"
+    },
+    "customizer.quote.notice": {
+      "value": "系统不会自动计算价格。可行性、价格与交期将在技术评审后确认。",
+      "status": "reviewed",
+      "sourceHash": "1738117808396fb2"
+    },
+    "customizer.quote.prepare": {
+      "value": "准备报价申请",
+      "status": "reviewed",
+      "sourceHash": "4dc72476c633b6bd"
+    },
+    "customizer.shaped": {
+      "value": "已完成 {count}/4 项选择",
+      "status": "reviewed",
+      "sourceHash": "8d51fb1a609d609f"
+    },
+    "customizer.shaped_open": {
+      "value": "已完成 {count}/4 项选择 · {open} 项待定",
+      "status": "reviewed",
+      "sourceHash": "dc5a80986d48c4f6"
+    },
+    "customizer.status.missing": {
+      "value": "请填写必填信息后继续。",
+      "status": "reviewed",
+      "sourceHash": "81ba99d232a725f2"
+    },
+    "customizer.status.optional": {
+      "value": "选填",
+      "status": "reviewed",
+      "sourceHash": "59be71333c960fd0"
+    },
+    "customizer.status.required": {
+      "value": "必填",
+      "status": "reviewed",
+      "sourceHash": "4850b174b713d88c"
+    },
+    "customizer.status.summary_ready": {
+      "value": "需求摘要已可查看",
+      "status": "reviewed",
+      "sourceHash": "1d260cf23fb46cf7"
+    },
+    "customizer.step.material.help": {
+      "value": "选择偏好的材料与表面工艺；可多选，也可保留待定项。",
+      "status": "reviewed",
+      "sourceHash": "15f7f8cf7757417d"
+    },
+    "customizer.step.material.number": {
+      "value": "03 / 材质",
+      "status": "reviewed",
+      "sourceHash": "44209ec2bc2663ea"
+    },
+    "customizer.step.material.title": {
+      "value": "材料与表面工艺",
+      "status": "reviewed",
+      "sourceHash": "a9009aa83f05e541"
+    },
+    "customizer.step.product.help": {
+      "value": "选择最接近您想法的起点，后续仍可补充细节。",
+      "status": "reviewed",
+      "sourceHash": "76ede206e4f6d72a"
+    },
+    "customizer.step.product.number": {
+      "value": "01 / 方向",
+      "status": "reviewed",
+      "sourceHash": "73db3d0b375247c4"
+    },
+    "customizer.step.product.title": {
+      "value": "产品方向",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.step.structure.help": {
+      "value": "先选择一个结构方向，具体技术可行性将在后续评审。",
+      "status": "reviewed",
+      "sourceHash": "c02088ee961f4578"
+    },
+    "customizer.step.structure.number": {
+      "value": "02 / 结构",
+      "status": "reviewed",
+      "sourceHash": "9cc74b99824b51a0"
+    },
+    "customizer.step.structure.title": {
+      "value": "结构与造型",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.step.visual.help": {
+      "value": "选择最接近期望成品感受的视觉方向。",
+      "status": "reviewed",
+      "sourceHash": "3a1c892512953df2"
+    },
+    "customizer.step.visual.number": {
+      "value": "04 / 视觉",
+      "status": "reviewed",
+      "sourceHash": "c4bd690b234f407b"
+    },
+    "customizer.step.visual.title": {
+      "value": "视觉风格与个性",
+      "status": "reviewed",
+      "sourceHash": "b36632c96b2e0285"
+    },
+    "customizer.structure.cards_description": {
+      "value": "卡牌、分隔件与贴合的印刷盒",
+      "status": "reviewed",
+      "sourceHash": "2466624ad6ea91cd"
+    },
+    "customizer.structure.classic_description": {
+      "value": "均衡的拼块接口与熟悉的拼装方式",
+      "status": "reviewed",
+      "sourceHash": "a717249b1199797c"
+    },
+    "customizer.structure.custom_shape": {
+      "value": "自定义外形与轮廓",
+      "status": "reviewed",
+      "sourceHash": "65c539d36a665fd8"
+    },
+    "customizer.structure.custom_shape_description": {
+      "value": "圆润的连接方式或自定义产品轮廓",
+      "status": "reviewed",
+      "sourceHash": "0dbea09755bcb6f9"
+    },
+    "customizer.structure.flat": {
+      "value": "经典平面形式",
+      "status": "reviewed",
+      "sourceHash": "ec80c9fbfa1c6fd6"
+    },
+    "customizer.structure.foldable": {
+      "value": "折叠或自行组装结构",
+      "status": "reviewed",
+      "sourceHash": "ba1ea3a1fd7b3404"
+    },
+    "customizer.structure.foldable_description": {
+      "value": "通过折叠、插接或简易组装连接部件",
+      "status": "reviewed",
+      "sourceHash": "afac25cc1bf1b047"
+    },
+    "customizer.structure.game_description": {
+      "value": "棋盘、卡牌、规则与包装组成一套产品",
+      "status": "reviewed",
+      "sourceHash": "ac4782a3742253c5"
+    },
+    "customizer.structure.hybrid_description": {
+      "value": "组合两种或更多纸制品类型",
+      "status": "reviewed",
+      "sourceHash": "bb6bb5f2ef91dbef"
+    },
+    "customizer.structure.layered": {
+      "value": "多层立体结构",
+      "status": "reviewed",
+      "sourceHash": "8a472aa4e2990128"
+    },
+    "customizer.structure.layered_description": {
+      "value": "印刷层叠结构形成体积与深度",
+      "status": "reviewed",
+      "sourceHash": "3706e4b14855cabc"
+    },
+    "customizer.structure.open_description": {
+      "value": "保留结构未定，供共同创作",
+      "status": "reviewed",
+      "sourceHash": "9ea0f4b9d8784e18"
+    },
+    "customizer.structure.pack_description": {
+      "value": "带配套内托的展示礼盒",
+      "status": "reviewed",
+      "sourceHash": "f4cfb1d9d63a83f4"
+    },
+    "customizer.structure.reference_description": {
+      "value": "从现有实物或图片开始开发",
+      "status": "reviewed",
+      "sourceHash": "2ae2df3a134b37dc"
+    },
+    "customizer.structure.set": {
+      "value": "组合套装",
+      "status": "reviewed",
+      "sourceHash": "fda06b3868af6fe8"
+    },
+    "customizer.structure.set_description": {
+      "value": "多个部件组合成一个协调产品",
+      "status": "reviewed",
+      "sourceHash": "92cbf799eeeab50b"
+    },
+    "customizer.structure.unsure": {
+      "value": "待确定",
+      "status": "reviewed",
+      "sourceHash": "31d17eb884e6f3fe"
+    },
+    "customizer.structure.unsure_description": {
+      "value": "保留特殊外形或结构，留待评审",
+      "status": "reviewed",
+      "sourceHash": "75ad0b48d3c354f2"
+    },
+    "customizer.summary.audience": {
+      "value": "目标受众",
+      "status": "reviewed",
+      "sourceHash": "545c02357695a6ff"
+    },
+    "customizer.summary.body": {
+      "value": "您的选择将整理为暂定需求，并可在索取报价前继续修改。",
+      "status": "reviewed",
+      "sourceHash": "b81f15279fbab226"
+    },
+    "customizer.summary.budget": {
+      "value": "预算",
+      "status": "reviewed",
+      "sourceHash": "1c6225ec7092ad2f"
+    },
+    "customizer.summary.delivery": {
+      "value": "交付时间",
+      "status": "reviewed",
+      "sourceHash": "4a4bd27030d2deaa"
+    },
+    "customizer.summary.empty": {
+      "value": "选择一些选项后即可生成需求摘要。",
+      "status": "reviewed",
+      "sourceHash": "625c95a62181912d"
+    },
+    "customizer.summary.finish": {
+      "value": "表面工艺",
+      "status": "reviewed",
+      "sourceHash": "426962884f1959a2"
+    },
+    "customizer.summary.generated_label": {
+      "value": "定制需求摘要",
+      "status": "reviewed",
+      "sourceHash": "d3cb1ae47c969dc8"
+    },
+    "customizer.summary.material": {
+      "value": "材料",
+      "status": "reviewed",
+      "sourceHash": "fd10a146e9625bfd"
+    },
+    "customizer.summary.notes": {
+      "value": "补充说明",
+      "status": "reviewed",
+      "sourceHash": "5871e1abaa639712"
+    },
+    "customizer.summary.open_items": {
+      "value": "待确定项目",
+      "status": "reviewed",
+      "sourceHash": "d6b347f2ce7fad0c"
+    },
+    "customizer.summary.product": {
+      "value": "产品方向",
+      "status": "reviewed",
+      "sourceHash": "f9edf99021c87e0b"
+    },
+    "customizer.summary.quantity": {
+      "value": "数量",
+      "status": "reviewed",
+      "sourceHash": "822bab8d41bca8d7"
+    },
+    "customizer.summary.reference": {
+      "value": "参考风格",
+      "status": "reviewed",
+      "sourceHash": "880786a97e903197"
+    },
+    "customizer.summary.structure": {
+      "value": "结构与造型",
+      "status": "reviewed",
+      "sourceHash": "0495e4d69aa7e85b"
+    },
+    "customizer.summary.suggestion_tag": {
+      "value": "参考建议",
+      "status": "reviewed",
+      "sourceHash": "24306b958b9f88da"
+    },
+    "customizer.summary.title": {
+      "value": "项目需求摘要",
+      "status": "reviewed",
+      "sourceHash": "1f4e77e98ac6f838"
+    },
+    "customizer.summary.uncertain_tag": {
+      "value": "待确认",
+      "status": "reviewed",
+      "sourceHash": "4237b3b44dd9a860"
+    },
+    "customizer.summary.use_case": {
+      "value": "使用场景",
+      "status": "reviewed",
+      "sourceHash": "046def25f5b077ca"
+    },
+    "customizer.summary.visual": {
+      "value": "视觉风格",
+      "status": "reviewed",
+      "sourceHash": "e00cf1143c6cdbec"
+    },
+    "customizer.visual.bold": {
+      "value": "大胆活力",
+      "status": "reviewed",
+      "sourceHash": "004d57d44d441713"
+    },
+    "customizer.visual.bold_description": {
+      "value": "强烈节奏与鲜明色块",
+      "status": "reviewed",
+      "sourceHash": "e7f44751bba93b4d"
+    },
+    "customizer.visual.brand": {
+      "value": "沿用现有品牌视觉",
+      "status": "reviewed",
+      "sourceHash": "d656149d90fb64ec"
+    },
+    "customizer.visual.brand_description": {
+      "value": "以名称、符号或品牌标识作为视觉焦点",
+      "status": "reviewed",
+      "sourceHash": "a046acb0cef23d16"
+    },
+    "customizer.visual.illustrated": {
+      "value": "趣味插画",
+      "status": "reviewed",
+      "sourceHash": "ade644603a96efe4"
+    },
+    "customizer.visual.illustrated_description": {
+      "value": "将视觉叙事延伸到整个产品",
+      "status": "reviewed",
+      "sourceHash": "be3e3e703d348e27"
+    },
+    "customizer.visual.minimal": {
+      "value": "简约现代",
+      "status": "reviewed",
+      "sourceHash": "1936ec5e5270d5e3"
+    },
+    "customizer.visual.minimal_description": {
+      "value": "清晰层级与克制细节",
+      "status": "reviewed",
+      "sourceHash": "a63549201fb8b7b4"
+    },
+    "customizer.visual.natural": {
+      "value": "自然质感",
+      "status": "reviewed",
+      "sourceHash": "de8526a5163c4ec6"
+    },
+    "customizer.visual.refined": {
+      "value": "精致高级",
+      "status": "reviewed",
+      "sourceHash": "27eaa3b7d753bd09"
+    },
+    "customizer.waiting": {
+      "value": "选择一个方向",
+      "status": "reviewed",
+      "sourceHash": "c1120f24153bd83e"
     },
     "faq.01_company_manufacturing_fit": {
       "value": "01 / 公司与制造契合",
@@ -2560,8 +3280,13 @@
       "sourceHash": "ebf8d8110850dcdf"
     },
     "privacy.how_the_web_form_works": {
-      "value": "网络形式如何运作",
-      "status": "needs_review",
+      "value": "定制工作室如何处理信息",
+      "status": "reviewed",
+      "sourceHash": "bc19db130213e082"
+    },
+    "privacy.how_the_web_form_works_2": {
+      "value": "网页表单如何处理信息",
+      "status": "reviewed",
       "sourceHash": "43e60c675ce6d04c"
     },
     "privacy.information_is_kept_only_for_as_long": {
@@ -2625,9 +3350,14 @@
       "sourceHash": "2514aeb0555faeee"
     },
     "privacy.the_quote_and_contact_forms_prepare_an": {
-      "value": "报价和联系表会在您的电子邮件应用程序中准备电子邮件 。 网站不声称要上传或存储这些表格条目。 勤益只有在审查并发送邮件时才会收到信息.",
-      "status": "needs_review",
-      "sourceHash": "36d9a4f2a499bc30"
+      "value": "探索概念时，您的选择与可修改摘要保留在浏览器中。将摘要加入报价表不会提交信息。若选择“更多想法”后主动请求人工共创，摘要将发送至客服服务以创建人工请求，并供获授权的勤益客服人员查看。",
+      "status": "reviewed",
+      "sourceHash": "a3bbac2687499901"
+    },
+    "privacy.the_quote_and_contact_forms_prepare_an_2": {
+      "value": "报价与联系表会在您自己的邮件应用中准备邮件；网站不会上传或存储这些表单内容。只有在您检查并发送邮件后，勤益才会收到信息，但您通过上述人工共创操作主动发送的定制摘要除外。",
+      "status": "reviewed",
+      "sourceHash": "529053a269caf698"
     },
     "privacy.this_notice_explains_what_happens_when_a": {
       "value": "本通知解释未来客户或业务联系人向勤益询问或项目材料时会发生什么.",
@@ -3325,7 +4055,12 @@
       "sourceHash": "6edaa2e170b7def6"
     },
     "quote.a_concise_first_review": {
-      "value": "简洁的第一评论.",
+      "value": "简洁的初步审查。",
+      "status": "reviewed",
+      "sourceHash": "90fbf706fc995653"
+    },
+    "quote.a_concise_first_review_2": {
+      "value": "A concise first review.",
       "status": "needs_review",
       "sourceHash": "90fbf706fc995653"
     },
@@ -3495,14 +4230,14 @@
       "sourceHash": "7577a5a98323aaf3"
     },
     "quote.request_a_custom_manufacturing_quote": {
-      "value": "请求定制制造报价",
-      "status": "needs_review",
-      "sourceHash": "66048860303d9e27"
+      "value": "定制化与报价",
+      "status": "reviewed",
+      "sourceHash": "ef32ec984a6986ba"
     },
     "quote.request_a_custom_manufacturing_quote_qinyi": {
-      "value": "申请定制生产报价 | 勤益",
-      "status": "needs_review",
-      "sourceHash": "fea8be71aa6cbafb"
+      "value": "定制化与报价 | 勤益",
+      "status": "reviewed",
+      "sourceHash": "827d1573efcaee66"
     },
     "quote.review_result": {
       "value": "审查结果",
@@ -3515,27 +4250,32 @@
       "sourceHash": "5994bea3d662c0b7"
     },
     "quote.send_a_short_project_outline_first_qinyi": {
-      "value": "先发送短项目大纲. 勤益将审查制造是否合适,然后要求提供定价所需的图纸、设计稿和详细规格。",
-      "status": "needs_review",
+      "value": "先发送简短的项目概述。勤益将评审制造匹配度，再索取定价所需的图纸、设计稿与详细规格。",
+      "status": "reviewed",
       "sourceHash": "732dd3c1a0565ed2"
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
-      "value": "启动两步制造RFQ，用于定制拼图、纸牌游戏、卡片产品或印刷包装。",
-      "status": "needs_review",
-      "sourceHash": "4e37d90ab1adbf9f"
+      "value": "创建可修改的产品概念，并继续为定制拼图、纸质游戏或印刷包装提交制造 RFQ。",
+      "status": "reviewed",
+      "sourceHash": "eae7cb2bbcc61b8f"
     },
     "quote.start_a_two_step_rfq_for_custom": {
-      "value": "在中国东莞开始使用勤益的定制拼图,纸牌游戏,卡片或印刷包装的两步RFQ.",
-      "status": "needs_review",
-      "sourceHash": "2426a0c5f16f240c"
+      "value": "探索引导式产品概念、创建可修改的定制需求摘要，并向勤益申请生产报价。",
+      "status": "reviewed",
+      "sourceHash": "6b6ef5c33a94f362"
     },
     "quote.start_with_the_essentials": {
-      "value": "从基本内容开始.",
-      "status": "needs_review",
+      "value": "从基本信息开始。",
+      "status": "reviewed",
       "sourceHash": "b662c6f4326ee3a4"
     },
     "quote.step_1_of_2": {
-      "value": "2步骤1",
+      "value": "第 1 步，共 2 步",
+      "status": "reviewed",
+      "sourceHash": "e32a2b28a767ef5e"
+    },
+    "quote.step_1_of_2_2": {
+      "value": "Step 1 of 2",
       "status": "needs_review",
       "sourceHash": "e32a2b28a767ef5e"
     },
@@ -3555,8 +4295,8 @@
       "sourceHash": "a15c1c4cee08a63e"
     },
     "quote.two_step_rfq": {
-      "value": "两步RFQ",
-      "status": "needs_review",
+      "value": "两步式 RFQ",
+      "status": "reviewed",
       "sourceHash": "76ab0cd93471b22f"
     },
     "solutions.a_clearer_handoff": {
