@@ -45,7 +45,7 @@ document.documentElement.dir = i18n.locale === 'ar' ? 'rtl' : 'ltr';
 document.documentElement.style.setProperty('--rfq-production-brief', JSON.stringify(t('common.rfq.production_brief')));
 
 if (currentPage === 'quote.html') {
-  document.title = `${t('customizer.page.title')} | Qinyi Printing`;
+  document.title = `${t('customizer.page.title')} | ${t('common.qinyi')}`;
 }
 
 document.querySelectorAll('.nav-actions a[href="quote.html"]').forEach((link) => {
