@@ -29,6 +29,16 @@ jobs:
         run: node scripts/i18n_build.mjs
       - name: Validate generated site
         run: python3 scripts/site_smoke.py
+      - name: Validate CMS-driven customizer contract
+        run: node scripts/customizer_cms_contract_check.mjs
+      - name: Validate CMS site-content runtime contract
+        run: node scripts/site_content_runtime_check.mjs
+      - name: Validate support handoff contract
+        run: node scripts/support_handoff_check.mjs
+      - name: Validate visitor order contract
+        run: node scripts/order_frontend_contract_check.mjs
+      - name: Validate standalone repository delivery
+        run: node scripts/verify_repository_delivery.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

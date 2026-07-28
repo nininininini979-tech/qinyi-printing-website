@@ -100,6 +100,7 @@ p { margin: 0; }
 .nav-links a:hover, .nav-links a[aria-current="page"] { border-color: var(--orange); }
 .mobile-nav-only { display: none; }
 .nav-actions { display: flex; align-items: center; gap: 12px; }
+.order-portal-trigger { min-height: 40px; padding: 8px 12px; border: 0; background: transparent; color: var(--ink); font-size: .78rem; font-weight: 800; cursor: pointer; }
 .lang-select { padding: 10px 26px 10px 10px; border: 0; background: transparent; color: var(--muted); font-size: .78rem; }
 .menu-toggle { display: none; width: 44px; height: 44px; border: 1px solid var(--line); background: var(--white); cursor: pointer; }
 .menu-toggle span, .menu-toggle::before, .menu-toggle::after { content: ""; display: block; width: 19px; height: 2px; margin: 4px auto; background: var(--ink); transition: transform .2s, opacity .2s; }
@@ -115,6 +116,46 @@ p { margin: 0; }
 .btn.ghost-light { border-color: rgba(255,255,255,.5); background: transparent; color: white; }
 .text-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; color: var(--orange-dark); font-size: .84rem; font-weight: 800; }
 .text-link::after { content: "\2192"; font-size: 1.2rem; }
+
+.order-portal-open { overflow: hidden; }
+.order-portal-layer { position: fixed; inset: 0; z-index: 1200; }
+.order-portal-layer[hidden] { display: none; }
+.order-portal-scrim { position: absolute; inset: 0; background: rgba(23,25,22,.52); }
+.order-portal-dialog { position: absolute; inset: 5vh 5vw 5vh auto; display: grid; grid-template-rows: 64px minmax(0,1fr); width: min(760px,90vw); overflow: hidden; border: 1px solid var(--ink); border-radius: 6px; background: var(--white); box-shadow: 12px 12px 0 rgba(23,25,22,.7); }
+.order-portal-dialog > header { display: flex; align-items: center; justify-content: space-between; padding: 0 16px 0 22px; border-bottom: 1px solid var(--line); }
+.order-portal-dialog > header strong,.order-portal-dialog > header small { display: block; }
+.order-portal-dialog > header small { margin-top: 3px; color: var(--muted); font-size: .68rem; }
+.order-portal-close { width: 40px; height: 40px; border: 1px solid var(--line); background: white; font-size: 1.4rem; cursor: pointer; }
+.order-portal-body { overflow: auto; padding: 24px; }
+.order-account-bar { display: flex; align-items: center; justify-content: flex-end; gap: 12px; min-height: 36px; margin-bottom: 12px; color: var(--muted); font-size: .72rem; }
+.order-account-bar button { border: 0; background: transparent; color: var(--orange-dark); font: inherit; font-weight: 800; cursor: pointer; }
+.order-login-form { display: grid; gap: 14px; max-width: 460px; margin: 7vh auto 0; }
+.order-login-form label { display: grid; gap: 7px; font-size: .78rem; font-weight: 800; }
+.order-login-form input { width: 100%; min-height: 48px; padding: 10px 12px; border: 1px solid var(--line); background: white; }
+.order-code-fields { display: grid; gap: 14px; }
+.order-code-fields[hidden] { display: none; }
+.order-login-status,.order-portal-error { min-height: 24px; color: var(--orange-dark); font-size: .78rem; }
+.order-portal-error { overflow-wrap: anywhere; }
+.order-portal-state { padding: 54px 12px; color: var(--muted); text-align: center; }
+.order-record { padding: 20px 0 28px; border-bottom: 1px solid var(--line); }
+.order-record:first-child { padding-top: 0; }
+.order-record-head { display: flex; align-items: start; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
+.order-record-head small { color: var(--muted); font-size: .68rem; }
+.order-record-head h3 { margin-top: 5px; font-size: 1.15rem; }
+.order-record-head > span { padding: 6px 9px; background: var(--orange); color: white; font-size: .7rem; font-weight: 800; }
+.order-record h4 { margin: 20px 0 10px; font-size: .82rem; }
+.order-stage-list { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 8px; padding: 0; list-style: none; }
+.order-stage-list li { display: grid; grid-template-columns: 24px minmax(0,1fr); gap: 7px; align-items: center; min-height: 42px; padding: 6px; border: 1px solid var(--line); color: var(--muted); font-size: .7rem; }
+.order-stage-list li span { display: grid; place-items: center; width: 24px; height: 24px; border: 1px solid currentColor; }
+.order-stage-list li.is-complete { background: #eef4ec; color: var(--green); }
+.order-stage-list li.is-current { border-color: var(--orange); background: #fff1e7; color: var(--ink); }
+
+@media (max-width: 700px) {
+  .order-portal-trigger { padding-inline: 7px; font-size: .7rem; }
+  .order-portal-dialog { inset: 0; width: 100%; height: 100dvh; border: 0; border-radius: 0; box-shadow: none; }
+  .order-portal-body { padding: 18px; }
+  .order-stage-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
 
 .hero { min-height: calc(100svh - 136px); overflow: hidden; background: var(--white); border-bottom: 1px solid var(--line); }
 .hero-grid { display: grid; grid-template-columns: minmax(0,.94fr) minmax(520px,1.06fr); min-height: max(580px,calc(100svh - 136px)); }
@@ -381,6 +422,11 @@ p { margin: 0; }
 }
 
 /* Production language selector and mobile RFQ */
+.qinyi-managed-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr); gap: clamp(28px, 5vw, 72px); align-items: center; }
+.qinyi-managed-media { min-height: 280px; margin: 0; overflow: hidden; background: #e9ece7; }
+.qinyi-managed-media img { width: 100%; height: 100%; min-height: 280px; max-height: 620px; display: block; object-fit: cover; }
+.qinyi-managed-copy { max-width: 680px; }
+.qinyi-managed-copy h2 { margin: 0 0 16px; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 .language-control { position: relative; min-width: 112px; }
 .language-control select { width: 100%; min-height: 40px; padding: 8px 28px 8px 10px; border: 1px solid var(--line); background: var(--white); color: var(--ink); font-size: .72rem; font-weight: 700; cursor: pointer; }
@@ -402,6 +448,7 @@ html[dir="rtl"] .industry-row::before { transform-origin: right; }
 }
 
 @media (max-width: 760px) {
+  .qinyi-managed-grid { grid-template-columns: 1fr; }
   .nav-shell { gap: 9px; }
   .brand { min-width: 0; margin-inline-end: auto; }
   .language-control { min-width: 96px; margin-inline-start: 0; }

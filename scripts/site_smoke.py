@@ -90,6 +90,10 @@ def main() -> None:
                         errors.append(f"{page}: runtime locale mismatch")
                 except json.JSONDecodeError as exc:
                     errors.append(f"{page}: invalid runtime locale payload: {exc}")
+            if "support-config.js" not in content:
+                errors.append(f"{page}: missing public API configuration")
+            if "site-content-runtime.js" not in content:
+                errors.append(f"{page}: missing CMS runtime")
             if not re.search(r'<link rel="canonical" href="https://nininininini979-tech\.github\.io/qinyi-printing-website/' + re.escape(locale) + r'/', content):
                 errors.append(f"{page}: incorrect canonical")
 

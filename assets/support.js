@@ -34,7 +34,7 @@
     resetFailed: "Session reset failed", viewCleared: "Conversation cleared on this page",
     resetDetail: "The server session could not be reset. Your next message will still start a separate conversation.",
     manualMode: "Human support mode", manualService: "Human support",
-    manualServiceDetail: "Automatic replies are paused. Messages follow the server's human-support policy.", manualPriority: "Human first",
+    manualServiceDetail: "AI replies remain available while a Qinyi manager joins the conversation.", manualPriority: "AI + human",
     online: "Online", onlineTitle: "Qinyi AI is online", onlineDetail: "The approved knowledge and conversation services are connected.",
     aiMode: "AI support", statusUnknown: "Status unavailable", statusUnknownTitle: "Service status unavailable",
     statusUnknownDetail: "The service status could not be read. You can still try sending a message.", waiting: "Waiting for connection",
@@ -45,14 +45,19 @@
     acknowledgedTitle: "Qinyi has received your request", acknowledgedBadge: "Acknowledged",
     acknowledgedDetail: "The support team has been notified and your conversation is waiting to be claimed.",
     humanActiveTitle: "Human support is now active", humanActiveBadge: "Connected",
-    humanActiveDetail: "AI automatic replies are paused. New messages will be sent to Qinyi human support.",
+    humanActiveDetail: "Human support has joined. AI remains available and every reply is identified by source.",
     resolvedTitle: "Human support has ended", resolvedBadge: "Resolved",
     resolvedDetail: "This handoff has been resolved. AI support is available again unless the team has kept this conversation human-only.",
     ticketLabel: "Support reference", humanMessageQueued: "Your message was sent to Qinyi human support.",
     waitingHumanEvent: "A human-support request has been created.", acknowledgedEvent: "Qinyi has acknowledged your support request.",
-    humanActiveEvent: "Qinyi human support has joined the conversation. AI automatic replies are paused.",
+    humanActiveEvent: "Qinyi human support has joined the conversation. AI support remains available.",
     resolvedEvent: "Human support has ended. AI support is available again.",
     humanConversationMode: "Human support",
+    attachmentNeedsSession: "Send a message before attaching a file to this conversation.",
+    attachmentTooLarge: "Attachments cannot exceed 25MB.",
+    attachmentUploading: "Securely uploading the attachment...",
+    attachmentUploaded: "Attachment uploaded and retained with this conversation.",
+    attachmentFailed: "Attachment upload failed",
   };
 
   function copy(key, fallback) {
@@ -138,6 +143,7 @@
     chatForm: document.getElementById("chatForm"),
     messageInput: document.getElementById("messageInput"),
     sendButton: document.getElementById("sendButton"),
+    fileInput: document.getElementById("supportFileInput"),
     messages: document.getElementById("messages"),
     emptyState: document.getElementById("emptyState"),
     newConversationButton: document.getElementById("newConversationButton"),
@@ -1022,7 +1028,7 @@
     }, 6000);
 
     try {
-      const response = await fetch(apiUrl("/api/support/status"), {
+      const requestOptions = {
         method: "GET",
         headers: {
           "X-Client-Id": API_HEADERS["X-Client-Id"],
@@ -1030,8 +1036,13 @@
           "X-Tenant-Id": API_HEADERS["X-Tenant-Id"],
         },
         signal: controller.signal,
-      });
+      };
+      const [response, availabilityResponse] = await Promise.all([
+        fetch(apiUrl("/api/support/status"), requestOptions),
+        fetch(apiUrl("/api/support/availability"), requestOptions).catch(() => null)
+      ]);
       const data = await readResponse(response);
+      const availability = availabilityResponse?.ok ? await readResponse(availabilityResponse) : null;
       if (!response.ok) {
         throw new Error("status unavailable");
       }
@@ -1049,7 +1060,7 @@
           "warning",
           copy("manualMode", "人工支持模式"),
           copy("manualService", "人工客服模式"),
-          copy("manualServiceDetail", "智能答复暂时停用，消息会按服务端策略转交人工处理。"),
+          copy("manualServiceDetail", "人工已加入服务流程；如未由开发者紧急暂停，AI 仍可继续回复。"),
           copy("manualPriority", "人工优先"),
         );
       } else {
@@ -1057,7 +1068,7 @@
           "online",
           copy("online", "服务在线"),
           copy("onlineTitle", "勤益智能客服在线"),
-          copy("onlineDetail", "知识库与会话服务已连接，可以开始咨询。"),
+          `${copy("onlineDetail", "知识库与会话服务已连接，可以开始咨询。")} ${availability?.human?.online ? (localeConfig.locale === "en" ? "Human support is online." : "人工客服在线。") : (localeConfig.locale === "en" ? "Human support is currently offline; AI remains online." : "人工客服当前离线，AI 仍在线。")}`,
           copy("aiMode", "智能答复"),
         );
       }
@@ -1078,6 +1089,46 @@
   elements.chatForm.addEventListener("submit", function (event) {
     event.preventDefault();
     sendMessage(elements.messageInput.value);
+  });
+
+  elements.fileInput?.addEventListener("change", async function () {
+    const file = elements.fileInput.files?.[0];
+    if (!file) return;
+    if (!state.sessionId) {
+      showToast(copy("attachmentNeedsSession", "请先发送一条消息，再上传会话附件。"));
+      elements.fileInput.value = "";
+      return;
+    }
+    if (file.size > 25 * 1024 * 1024) {
+      showToast(copy("attachmentTooLarge", "附件不能超过 25MB。"));
+      elements.fileInput.value = "";
+      return;
+    }
+    const form = new FormData();
+    form.append("purpose", "support");
+    form.append("sessionId", state.sessionId);
+    form.append("file", file, file.name);
+    try {
+      showToast(copy("attachmentUploading", "正在安全上传附件…"));
+      const response = await fetch(apiUrl("/api/support/uploads"), {
+        method: "POST",
+        headers: {
+          "X-Client-Id": API_HEADERS["X-Client-Id"],
+          "X-Demo-User-Id": API_HEADERS["X-Demo-User-Id"],
+          "X-Tenant-Id": API_HEADERS["X-Tenant-Id"]
+        },
+        body: form,
+        credentials: "omit"
+      });
+      const payload = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(payload.error || `HTTP ${response.status}`);
+      appendTranscriptMessage("system", `${copy("attachmentUploaded", "附件已上传")}：${payload.filename}`);
+      showToast(copy("attachmentUploaded", "附件已上传并随本次会话保存。"));
+    } catch (error) {
+      showToast(`${copy("attachmentFailed", "附件上传失败")}：${error.message}`);
+    } finally {
+      elements.fileInput.value = "";
+    }
   });
 
   elements.messageInput.addEventListener("input", function () {

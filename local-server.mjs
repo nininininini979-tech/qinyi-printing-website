@@ -4,9 +4,9 @@ import { extname, resolve, sep } from "node:path";
 import { Readable } from "node:stream";
 
 const HOST = "127.0.0.1";
-const PORT = Number(process.env.PORT || 4173);
+const PORT = Number(process.env.PORT || 4174);
 const ROOT = resolve(import.meta.dirname);
-const API_ORIGIN = String(process.env.QINYI_API_ORIGIN || "https://qinyi-ai-support-private-api.vercel.app").replace(/\/+$/, "");
+const API_ORIGIN = String(process.env.QINYI_API_ORIGIN || "http://127.0.0.1:3002").replace(/\/+$/, "");
 const MAX_REQUEST_BYTES = 1024 * 1024;
 
 const CONTENT_TYPES = {
@@ -70,11 +70,11 @@ async function proxyApi(req, res, pathname) {
   });
 
   const responseHeaders = {
-    "Cache-Control": "no-store",
+    "Cache-Control": upstream.headers.get("cache-control") || "no-store",
     "Content-Type": upstream.headers.get("content-type") || "application/octet-stream",
     "X-Content-Type-Options": "nosniff",
   };
-  for (const name of ["x-ratelimit-limit", "x-ratelimit-remaining", "x-ratelimit-reset"]) {
+  for (const name of ["content-security-policy", "etag", "x-robots-tag", "x-ratelimit-limit", "x-ratelimit-remaining", "x-ratelimit-reset"]) {
     const value = upstream.headers.get(name);
     if (value) responseHeaders[name] = value;
   }
@@ -90,14 +90,13 @@ async function serveStatic(res, pathname) {
   const filePath = resolve(ROOT, relativePath);
   if (filePath !== ROOT && !filePath.startsWith(`${ROOT}${sep}`)) {
     send(res, 403, "Forbidden");
-    return;
+    return true;
   }
 
   try {
     const stat = await fs.stat(filePath);
     if (!stat.isFile()) {
-      send(res, 404, "Not found");
-      return;
+      return false;
     }
 
     res.writeHead(200, {
@@ -107,13 +106,20 @@ async function serveStatic(res, pathname) {
       "X-Content-Type-Options": "nosniff",
     });
     createReadStream(filePath).pipe(res);
+    return true;
   } catch (error) {
     if (error.code === "ENOENT") {
-      send(res, 404, "Not found");
-      return;
+      return false;
     }
     throw error;
   }
+}
+
+function managedPageTarget(pathname) {
+  const localized = pathname.match(/^\/(zh-CN|en)\/([a-z0-9-]+\.html)$/);
+  if (localized) return `/api/public/site-pages/${encodeURIComponent(localized[2])}?locale=${encodeURIComponent(localized[1])}`;
+  const rootAlias = pathname.match(/^\/([a-z0-9-]+\.html)$/);
+  return rootAlias ? `/api/public/site-pages/${encodeURIComponent(rootAlias[1])}?locale=en` : null;
 }
 
 const server = createServer(async (req, res) => {
@@ -123,11 +129,26 @@ const server = createServer(async (req, res) => {
       await proxyApi(req, res, `${url.pathname}${url.search}`);
       return;
     }
+    const technicalPath = {
+      "/sitemap.xml": "/api/public/seo/sitemap.xml",
+      "/robots.txt": "/api/public/seo/robots.txt",
+      "/llms.txt": "/api/public/seo/llms.txt",
+    }[url.pathname];
+    if (technicalPath) {
+      await proxyApi(req, res, technicalPath);
+      return;
+    }
     if (req.method !== "GET" && req.method !== "HEAD") {
       send(res, 405, "Method not allowed");
       return;
     }
-    await serveStatic(res, url.pathname);
+    if (await serveStatic(res, url.pathname)) return;
+    const managedTarget = managedPageTarget(url.pathname);
+    if (managedTarget) {
+      await proxyApi(req, res, managedTarget);
+      return;
+    }
+    send(res, 404, "Not found");
   } catch (error) {
     console.error(error);
     send(res, 502, JSON.stringify({ error: "本地服务暂时不可用" }), "application/json; charset=utf-8");

@@ -4,11 +4,13 @@ Static, dependency-free multilingual website for Qinyi Printing / Coinshin.
 
 ## Local Preview
 
+For the complete visitor, order, CMS and AI support experience, start the backend on `127.0.0.1:3002`, then use the repository server so `/api` stays same-origin:
+
 ```bash
-python3 -m http.server 4173 --bind 127.0.0.1
+QINYI_API_ORIGIN=http://127.0.0.1:3002 node local-server.mjs
 ```
 
-Open `http://127.0.0.1:4173/`.
+Open `http://127.0.0.1:4174/zh-CN/index.html`. A plain `python3 -m http.server` can display static pages, but it cannot proxy the operational APIs or serve CMS-generated pages.
 
 ## Localization workflow
 
@@ -58,8 +60,9 @@ Production deployment is intentionally manual through
 is not marked `reviewed`.
 
 The site includes Qinyi AI Support at `ai-support.html` and loads it in an
-isolated iframe from the floating support button on every localized page. Run
-`node local-server.mjs` starts a local preview with same-origin API proxying. It uses the deployed API by default; for full local operations testing, start the backend separately and run `QINYI_API_ORIGIN=http://127.0.0.1:3001 node local-server.mjs`.
+isolated iframe from the floating support button on every localized page. `node local-server.mjs` starts the visitor site on port `4174` and proxies API traffic to the backend on port `3002` by default. `assets/support-config.js` deliberately uses a relative API base on localhost so this proxy remains effective.
+
+The local server also resolves CMS-added `zh-CN` and `en` page slugs through the approved backend snapshot and proxies the current server-generated `sitemap.xml`, `robots.txt`, and `llms.txt`. Draft previews remain authenticated in the administrator interface. Static source pages stay the fallback when the CMS/API is offline; production hosting must route these managed page and technical-file paths to the backend, or materialize the same approved output during deployment.
 
 ## Site Structure
 

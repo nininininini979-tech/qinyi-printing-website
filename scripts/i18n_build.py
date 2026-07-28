@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGES = ROOT / "src" / "pages"
 BASE_URL = "https://nininininini979-tech.github.io/qinyi-printing-website"
 LOCALES = ["en", "zh-CN", "es", "de", "fr", "ja", "ko", "ar"]
-ASSET_VERSION = "20260727-customizer-v2"
+ASSET_VERSION = "20260728-platform-v1"
 TRANSLATABLE_ATTRIBUTES = {"alt", "aria-label", "placeholder", "title"}
 JSON_LD_SKIP_KEYS = {"@context", "@type", "@id", "url", "item", "email", "telephone", "image", "addressCountry", "foundingDate"}
 VOID_TAGS = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"}
@@ -188,9 +188,12 @@ def inject_runtime(page_html: str, catalog: dict, locale: str, root_alias: bool)
     }
     payload = json.dumps({"locale": locale, "rootAlias": root_alias, "messages": needed}, ensure_ascii=False).replace("<", "\\u003c")
     pattern = r'(<script src="(?:\.\./)?assets/app\.js(?:\?[^\"]*)?" defer></script>)'
+    asset_prefix = 'assets/' if root_alias else '../assets/'
+    support_config = f'{asset_prefix}support-config.js?v={ASSET_VERSION}'
+    content_runtime = f'{asset_prefix}site-content-runtime.js?v={ASSET_VERSION}'
     return re.sub(
         pattern,
-        lambda match: f'<script>window.QINYI_I18N={payload};</script>\n  {match.group(1)}',
+        lambda match: f'<script>window.QINYI_I18N={payload};</script>\n  <script src="{support_config}"></script>\n  <script src="{content_runtime}" defer></script>\n  {match.group(1)}',
         page_html,
         count=1,
     )

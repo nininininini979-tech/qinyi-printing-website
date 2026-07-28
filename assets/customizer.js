@@ -1,6 +1,7 @@
 (function () {
   "use strict";
 
+  const HANDOFF_REQUEST_TIMEOUT_MS = 20_000;
   const locale = window.QINYI_I18N?.locale || document.documentElement.lang || "en";
   const messages = window.QINYI_I18N?.messages || {};
   const text = (key, fallback) => {
@@ -389,6 +390,8 @@
   }
 
   function initializeStudio(host) {
+    if (host.dataset.qinyiCustomizerReady === "true") return;
+    host.dataset.qinyiCustomizerReady = "true";
     host.innerHTML = studioTemplate();
     const root = host.querySelector(".qinyi-customizer");
     const nodes = {
@@ -412,7 +415,35 @@
     let swipeStart = null;
     let modelApi = null;
     const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const stages = () => [directionStage, structureStage(state.answers[0]?.id || "more"), finishStage, personalityStage];
+    const fallbackStages = () => [directionStage, structureStage(state.answers[0]?.id || "more"), finishStage, personalityStage];
+    const managedCustomizer = window.QINYI_CONTENT?.customizer;
+    const managedSteps = Array.isArray(managedCustomizer?.steps) ? managedCustomizer.steps : [];
+    const managedStepById = (stageId) => {
+      const aliases = { direction: "product", finish: "material", personality: "visual" };
+      return managedSteps.find((item) => item.id === (aliases[stageId] || stageId));
+    };
+    const managedStages = () => fallbackStages().map((fallback) => {
+      const managed = managedStepById(fallback.id);
+      if (!managed) return fallback;
+      const options = Array.isArray(managed.options) && managed.options.length
+        ? managed.options.slice(0, 20).map((entry, index) => ({
+          id: String(entry.id || `${managed.id}-${index + 1}`).slice(0, 100),
+          name: String(entry[locale.toLowerCase().startsWith("zh") ? "labelZh" : "labelEn"] || entry.name || entry.labelZh || entry.labelEn || "待补充"),
+          description: String(entry[locale.toLowerCase().startsWith("zh") ? "descriptionZh" : "descriptionEn"] || entry.description || ""),
+          preview: String(entry.preview || fallback.options[index % fallback.options.length]?.preview || "more"),
+          modelName: String(entry.modelName || fallback.options[index % fallback.options.length]?.modelName || copy.freeModel),
+          kind: entry.kind === "more" ? "more" : "standard"
+        }))
+        : fallback.options;
+      return {
+        ...fallback,
+        eyebrow: managed[locale.toLowerCase().startsWith("zh") ? "titleZh" : "titleEn"] || fallback.eyebrow,
+        title: managed[locale.toLowerCase().startsWith("zh") ? "titleZh" : "titleEn"] || fallback.title,
+        subtitle: managed[locale.toLowerCase().startsWith("zh") ? "descriptionZh" : "descriptionEn"] || fallback.subtitle,
+        options
+      };
+    });
+    const stages = () => managedStages();
     const currentStage = () => stages()[state.stageIndex];
     const progressText = (step) => {
       const localized = messages["customizer.progress"];
@@ -565,12 +596,18 @@
       nodes.human.disabled = true;
       nodes.status.removeAttribute("data-tone");
       nodes.status.textContent = copy.handoffPreparing;
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), HANDOFF_REQUEST_TIMEOUT_MS);
       try {
         let result;
         const message = `human support / 人工客服\n${summary}`.slice(0, 1950);
         // Policy-matched chat creates the support session and handoff atomically,
         // even when an older browser session has expired.
-        result = await apiRequest("/api/support/chat", { method: "POST", body: JSON.stringify({ message }) });
+        result = await apiRequest("/api/support/chat", {
+          method: "POST",
+          body: JSON.stringify({ message }),
+          signal: controller.signal,
+        });
         const action = result.action || result.result?.action;
         const ticketId = result.ticketId || result.handoff?.ticketId || result.handoff?.id;
         if (!ticketId || (action && action !== "handoff")) throw new Error("Human-support request was not confirmed");
@@ -584,6 +621,7 @@
         nodes.status.dataset.tone = "error";
         nodes.status.textContent = copy.handoffFailed;
       } finally {
+        clearTimeout(timeout);
         nodes.human.disabled = false;
       }
     }
@@ -835,9 +873,12 @@
         if (disposed) return;
         disposed = true;
         cancelAnimationFrame(animationId);
+        if (hoverFrame) cancelAnimationFrame(hoverFrame);
         resizeObserver.disconnect();
+        removeEventListener("resize", positionCards);
+        dispose(scene);
+        scene.clear();
         renderer.dispose();
-        clearModel();
         removeEventListener("pagehide", handlePageHide);
       };
       addEventListener("pagehide", handlePageHide);
@@ -847,5 +888,14 @@
     });
   }
 
-  document.querySelectorAll("[data-qinyi-customizer]").forEach(initializeStudio);
+  function initializeAll() {
+    document.querySelectorAll("[data-qinyi-customizer]").forEach(initializeStudio);
+  }
+
+  if (window.QINYI_CONTENT) initializeAll();
+  else {
+    let initialized = false;
+    document.addEventListener("qinyi:content-ready", () => { if (!initialized) { initialized = true; initializeAll(); } }, { once: true });
+    window.setTimeout(() => { if (!initialized) { initialized = true; initializeAll(); } }, 1200);
+  }
 }());
