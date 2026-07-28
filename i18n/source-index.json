@@ -576,7 +576,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 83
+          "position": 108
         },
         {
           "page": "solutions",
@@ -828,7 +828,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 76
+          "position": 101
         },
         {
           "page": "solutions",
@@ -930,7 +930,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 77
+          "position": 102
         },
         {
           "page": "solutions",
@@ -1217,7 +1217,7 @@
         {
           "page": "quote",
           "kind": "text:h3",
-          "position": 78
+          "position": 103
         },
         {
           "page": "solutions",
@@ -1478,7 +1478,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 58
+          "position": 83
         }
       ]
     },
@@ -1559,7 +1559,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 81
+          "position": 106
         },
         {
           "page": "solutions",
@@ -1803,7 +1803,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 84
+          "position": 109
         },
         {
           "page": "solutions",
@@ -1892,7 +1892,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 87
+          "position": 112
         }
       ]
     },
@@ -1908,7 +1908,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 30
+          "position": 45
         }
       ]
     },
@@ -2096,22 +2096,22 @@
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 34
-        },
-        {
-          "page": "quote",
-          "kind": "text:small",
           "position": 49
         },
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 51
+          "position": 72
         },
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 56
+          "position": 74
+        },
+        {
+          "page": "quote",
+          "kind": "text:small",
+          "position": 79
         }
       ]
     },
@@ -2230,7 +2230,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 59
+          "position": 84
         }
       ]
     },
@@ -2298,7 +2298,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 69
+          "position": 94
         },
         {
           "page": "trade",
@@ -2510,7 +2510,7 @@
         {
           "page": "quote",
           "kind": "text:strong",
-          "position": 75
+          "position": 100
         },
         {
           "page": "solutions",
@@ -2576,7 +2576,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 88
+          "position": 113
         },
         {
           "page": "solutions",
@@ -2853,7 +2853,7 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 80
+          "position": 105
         },
         {
           "page": "solutions",
@@ -2879,7 +2879,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 89
+          "position": 114
         },
         {
           "page": "solutions",
@@ -3037,7 +3037,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 32
+          "position": 47
         }
       ]
     },
@@ -10667,7 +10667,18 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 39
+          "position": 54
+        }
+      ]
+    },
+    "quote.3d_composition": {
+      "source": "3D composition",
+      "sourceHash": "3f9815e20135ed17",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 29
         }
       ]
     },
@@ -10678,7 +10689,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 40
+          "position": 55
         }
       ]
     },
@@ -10700,7 +10711,7 @@
         {
           "page": "quote",
           "kind": "text:h2",
-          "position": 24
+          "position": 39
         }
       ]
     },
@@ -10711,7 +10722,7 @@
         {
           "page": "quote",
           "kind": "text:span",
-          "position": 60
+          "position": 85
         }
       ]
     },
@@ -10722,7 +10733,7 @@
         {
           "page": "quote",
           "kind": "attribute:placeholder",
-          "position": 57
+          "position": 80
         }
       ]
     },
@@ -10733,7 +10744,18 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 70
+          "position": 95
+        }
+      ]
+    },
+    "quote.available": {
+      "source": "Available",
+      "sourceHash": "e674447337e83c13",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:small",
+          "position": 24
         }
       ]
     },
@@ -10744,7 +10766,18 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 55
+          "position": 78
+        }
+      ]
+    },
+    "quote.budget_range": {
+      "source": "Budget range",
+      "sourceHash": "fa6e8433c609a567",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:label",
+          "position": 68
         }
       ]
     },
@@ -10755,7 +10788,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 42
+          "position": 57
         }
       ]
     },
@@ -10766,7 +10799,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 67
+          "position": 92
         }
       ]
     },
@@ -10777,7 +10810,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 27
+          "position": 42
         }
       ]
     },
@@ -10788,7 +10821,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 41
+          "position": 56
         }
       ]
     },
@@ -10799,7 +10832,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 37
+          "position": 52
         }
       ]
     },
@@ -10810,7 +10843,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 47
+          "position": 70
         }
       ]
     },
@@ -10821,7 +10854,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 26
+          "position": 41
         }
       ]
     },
@@ -10832,7 +10865,18 @@
         {
           "page": "quote",
           "kind": "text:h2",
-          "position": 63
+          "position": 88
+        }
+      ]
+    },
+    "quote.dimensions": {
+      "source": "Dimensions",
+      "sourceHash": "914182d5e25f69e1",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 34
         }
       ]
     },
@@ -10843,7 +10887,7 @@
         {
           "page": "quote",
           "kind": "text:h3",
-          "position": 86
+          "position": 111
         }
       ]
     },
@@ -10854,7 +10898,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 73
+          "position": 98
         }
       ]
     },
@@ -10865,7 +10909,40 @@
         {
           "page": "quote",
           "kind": "attribute:placeholder",
-          "position": 46
+          "position": 61
+        }
+      ]
+    },
+    "quote.e_g_300_300_mm": {
+      "source": "e.g. 300 × 300 mm",
+      "sourceHash": "16bc5fe49d03b8fd",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "attribute:placeholder",
+          "position": 63
+        }
+      ]
+    },
+    "quote.e_g_greyboard_coated_paper_recommendation_needed": {
+      "source": "e.g. greyboard, coated paper, recommendation needed",
+      "sourceHash": "0f45d1c172aebb7c",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "attribute:placeholder",
+          "position": 65
+        }
+      ]
+    },
+    "quote.e_g_matte_lamination_foil_recommendation_needed": {
+      "source": "e.g. matte lamination, foil, recommendation needed",
+      "sourceHash": "ae9b5337e6a6d865",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "attribute:placeholder",
+          "position": 67
         }
       ]
     },
@@ -10876,7 +10953,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 45
+          "position": 60
         }
       ]
     },
@@ -10887,7 +10964,7 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 72
+          "position": 97
         }
       ]
     },
@@ -10898,7 +10975,18 @@
         {
           "page": "quote",
           "kind": "text:a",
-          "position": 74
+          "position": 99
+        }
+      ]
+    },
+    "quote.finished_dimensions": {
+      "source": "Finished dimensions",
+      "sourceHash": "5158597f638c61fd",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:label",
+          "position": 62
         }
       ]
     },
@@ -10909,7 +10997,18 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 66
+          "position": 91
+        }
+      ]
+    },
+    "quote.generate_preview": {
+      "source": "Generate preview",
+      "sourceHash": "f82333b89a5dc903",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:button",
+          "position": 37
         }
       ]
     },
@@ -10920,7 +11019,18 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 43
+          "position": 58
+        }
+      ]
+    },
+    "quote.guided_studio": {
+      "source": "Guided studio",
+      "sourceHash": "15b99054f8fae9e8",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 23
         }
       ]
     },
@@ -10931,7 +11041,7 @@
         {
           "page": "quote",
           "kind": "attribute:placeholder",
-          "position": 52
+          "position": 75
         }
       ]
     },
@@ -10942,7 +11052,18 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 64
+          "position": 89
+        }
+      ]
+    },
+    "quote.image_reference": {
+      "source": "Image reference",
+      "sourceHash": "24f4a48a2efa645f",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 27
         }
       ]
     },
@@ -10953,7 +11074,51 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 38
+          "position": 53
+        }
+      ]
+    },
+    "quote.material": {
+      "source": "Material",
+      "sourceHash": "616cb218a65b982f",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 35
+        }
+      ]
+    },
+    "quote.material_preference": {
+      "source": "Material preference",
+      "sourceHash": "785fcccfa22e3a1d",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:label",
+          "position": 64
+        }
+      ]
+    },
+    "quote.model_engine_viewport_controls_and_generation_adapter": {
+      "source": "Model engine, viewport controls and generation adapter pending input.",
+      "sourceHash": "cf3d275fcaefb8db",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:p",
+          "position": 31
+        }
+      ]
+    },
+    "quote.model_parameters": {
+      "source": "Model parameters",
+      "sourceHash": "be1179e7fc3cb11f",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:h3",
+          "position": 32
         }
       ]
     },
@@ -10964,7 +11129,7 @@
         {
           "page": "quote",
           "kind": "text:small",
-          "position": 53
+          "position": 76
         }
       ]
     },
@@ -10975,7 +11140,18 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 28
+          "position": 43
+        }
+      ]
+    },
+    "quote.optional_recommendation_needed": {
+      "source": "Optional / recommendation needed",
+      "sourceHash": "f41a490bf01d622a",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "attribute:placeholder",
+          "position": 69
         }
       ]
     },
@@ -10986,7 +11162,61 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 44
+          "position": 59
+        }
+      ]
+    },
+    "quote.output_mode": {
+      "source": "Output mode",
+      "sourceHash": "d7ac94557d427580",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 36
+        }
+      ]
+    },
+    "quote.parametric_modeling": {
+      "source": "Parametric modeling",
+      "sourceHash": "ad6e5ce1940eeabc",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 25
+        }
+      ]
+    },
+    "quote.pdf_jpg_png_or_webp_up_to": {
+      "source": "PDF, JPG, PNG or WebP, up to 25MB. Do not upload passwords, payment data, identity documents or confidential production files.",
+      "sourceHash": "2c53004cb37e02ba",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:small",
+          "position": 82
+        }
+      ]
+    },
+    "quote.pending_input": {
+      "source": "Pending input",
+      "sourceHash": "bc6e0973dfa1a086",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:small",
+          "position": 26
+        },
+        {
+          "page": "quote",
+          "kind": "text:small",
+          "position": 28
+        },
+        {
+          "page": "quote",
+          "kind": "text:small",
+          "position": 30
         }
       ]
     },
@@ -10997,18 +11227,18 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 33
+          "position": 48
         }
       ]
     },
-    "quote.prepare_enquiry_email": {
-      "source": "Prepare enquiry email",
-      "sourceHash": "3c1124fb7778a421",
+    "quote.print_finishing": {
+      "source": "Print & finishing",
+      "sourceHash": "6d3e8e28c6061f73",
       "references": [
         {
           "page": "quote",
-          "kind": "text:button",
-          "position": 61
+          "kind": "text:label",
+          "position": 66
         }
       ]
     },
@@ -11019,7 +11249,7 @@
         {
           "page": "quote",
           "kind": "text:li",
-          "position": 25
+          "position": 40
         }
       ]
     },
@@ -11030,7 +11260,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 65
+          "position": 90
         }
       ]
     },
@@ -11041,7 +11271,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 35
+          "position": 50
         }
       ]
     },
@@ -11052,7 +11282,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 50
+          "position": 73
         }
       ]
     },
@@ -11063,7 +11293,18 @@
         {
           "page": "quote",
           "kind": "text:td",
-          "position": 68
+          "position": 93
+        }
+      ]
+    },
+    "quote.reference_file_optional": {
+      "source": "Reference file (optional)",
+      "sourceHash": "804da7b1b282548c",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:label",
+          "position": 81
         }
       ]
     },
@@ -11096,7 +11337,7 @@
         {
           "page": "quote",
           "kind": "text:th",
-          "position": 71
+          "position": 96
         }
       ]
     },
@@ -11107,7 +11348,7 @@
         {
           "page": "quote",
           "kind": "text:option",
-          "position": 36
+          "position": 51
         }
       ]
     },
@@ -11119,6 +11360,17 @@
           "page": "common",
           "kind": "javascript",
           "position": 21
+        }
+      ]
+    },
+    "quote.source_asset": {
+      "source": "Source asset",
+      "sourceHash": "b1187c58ac5f17a8",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:span",
+          "position": 33
         }
       ]
     },
@@ -11173,7 +11425,7 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 23
+          "position": 38
         }
       ]
     },
@@ -11184,7 +11436,18 @@
         {
           "page": "quote",
           "kind": "text:p",
-          "position": 62
+          "position": 87
+        }
+      ]
+    },
+    "quote.submit_quote_details": {
+      "source": "Submit quote details",
+      "sourceHash": "191d767a0f2a41dc",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:button",
+          "position": 86
         }
       ]
     },
@@ -11195,18 +11458,7 @@
         {
           "page": "quote",
           "kind": "text:label",
-          "position": 48
-        }
-      ]
-    },
-    "quote.this_form_prepares_an_email_in_your": {
-      "source": "This form prepares an email in your own email application. It does not upload your information or files to this website.",
-      "sourceHash": "a15c1c4cee08a63e",
-      "references": [
-        {
-          "page": "quote",
-          "kind": "text:p",
-          "position": 29
+          "position": 71
         }
       ]
     },
@@ -11218,6 +11470,17 @@
           "page": "common",
           "kind": "javascript",
           "position": 19
+        }
+      ]
+    },
+    "quote.your_project_details_remain_editable_before_submission": {
+      "source": "Your project details remain editable before submission. An optional PDF or image is uploaded through Qinyi's protected quote channel and identified by a reference number.",
+      "sourceHash": "d22a8f6fa43d5318",
+      "references": [
+        {
+          "page": "quote",
+          "kind": "text:p",
+          "position": 44
         }
       ]
     },

@@ -2,7 +2,7 @@
   "locale": "en",
   "languageName": "English",
   "direction": "ltr",
-  "updatedAt": "2026-07-27",
+  "updatedAt": "2026-07-28",
   "messages": {
     "about.a_manufacturing_team_for_custom_paper_products": {
       "value": "A manufacturing team for custom paper products.",
@@ -4049,6 +4049,11 @@
       "status": "source",
       "sourceHash": "21ff79a316d75500"
     },
+    "quote.3d_composition": {
+      "value": "3D composition",
+      "status": "source",
+      "sourceHash": "3f9815e20135ed17"
+    },
     "quote.3d_paper_puzzle": {
       "value": "3D paper puzzle",
       "status": "source",
@@ -4079,10 +4084,20 @@
       "status": "source",
       "sourceHash": "159f6e0ad29b16c0"
     },
+    "quote.available": {
+      "value": "Available",
+      "status": "source",
+      "sourceHash": "e674447337e83c13"
+    },
     "quote.brief_note": {
       "value": "Brief note",
       "status": "source",
       "sourceHash": "17df7cf689c673fd"
+    },
+    "quote.budget_range": {
+      "value": "Budget range",
+      "status": "source",
+      "sourceHash": "fa6e8433c609a567"
     },
     "quote.cards_playing_cards": {
       "value": "Cards / playing cards",
@@ -4124,6 +4139,11 @@
       "status": "source",
       "sourceHash": "a4c89c09a3416e3e"
     },
+    "quote.dimensions": {
+      "value": "Dimensions",
+      "status": "source",
+      "sourceHash": "914182d5e25f69e1"
+    },
     "quote.direct_contact": {
       "value": "Direct contact",
       "status": "source",
@@ -4138,6 +4158,21 @@
       "value": "e.g. 2,000 units",
       "status": "source",
       "sourceHash": "e85a9c19071fe068"
+    },
+    "quote.e_g_300_300_mm": {
+      "value": "e.g. 300 × 300 mm",
+      "status": "source",
+      "sourceHash": "16bc5fe49d03b8fd"
+    },
+    "quote.e_g_greyboard_coated_paper_recommendation_needed": {
+      "value": "e.g. greyboard, coated paper, recommendation needed",
+      "status": "source",
+      "sourceHash": "0f45d1c172aebb7c"
+    },
+    "quote.e_g_matte_lamination_foil_recommendation_needed": {
+      "value": "e.g. matte lamination, foil, recommendation needed",
+      "status": "source",
+      "sourceHash": "ae9b5337e6a6d865"
     },
     "quote.estimated_quantity": {
       "value": "Estimated quantity",
@@ -4154,15 +4189,30 @@
       "status": "source",
       "sourceHash": "61ec345502905424"
     },
+    "quote.finished_dimensions": {
+      "value": "Finished dimensions",
+      "status": "source",
+      "sourceHash": "5158597f638c61fd"
+    },
     "quote.finished_dimensions_piece_or_card_count_materials": {
       "value": "Finished dimensions, piece or card count, materials, construction and packaging.",
       "status": "source",
       "sourceHash": "ca02698fa043bee9"
     },
+    "quote.generate_preview": {
+      "value": "Generate preview",
+      "status": "source",
+      "sourceHash": "f82333b89a5dc903"
+    },
     "quote.gift_box_printed_packaging": {
       "value": "Gift box / printed packaging",
       "status": "source",
       "sourceHash": "a4825a4bfebb50a2"
+    },
+    "quote.guided_studio": {
+      "value": "Guided studio",
+      "status": "source",
+      "sourceHash": "15b99054f8fae9e8"
     },
     "quote.https": {
       "value": "https://",
@@ -4174,10 +4224,35 @@
       "status": "source",
       "sourceHash": "60c39eefb66ec0e2"
     },
+    "quote.image_reference": {
+      "value": "Image reference",
+      "status": "source",
+      "sourceHash": "24f4a48a2efa645f"
+    },
     "quote.kids_educational_puzzle": {
       "value": "Kids educational puzzle",
       "status": "source",
       "sourceHash": "1938f843b4e8c6f3"
+    },
+    "quote.material": {
+      "value": "Material",
+      "status": "source",
+      "sourceHash": "616cb218a65b982f"
+    },
+    "quote.material_preference": {
+      "value": "Material preference",
+      "status": "source",
+      "sourceHash": "785fcccfa22e3a1d"
+    },
+    "quote.model_engine_viewport_controls_and_generation_adapter": {
+      "value": "Model engine, viewport controls and generation adapter pending input.",
+      "status": "source",
+      "sourceHash": "cf3d275fcaefb8db"
+    },
+    "quote.model_parameters": {
+      "value": "Model parameters",
+      "status": "source",
+      "sourceHash": "be1179e7fc3cb11f"
     },
     "quote.only_share_a_link_that_is_safe": {
       "value": "Only share a link that is safe to view publicly. Do not include confidential artwork, credentials or personal data.",
@@ -4189,20 +4264,45 @@
       "status": "source",
       "sourceHash": "d188cb55cb2eb131"
     },
+    "quote.optional_recommendation_needed": {
+      "value": "Optional / recommendation needed",
+      "status": "source",
+      "sourceHash": "f41a490bf01d622a"
+    },
     "quote.other_paper_product": {
       "value": "Other paper product",
       "status": "source",
       "sourceHash": "18ad0cf847ef7f65"
+    },
+    "quote.output_mode": {
+      "value": "Output mode",
+      "status": "source",
+      "sourceHash": "d7ac94557d427580"
+    },
+    "quote.parametric_modeling": {
+      "value": "Parametric modeling",
+      "status": "source",
+      "sourceHash": "ad6e5ce1940eeabc"
+    },
+    "quote.pdf_jpg_png_or_webp_up_to": {
+      "value": "PDF, JPG, PNG or WebP, up to 25MB. Do not upload passwords, payment data, identity documents or confidential production files.",
+      "status": "source",
+      "sourceHash": "2c53004cb37e02ba"
+    },
+    "quote.pending_input": {
+      "value": "Pending input",
+      "status": "source",
+      "sourceHash": "bc6e0973dfa1a086"
     },
     "quote.phone_whatsapp": {
       "value": "Phone / WhatsApp",
       "status": "source",
       "sourceHash": "2e2c97ab4237fe1b"
     },
-    "quote.prepare_enquiry_email": {
-      "value": "Prepare enquiry email",
+    "quote.print_finishing": {
+      "value": "Print & finishing",
       "status": "source",
-      "sourceHash": "3c1124fb7778a421"
+      "sourceHash": "6d3e8e28c6061f73"
     },
     "quote.product_category_and_estimated_quantity": {
       "value": "Product category and estimated quantity",
@@ -4229,6 +4329,11 @@
       "status": "source",
       "sourceHash": "7577a5a98323aaf3"
     },
+    "quote.reference_file_optional": {
+      "value": "Reference file (optional)",
+      "status": "source",
+      "sourceHash": "804da7b1b282548c"
+    },
     "quote.request_a_custom_manufacturing_quote": {
       "value": "Customization and Quote",
       "status": "source",
@@ -4253,6 +4358,11 @@
       "value": "Send a short project outline first. Qinyi will review manufacturing fit and then request the drawings, artwork and detailed specifications needed for pricing.",
       "status": "source",
       "sourceHash": "732dd3c1a0565ed2"
+    },
+    "quote.source_asset": {
+      "value": "Source asset",
+      "status": "source",
+      "sourceHash": "b1187c58ac5f17a8"
     },
     "quote.start_a_two_step_manufacturing_rfq_for": {
       "value": "Create an editable product concept and continue to a manufacturing RFQ for a custom puzzle, paper game or printed package.",
@@ -4284,20 +4394,25 @@
       "status": "source",
       "sourceHash": "933ec51f8cba96a5"
     },
+    "quote.submit_quote_details": {
+      "value": "Submit quote details",
+      "status": "source",
+      "sourceHash": "191d767a0f2a41dc"
+    },
     "quote.target_delivery_date": {
       "value": "Target delivery date",
       "status": "source",
       "sourceHash": "7783bea7bc8f5b1d"
     },
-    "quote.this_form_prepares_an_email_in_your": {
-      "value": "This form prepares an email in your own email application. It does not upload your information or files to this website.",
-      "status": "source",
-      "sourceHash": "a15c1c4cee08a63e"
-    },
     "quote.two_step_rfq": {
       "value": "Two-step RFQ",
       "status": "source",
       "sourceHash": "76ab0cd93471b22f"
+    },
+    "quote.your_project_details_remain_editable_before_submission": {
+      "value": "Your project details remain editable before submission. An optional PDF or image is uploaded through Qinyi's protected quote channel and identified by a reference number.",
+      "status": "source",
+      "sourceHash": "d22a8f6fa43d5318"
     },
     "solutions.a_clearer_handoff": {
       "value": "A clearer handoff",
